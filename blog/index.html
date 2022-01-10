@@ -1,0 +1,54 @@
+---
+layout: page
+title: Blog
+description:
+---
+<section>
+	<div class="row">
+		<div class="col-md-8">
+			<h1>William's Blog</h1>
+			<p>A record of my experiences, thoughts and options around what I do and see in my daily life. </p>
+		</div>
+	</div>
+</section>
+<section>
+	<div class="row">
+		<div class="column-flex"> 
+			{% for post in paginator.posts %}
+			<a href="{{ post.url | prepend: site.baseurl }}">
+				<div class="columns blog-card {{ post.categories }} shadow">
+					<img src="/images/blog/{{ post.image | prepend: site.baseurl }}" alt="Image for {{ post.title }}" class="blog-card-image" oncontextmenu="return false;">
+					<div class="card-body text-left">
+						<strong class="d-inline-block mb-2 text-primary text-capitalize">{{ post.categories }}</strong>    
+						<h5>{{ post.title | escape }}</h5>
+						<p>{{ post.date | date: "%A, %d %B %Y" }}</p>
+					</div>
+				</div>
+			</a>
+			{% endfor %}
+		</div>
+	</div>
+	<!--p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></!--p-->
+<section>
+	<div class="row">
+		<div class="col-md text-center page-index">
+			{% if paginator.total_pages > 1 %}
+				{% if paginator.previous_page %}
+					<a href="{{ paginator.previous_page_path | prepend: site.baseurl }}">Previous</a>
+				{% endif %}
+					{% for page in (1..paginator.total_pages) %}
+						{% if page == paginator.page %}
+							<em>{{ page }}</em>
+						{% elsif page == 1 %}
+							<a href="{{ '/' | relative_url }}">{{ page }}</a>
+						{% else %}
+							<a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a>
+						{% endif %}
+					{% endfor %}
+				{% if paginator.next_page %}
+					<a href="{{ paginator.next_page_path | prepend: site.baseurl }}">Next</a>
+				{% endif %}
+			{% endif %}
+		</div>
+	</div>
+</section>

@@ -1,0 +1,35 @@
+---
+layout: page
+title: Contact
+description:
+permalink: /contact/
+credit:
+---
+<div class="row">
+    <div class="col-md">
+        <h1>Contact Me</h1>
+        <p>
+            Are you are interested in what I am doing or want to enquire for more information, including collaborations and opportunities, let's chat!
+        </p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-5 contact-socials">
+        <h5>Follow</h5>
+        {% if site.facebook %}
+            <p><i class="fa fa-lg fa-facebook"></i><a href="https://www.facebook.com/{{ site.facebook }}/">William - Tsz Kin LIU</a></p>
+        {% endif %}
+        {% if site.instagram %}
+            <p><i class="fa fa-lg fa-instagram"></i><a href="https://www.instagram.com/{{ site.instagram }}/">@{{ site.instagram }}</a></p>
+        {% endif %}
+        {% if site.linkedin %}
+            <p><i class="fa fa-lg fa-linkedin"></i><a href="https://www.linkedin.com/in/{{ site.linkedin }}">Tsz Kin (William) Liu</a></p>
+        {% endif %}
+    </div>
+    <div class="col-md-7">
+        <!-- form.123formbuilder.com script begins here -->
+            <script type="text/javascript" defer src="https://form.123formbuilder.com/embed/5989299.js" data-role="form" data-default-width="650px"></script>
+        <!-- form.123formbuilder.com script ends here -->
+    </div>
+</div>

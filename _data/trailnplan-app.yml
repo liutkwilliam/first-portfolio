@@ -1,0 +1,24 @@
+- title: Login screen
+  image: app-welcome-screen.png
+- title: Home screen
+  image: app-home-screen.png
+- title: Group event invite
+  image: app-group-event-details-preview.png
+- title: Place search result details
+  image: app-place-result.png
+- title: Stop added
+  image: app-trail-plan-5th-stop-added.png
+- title: Trail plan completed
+  image: app-trail-plan-complete.png
+- title: Add event details
+  image: app-add-event-details.png
+- title: Event summary screen
+  image: app-event-summary.png
+- title: Overall logistics plan
+  image: app-overall-logistics-plan.png
+- title: Screen of Adding personalised logisics details
+  image: app-your-logistics-details-stop-1-typed.png
+- title: Event stop preview
+  image: app-stop-map-1.png
+- title: Screen of Travel arrangement and carpooling option
+  image: app-travel-arrangements-ticked.png

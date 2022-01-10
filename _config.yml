@@ -1,0 +1,104 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you: 
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+# Site setting
+title: "Tsz Kin LIU (William)"
+email: liutk.william@gmail.com
+description: William is a Animator, Photographer and graphic designer based in Sydney. Currently in the progress of upskilling design knowledge.
+baseurl: ""
+url: "https://liutkwilliam.github.io"
+# facebook: liutk.william
+instagram: liutk.william
+linkedin: liutkwilliam
+
+#logo
+logo-reg: /images/logos/logo-landscape-colour.svg
+logo-black: /images/logos/logo-landscape-black.svg
+logo-white: /images/logos/logo-landscape-white.svg
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+
+# sass:
+#   sass_dir: "/"
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
+
+# run jnvsor/jekyll-php
+# php_path: /contactform.php
+# include: [.php]
+
+collections:
+  _portfolio:
+      output: true
+      permalink: /portfolio/:title/
+  posts:
+      output: true
+      permalink: /blog/:title/
+  _gallery:
+      output: true
+      permalink: /photography/:title/
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+  -
+    scope:
+      path: "_posts"
+    values:
+      layout: "post"
+  -
+    scope:
+      path: "__portfolio"
+    values:
+      layout: "portfoliosite"
+  -
+    scope:
+      path: "__gallery"
+    values:
+      layout: "gallery"
+
+# pagination for blog
+paginate: 9
+paginate_path: "blog/page:num/"

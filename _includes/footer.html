@@ -1,0 +1,22 @@
+<button onclick="topFunction()" id="topBtn" class="shadow" title="Go to top"><i class="fa fa-angle-up" aria-hidden="true"></i></button>
+
+<!--footer section-->
+{% assign home = "/" | pretend: site.baseurl %}
+{% if page.url == home %}
+<footer class="home-footer">
+{% else %}
+<footer>
+{% endif %}
+	<div class="container-xl">
+		<div class="row">
+			<div class="col-md text-center text-md-left">
+				<p>@ {{ 'now' | date: "%Y" }}, <a href="{{'/' | prepend: site.baseurl }}">Tsz Kin LIU (William)</a></p>
+			</div>
+			<div class="col-md text-center text-md-right">
+				{% if site.facebook %}<a href="https://www.facebook.com/{{ site.facebook }}/" class="fa fa-lg fa-facebook"></a>{% endif %}
+				{% if site.instagram %}<a href="https://www.instagram.com/{{ site.instagram }}/" class="fa fa-lg fa-instagram"></a>{% endif %}
+				{% if site.linkedin %}<a href="https://www.linkedin.com/in/{{ site.linkedin }}/" class="fa fa-lg fa-linkedin"></a>{% endif %}
+			</div>				
+		</div>
+	</div>
+</footer>

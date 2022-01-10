@@ -1,0 +1,31 @@
+---
+layout: default
+---
+<div class="container-xl">
+	<section class="gallery-head">
+		<div class="row">
+			<div class="col-md text-md-left text-center">
+				<p class="lead text-capitalize text-muted">Photography Portfolio</p>
+				<h1 class="text-primary">{{ page.title }}</h1>
+				<h5>{{ page.date | date: "%B %Y" }}</h5>
+				<p class="text-uppercase text-muted">Type: {{ page.categories | uniq | join: ", " }}</p>
+				<p>{{ page.content }}</p>
+			</div>
+		</div>
+	</section>
+</div>
+<div class="container-fluid">
+	<section>
+		<div class="row">
+			<div class="col-md">
+				<div class="card-columns">
+					{% for image in page.images %}
+						<div class="card" oncontextmenu="return false;">
+							<img src="{{site.baseurl}}/images/album/{{page.foldername}}/{{image.image_path}}" alt="Image {{ forloop.index }} of {{ page.title }}" class="card-img-top">
+						</div>
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+	</section>
+</div> 

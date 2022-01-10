@@ -1,0 +1,54 @@
+---
+layout: default
+title: Design Portfolio
+description: Design portfolio includes various works including animation, graphic design, website designs, videography and etc.
+permalink: /portfolio/
+---
+<div class="container-xl">
+	<section>
+		<div class="row">
+			<div class="col-md text-center">
+				<h1>{{ page.title }}</h1>
+			</div>
+		</div>
+		<!--Type Filter-->
+		<div class="row">
+			<!--Display unless mobile screen size-->
+			<div class="col-md text-center">
+				<div id="myBtnContainer">
+					<a class="btn btn-sm btn-outline-primary active" onclick="filterSelection('all')">Show all</a>
+					{% assign cmap = site._portfolio | map: 'categories' | uniq %}
+					{% assign cats = cmap | sort %}
+					{% for cat in cats %}
+					<a class="btn btn-sm btn-outline-primary" onclick="filterSelection('{{ cat }}')">{{ cat }}</a>
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+	</section>
+	<section>
+		<!--Filtered Content-->
+		<div class="row">
+			<div class="column-flex">
+				{% assign sorted = site._portfolio | sort:"date" | reverse %}
+				{% for _portfolio in sorted %}
+				<div class="filterDiv {{ _portfolio.categories }} animated fadeIn shadow">
+					<a href="{% if _portfolio.link %}{{ _portfolio.link }}{% else %}{{ _portfolio.url }}{% endif %}">				
+						<div class="imgcontainer" oncontextmenu="return false;">
+							<img src="/images/{% if _portfolio.folder %}{{ _portfolio.folder }}/{% endif %}{{ _portfolio.image }}" alt="{{ _portfolio.slug }}">
+							<div class="overlay">
+								<div class="text">
+									<h6>{{ _portfolio.title }}</h6>
+									<br>
+									<p class="text-uppercase">{{ _portfolio.categories | uniq | join: ", " }}</p>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+				{% endfor %}											
+			</div>				
+		</div>
+	</section>
+</div>
+<script src="{{ "/js/portfolio-grid.js" | relative_url }}"></script>

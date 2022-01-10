@@ -1,0 +1,12 @@
+- name: About
+  link: /about
+- name: Design
+  link: /portfolio
+- name: Photography
+  link: /photography
+# - name: Blog
+#   link: /blog
+- name: CV
+  link: /cv
+- name: Contact
+  link: /contact

@@ -1,0 +1,352 @@
+// Written by Tsz Kin LIU (William)
+
+//////////////
+// General //
+////////////
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Georama', sans-serif;
+    font-size: 1rem;
+    margin: 0 auto;
+    color: $black;
+}
+
+h2, h3 {
+    &:after {
+        content: "";
+        display: block;
+        margin: 0.5rem 0;
+        border-radius: 4rem;
+        position: relative;
+    }
+}
+
+h2 {
+    padding: 0.5rem 0;
+    &:after {
+        width: 6rem;
+        height: 0.25rem;
+        background: $secondary;
+    }
+}
+
+h3 {
+    padding: 0.5rem;
+    &:after {
+        width: 3rem;
+        height: 0.2rem;
+        background: $website-third;
+    }
+}
+
+.page-content {
+    min-height: 80vh!important;
+}
+
+section {
+    padding-top: 4rem;
+    &:last-child {
+        padding-bottom: 4rem;
+        &.gallery-head {
+            padding-bottom: 0rem;
+        }
+    }
+    @media (max-width: 767.98px) {
+        padding-top: 2rem;
+        &:last-child {
+            padding-bottom: 2rem; 
+        }
+    }
+}
+
+/////////////////
+// Navigation //
+///////////////
+
+// header
+header {
+    border-width: 0 0 1px 0;
+    border-color: rgba($light, 0.1);
+    border-style: solid;
+}
+
+// navbar
+.navbar-brand img {
+    height: 60px;
+    @media (max-width: 575.98px) {	
+        height: 40px;
+    }
+}
+
+.nav-item a {
+    font-weight: 600;
+    user-select: none; /* supported by Chrome and Opera */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.currentpage {
+    color: $primary!important;
+}
+
+//////////////
+// Buttons //
+////////////
+
+.btn {
+    margin: 0.4rem 0.1rem;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    border-radius: 0.5rem;
+}
+
+#topBtn {
+    position: fixed;
+    bottom: 3rem;
+    right: 0;
+    z-index: 99;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    background-image: $diagonal-bg;
+    background-color: $primary;
+    color: $white;
+    cursor: pointer;
+    padding: 0.6rem 1.25rem;
+    border-radius: 1rem 0 0 1rem;
+    @include standard-transition;
+    transform: translate(100px, 0);
+    &.show {
+        transform: translate(0, 0);
+    }
+    @media (max-width: 767.98px) {
+        padding: 0.5rem 1rem;
+        font-size: 1.25rem;
+        bottom: 6rem;
+    }
+  }
+
+///////////////////////
+// Portfolio Filter //
+/////////////////////
+
+#myBtnContainer {
+    a {
+        text-transform: uppercase!important;
+    }
+}
+.filterDiv {
+    margin: 0.5rem;
+    float: left;
+    position: relative;
+    padding-top: 0;
+    line-height: 1.25rem;
+    text-align: center;
+    display: none;
+    background-color: $white;
+    &.show {
+        display: block;
+    }
+}
+
+//////////////////////
+// Columns & grids //
+////////////////////
+
+// apply margin-top and bottom in classes of col
+[class*="col-"] {
+    margin-top: 0.35rem;
+    margin-bottom: 0.35rem;
+}
+
+.column-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+.columns { // do not apply in filterdiv
+    display: block;
+    float: left;
+    margin: 0.5rem;
+}
+
+.profile-img {
+    float: none;
+    text-align: center;
+    img {
+        width: 15rem;
+        border-radius: 10rem;
+        margin: 1rem auto;
+    }
+}
+
+////////////////
+// Animation //
+//////////////
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+ }
+@-webkit-keyframes fadeIn {
+    0% {opacity: 0}
+    100% {opacity: 1}
+ }
+@keyframes fadeIn {
+    0% {opacity: 0}
+    100% {opacity: 1}
+ }
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+ }
+
+ ///////////
+
+// gradient strip
+#gradient-strip {
+    background-color: $primary;
+    background-image: $diagonal-bg;
+}
+
+// social buttons
+.fa {
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.social-buttons {
+    ul {
+        list-style-type: none;
+        margin-block-start: 0;
+        padding-inline-start: 0;
+        li {
+            list-style: none;
+            display: inline-block;
+        }
+    }
+    h5 {
+        margin: 10px 10px 10px 0;
+    }
+    .fa {
+        color: $black;
+        width: 40px;
+        height: 40px;
+        margin: 10px 5px 10px 5px; //keep it
+        padding: 10px 0;
+        font-size: 1.2rem;
+        text-align: center;
+        &.fa-twitter  {
+            padding: 10px;
+        }
+        &.fa-linkedin {
+            padding: 10px 11px;
+        }
+    }
+}
+
+/////////////
+// Footer //
+///////////
+
+footer {
+    padding: 1rem 0;
+    &.home-footer {
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+        p, a {
+            color: $white!important;
+        }
+    }
+    p {
+        margin-bottom: 0;
+        color: $black;
+    }
+    a {
+        color: $black;
+    }
+    .fa {
+        margin: 5px 10px;
+    }
+}
+
+/////////
+// CV //
+///////
+
+.skills-label {
+    display: inline-block;
+    margin: 0 0.5rem 0.5rem 0;
+    padding: 0.2rem 0.7rem;
+    color: $secondary;
+    border: 2px solid rgba($secondary, 0.5);
+    border-radius: 0.625rem;
+}
+
+.contact-socials {
+    .fa {
+        padding: 0.5rem 0.75rem 0.5rem 0;
+    }
+}
+
+//////////
+// 404 //
+////////
+
+.notfoundpage {
+    margin: 1.5rem auto;
+    h1 {
+        margin: 2rem 0;
+        font-size: 4em;
+        line-height: 1;
+        letter-spacing: -1px;
+    }
+    .logo-large {
+        padding: 2rem 0;
+        width: 20rem;
+    }
+}
+
+////////////////////////
+// Responsive layout //
+//////////////////////
+
+.navbar-dark {
+    @include standard-transition;
+}
+
+@media (max-width: 1199.98px) {
+
+}
+@media (max-width: 991.98px) {
+    .nav-link {
+        text-align: center;
+    }
+}
+@media (max-width: 767.98px) {
+    .navbar-dark {
+        background-color: $primary;
+    }
+}
+@media (max-width: 575.98px) {	
+
+}

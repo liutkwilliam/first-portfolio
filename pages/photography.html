@@ -1,0 +1,43 @@
+---
+layout: default
+title: Photography Portfolio
+description: Photography portfolio features what William captures.
+permalink: /photography/
+---
+<div class="container-xl">
+	<section>
+		<div class="row">
+			<div class="col-md text-center">
+				<h1>{{ page.title }}</h1>
+				<p>For more photos, visit William's Instagram <a href="https://www.instagram.com/{{ site.instagram }}/">here</a>.</p>
+			</div>
+		</div>
+	</section>
+	<section>
+		<!--Filtered Content-->
+		<div class="row">
+			<div class="column-flex">
+				{% assign sorted = site._gallery | sort:"date" | reverse %}
+				{% for _gallery in sorted %}
+				<div class="columns animated fadeIn">
+					{% if _gallery.link %}
+					<a href="{{ _gallery.link }}">
+					{% else %}
+					<a href="{{ _gallery.url }}">
+					{% endif %}
+						<div class="imgcontainer" oncontextmenu="return false;">
+							<img src="/images/album/{{_gallery.foldername}}/{{_gallery.image}}" alt="{{ _gallery.slug }}">
+							<div class="overlay">
+								<div class="text">
+									<h6>{{ _gallery.title }}</h6>
+									<p class="text-uppercase">{{ _gallery.date | date: "%B %Y"}}</p>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+				{% endfor %}											
+			</div>				
+		</div>
+	</section>
+</div>

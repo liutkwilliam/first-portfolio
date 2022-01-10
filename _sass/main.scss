@@ -1,0 +1,59 @@
+// variables
+$primary: #258dc7;
+$secondary: #3d69b2;
+$light: #f2f2f2;
+$black: #000000;
+$white: #FFFFFF;
+
+//responsive fonts
+$enable-responsive-font-sizes: true;
+
+// navbar
+$navbar-dark-color: $light;
+$navbar-light-hover-color: $primary;
+$navbar-light-active-color: $primary;
+$navbar-nav-link-padding-x: .7rem;
+
+// jumbotron
+$jumbotron-bg: none;
+
+// carousel
+$carousel-caption-color: $black;
+$carousel-caption-width: 100%;
+
+// website variables
+$website-third: #3c4fa2;
+$site-grey: #dbdbdb;
+$site-dark-grey: #999999;
+$speed: all .3s ease;
+
+// Social Media
+$facebook: #1877f2;
+$instagram: #282828;
+$twitter: #1da1f2;
+$pinterest: #bd081c;
+$reddit: #ff4500;
+$linkedin: #007bb5;
+$email: #606060;
+
+// bg colours
+$diagonal-bg: linear-gradient(135deg, $primary, $secondary, $website-third);
+$bg-opacity: 0.8;
+
+// specific
+$trailnplan: #4293d7, #8ac1f1, #ffffff, #ff9782, #e1d830, #6e7f10, #333333;
+
+// transition
+@mixin standard-transition {
+    -webkit-transition: $speed;
+    -moz-transition: $speed;
+    -ms-transition: $speed;
+    -o-transition: $speed;
+    transition: $speed;
+}
+
+@import 'bootstrap/bootstrap';
+@import 'general';
+@import 'fullpage';
+@import 'cards';
+@import 'gallery';

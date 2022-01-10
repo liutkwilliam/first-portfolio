@@ -1,0 +1,28 @@
+---
+layout: default
+title: 
+description: William Liu's creative portfolio in photgraphy, 2D animation, design and website design.
+image: /images/homepage2.JPG
+button: Design Portfolio
+btnlink: /portfolio
+button2: Photography Portfolio
+btnlink2: /photography
+---
+<div class="bg-black without-header" id="fullpage">
+    <div class="full-img-container">
+        <img src="{{ page.image | prepend: site.baseurl }}" alt="homepage cover photo">
+        <div class="gradient">
+            <div class="overlay-content animated fadeIn">
+                <h1><b>William Liu</b></h1>
+                <p class="h5">
+                    Photographer | 2D Animator | Designer | Web, UI & UX Designer
+                </p>
+                <p class="h6">Based in Sydney, Australia</p>
+                <div class="pt-4">
+                    <a href="{{ page.btnlink | prepend: site.baseurl }}" class="btn btn-light btn-lg">{{ page.button }}</a>
+                    <a href="{{ page.btnlink2 | prepend: site.baseurl }}" class="btn btn-outline-light btn-lg">{{ page.button2 }}</a>
+                </div>
+            </div>
+        </div>
+	</div>
+</div>

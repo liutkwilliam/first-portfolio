@@ -1,7 +1,7 @@
 ---
 layout: portfoliosite
 categories: 
-- ui design
+- ui ux web
 title: 3801 Locomotive - Prototype Bio
 description: A presentation prototype of 3801 Locomotive.
 organisation:

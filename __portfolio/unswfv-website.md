@@ -2,7 +2,7 @@
 layout: portfoliosite
 categories:
 - graphic design
-- website
+- ui ux web
 - animation
 title: UNSW Future Vehicles 
 description: A website and branding design completed for UNSW Future Vehicles.

@@ -1,7 +1,7 @@
 ---
 layout: portfoliosite
 categories:
-- website
+- ui ux web
 title: MPSB Management Consulting Website
 description: A website design and frontend development for MPSB Management Consulting.
 organisation: MPSB Management Consulting

@@ -1,7 +1,7 @@
 ---
 layout: portfoliosite
 categories:
-- website
+- ui ux web
 title: Nobility Care Australia Website
 description: A website design and frontend development for a health and disability care service Nobility Care Australia.
 organisation: Nobility Care Australia

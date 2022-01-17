@@ -1,8 +1,7 @@
 ---
 layout: portfoliosite
 categories: 
-- ui design
-- ux design
+- ui ux web
 title: Trail-n-Plan
 description: A graphics-styled animation portraying a nightmare from an unfinished crocodile animation assignment.
 organisation: Academy Xi - UX/UI Design Elevate Certificate

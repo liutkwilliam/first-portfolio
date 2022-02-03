@@ -29,8 +29,8 @@ permalink: /cv/
 
 - Jan 2020 - Present: Digital Art and Archive Volunteer, studio A (Crows Nest, Sydney)
 - Apr 2020 - Aug 2020: Creative Design Team Lead, UNSW Future Vehicles
-- Jan 2018 - Mar 2020: Member of Sub-committee in Media and Marketing, CREATE UNSW
 - Feb 2019 - Dec 2019: Business Associate, Content Creator and Designer, UNSW Solar Racing Team Sunswift
+- Jan 2018 - Dec 2019: Member of Sub-committee in Media and Marketing, CREATE UNSW
 - Jun 2019 - Sep 2019: Collection Management and Digital Archive Internship, studio A (Crows Nest, Sydney)
 - Jul 2018 - Jun 2019: Marketing Officer, CREATE UNSW Project Illuminate, for Vivid Sydney Installation "CELESTIAL PANCAKE"
 - Jan 2018 - Jan 2019: Content Contributor (Photography) for Marketing Team, UNSW Global
@@ -53,7 +53,7 @@ permalink: /cv/
 
 ## Volunteer works
 
-- Apr 2020 - Jan 2021: Advisor to Media and Marketing Team, CREATE UNSW
+- Jan 2020 - Jan 2022: Advisor to Media and Marketing Team, CREATE UNSW
 - Jan 2019 - May 2019: Peer Mentor, UNSW Art & Design
 - Jan 2019: Australia Day in Sydney Volunteer
 - 2015, 2016, 2017, 2018: Open Day Volunteer, UNSW Art & Design
@@ -68,15 +68,12 @@ permalink: /cv/
 - Sep 2017:  ENERGY - Double Take Projection Mapping Show, Surry Hills Festival, Sydney, Australia
 - Aug 2017:  UNTITLED - Small Projection-Mapping Work for UNSW Greenhouse, Artsweek Festival, Arc @ UNSW
 
-## Honours / Awards
+## Features / Mentions / Honours
 
 - Oct 2019:  2nd Place and Line of Honours in Cruiser Class - Representing UNSW and Sunswift for the Bridgestone World Solar Challenge 2019, Australia
-- Oct 2014:  Shortlist - Design Work in UNSW Foundation Year Design Exhibition (Group 2014 B&BPlus)
-         
-## Features / Mentions
-
 - Sep 2019:  Instagram mention - William, a UNSW Art & Design Media Arts student represents as the only non-engineering student in Sunswift, UNSW Engineering student project team to the Bridgestone World Solar Challenge 2019 <span class="blue">(via [Instagram, UNSW Art & Design](https://www.instagram.com/p/B22vyCxgDzX/))</span>
 - May 2018:  [Shining lights &#124; UNSW Engineering](https://www.unsw.edu.au/engineering/news/shining-lights)
 - Nov 2014:  Video testimonial - William's Experience in UNSW Foundation Studies Design Studies, UNSW Global *(YouTube Video link is no longer available)*
+- Oct 2014:  Shortlist - Design Work in UNSW Foundation Year Design Exhibition (Group 2014 B&BPlus)
 
 [Contact Me]({{site.baseurl}}/contact)

@@ -25,3 +25,5 @@ images:
 Australian Locomotive 3801 relaunched in Sydney on 13th March 2021 after a decade of restoration. Personally, this was William's first ever experience witnessing a moving steam train locomotive, he took the opportunity to capture its move along the track between Central and Hurstville, with photos captured at Central, Wolli Creek and Kogarah.
 
 More info about the legacy of 3801 can be read [here](https://www.thnsw.com.au/3801).
+
+All rights reserved.

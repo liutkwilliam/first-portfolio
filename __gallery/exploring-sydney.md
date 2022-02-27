@@ -7,8 +7,8 @@ categories:
 - Landscape
 organisation:
 foldername: sydney
-date: 2020-06-07 12:00:00 +1000
-image: 20200607-SydneyCOVID-IMG_0301.jpg
+date: 2017-06-07 12:00:00 +1000
+image: 20171108_SYD_ClassicVantage-0100.jpg
 images:
   - image_path: 20170318_SYD_AfterTheRain_WilliamLiu-0059.jpg
     title: Barangaroo South, Sydney at night
@@ -28,9 +28,6 @@ images:
   - image_path: 20170401_SYD_UNSWPhotoClub_WatsonsBay-0198.jpg
     title: Watsons Bay Hornby Lighthouse
     date: April 2017
-  - image_path: 20200607-SydneyCOVID-IMG_0301.jpg
-    title: Sydney George Street
-    date: June 2020
   - image_path: 20181229_SYD_LaPerouseHiking-0131.jpg
     title: La Perouse
     date: December 2018
@@ -47,3 +44,5 @@ images:
 Since William's arrival to Australia in 2014, he discovered a passion in photography, he captured various landmarks, vantage points, seasonal events when he had free time. This gallery captured some of the best photos he took in Sydney.
 
 This gallery is regularly updated. The most recent photo in the gallery was captured n June 2020.
+
+All rights reserved.

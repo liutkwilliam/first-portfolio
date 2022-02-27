@@ -19,3 +19,5 @@ images:
     - image_path: WilliamLIU_2405_AT3_Print_027.jpg
 ---
 Double-exposed photos is a fine arts experimental photographic series of using long exposure functionality to capture both the cut-out figures that the figures was exposed first tree portraits, then remove for capturing the cityscape into single photographs.
+
+All rights reserved.

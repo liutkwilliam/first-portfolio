@@ -1,6 +1,6 @@
 ---
 layout: gallery
-title: CREATE UNSW Workshops 2019
+title: CREATE UNSW Workshops
 description: This gallery showcases some of the best captures from Arduino workshops and CAD workshops run by CREATE UNSW.
 categories: 
 - Event
@@ -37,4 +37,4 @@ Photos taken between February 2019 and April 2019.
 
 More info about CREATE UNSW can be visited [here](https://www.createunsw.com.au).
 
-All rights reserved to William and CREATE NSW Inc. (CREATE UNSW).
+All rights reserved to William with usage permission granted to CREATE NSW Inc. (CREATE UNSW).

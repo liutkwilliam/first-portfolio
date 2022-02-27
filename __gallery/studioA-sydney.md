@@ -39,10 +39,10 @@ images:
 ---
 Selected photos of can-did photography while William is volunteering with studio A, a supported studio in Sydney, supporting artists living with intellectual disability.
 
-The photos are published on studio A's social media including Facebook, Instagram and LinkedIn. Find out more [here](https://www.studioa.org.au/about)
+The photos are published in studio A's social media including Facebook, Instagram and LinkedIn. Learn more about studio A [here](https://www.studioa.org.au/about)
 
-Artists appeared: Victoria Atkinson, Emily Crockford, Jaycee Kim, Thom Roberts.
+Artists appeared: Victoria Atkinson, Emily Crockford, Jaycee Kim, Catherine McGuinness, Thom Roberts.
 
-Guest appeared: Shane Simpson AM (Chair of Board, studio A Limited), Trent Zimmerman MP (Federal Member of North Sydney).
+Guests appeared: Shane Simpson AM (Chair of Board, studio A Limited), Trent Zimmerman MP (Federal Member for North Sydney).
 
 All rights reserved to William with usage permission granted to studio A Limited.

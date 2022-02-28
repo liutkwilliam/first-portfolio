@@ -3,10 +3,12 @@ layout: default
 title: 
 description: William Liu's creative portfolio in photgraphy, 2D animation, design and website design.
 image: /images/homepage2.JPG
-button: Design Portfolio
+button: Design
 btnlink: /portfolio
-button2: Photography Portfolio
-btnlink2: /photography
+button2: UI UX Web
+btnlink2: /ui-ux-web
+button3: Photography
+btnlink3: /photography
 ---
 <div class="bg-black without-header" id="fullpage">
     <div class="full-img-container">
@@ -15,12 +17,14 @@ btnlink2: /photography
             <div class="overlay-content animated fadeIn">
                 <h1><b>William Liu</b></h1>
                 <p class="h5">
-                    Photographer | 2D Animator | Designer | Web, UI & UX Designer
+                    Designer | Photographer | Web, UI Design Enthusiast
                 </p>
                 <p class="h6">Based in Sydney, Australia</p>
                 <div class="pt-4">
-                    <a href="{{ page.btnlink | prepend: site.baseurl }}" class="btn btn-light btn-lg">{{ page.button }}</a>
+                    <p class="text-uppercase">Explore my portfolio below</p>
                     <a href="{{ page.btnlink2 | prepend: site.baseurl }}" class="btn btn-outline-light btn-lg">{{ page.button2 }}</a>
+                    <a href="{{ page.btnlink | prepend: site.baseurl }}" class="btn btn-light btn-lg">{{ page.button }}</a>
+                    <a href="{{ page.btnlink3 | prepend: site.baseurl }}" class="btn btn-outline-light btn-lg">{{ page.button3 }}</a>
                 </div>
             </div>
         </div>

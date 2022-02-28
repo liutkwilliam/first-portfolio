@@ -51,14 +51,13 @@ permalink: /cv/
 - Dec 2018, Jan 2019, Jun 2019: UNSW Global, Sydney, Australia
 - Jun 2019: UNSW Student Development International, Sydney, Australia
 
-## Volunteer works
+## Volunteering works
 
 - Jan 2020 - Jan 2022: Advisor to Media and Marketing Team, CREATE UNSW
 - Jan 2019 - May 2019: Peer Mentor, UNSW Art & Design
 - Jan 2019: Australia Day in Sydney Volunteer
 - 2015, 2016, 2017, 2018: Open Day Volunteer, UNSW Art & Design
 - Jul 2018 - Aug 2018: Artsweek Volunteer, Arc @ UNSW
-
 
 ## Projects and participation
 

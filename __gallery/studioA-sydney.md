@@ -39,7 +39,9 @@ images:
 ---
 Selected photos of can-did photography while William is volunteering with studio A, a supported studio in Sydney, supporting artists living with intellectual disability.
 
-The photos are published in studio A's social media including Facebook, Instagram and LinkedIn. Learn more about studio A [here](https://www.studioa.org.au/about)
+The photos are published in studio A's social media including Facebook, Instagram and LinkedIn. 
+
+studio A is a Sydney based arts company that provides professional development for artists with intellectual disabilities. Learn more their mission [here](https://www.studioa.org.au/about).
 
 Artists appeared: Victoria Atkinson, Emily Crockford, Jaycee Kim, Catherine McGuinness, Thom Roberts.
 

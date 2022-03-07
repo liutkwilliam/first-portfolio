@@ -26,7 +26,7 @@ images:
 ---
 Selected photos of can-did photography from the launch of studio A's 'Where I'd Rather Be' Art Exhibition at Curl Curl Creative Space on 23 February 2022.
 
-The photos are published in studio A's social media including Facebook, Instagram and LinkedIn. 
+The photos are published in studio A's social media including Facebook, Instagram. 
 
 studio A is a Sydney based arts company that provides professional development for artists with intellectual disabilities. Learn more their mission [here](https://www.studioa.org.au/about).
 

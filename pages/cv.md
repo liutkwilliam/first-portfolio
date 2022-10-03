@@ -23,23 +23,32 @@ permalink: /cv/
 
 - 2021: UI UX Design (Elevate) Certificate, Academy Xi
 - 2015 - 2019: Bachelor of Media Arts (with Honours), in 2D Animation and Photography, The University of New South Wales
-- 2014: University Foundation Studies Certificate, majoring in Design, The University of New South Wales
+- 2014: University Foundation Studies Certificate, in Design, The University of New South Wales
 
 ## Experiences
 
+### Creative
+
+- Apr 2022 - Present: Art Documentation Contractor, studio A (Crows Nest, Sydney)
 - Jan 2020 - Present: Digital Art and Archive Volunteer, studio A (Crows Nest, Sydney)
 - Apr 2020 - Aug 2020: Creative Design Team Lead, UNSW Future Vehicles
 - Feb 2019 - Dec 2019: Business Associate, Content Creator and Designer, UNSW Solar Racing Team Sunswift
-- Jan 2018 - Dec 2019: Member of Sub-committee in Media and Marketing, CREATE UNSW
 - Jun 2019 - Sep 2019: Collection Management and Digital Archive Internship, studio A (Crows Nest, Sydney)
-- Jul 2018 - Jun 2019: Marketing Officer, CREATE UNSW Project Illuminate, for Vivid Sydney Installation "CELESTIAL PANCAKE"
-- Jan 2018 - Jan 2019: Content Contributor (Photography) for Marketing Team, UNSW Global
+- Jan 2018 - Jan 2019: Content Contributor (Photographer) for Marketing Team, UNSW Global
+
+### Managements and Leaderships
+
 - Aug 2017 - Sep 2018: President, UNSW Make Club
-- Jul 2017 - Jun 2018: Co-Project Director (Art & Design), Secretary and Marketing Officer, CREATE UNSW Project Illuminate, for Vivid Sydney Installation "SYNERGY"
+- Jul 2017 - Jun 2018: Co-Project Director (Art & Design), Secretary and Marketing Officer, CREATE UNSW Project Illuminate, for Vivid Sydney 2018 Installation "SYNERGY"
 - May 2016 - Aug 2017: Project Coordinator, UNSW Make Club
+
+### Marketing
+
+- Jan 2018 - Dec 2019: Member of Sub-committee in Media and Marketing, CREATE UNSW
+- Jul 2018 - Jun 2019: Marketing Officer, CREATE UNSW Project Illuminate, for Vivid Sydney 2019 Installation "CELESTIAL PANCAKE"
 - Dec 2015 - Feb 2016: Student Intern in Channel Marketing Department, FWD Insurance, Hong Kong
 
-## Freelance works
+## Completed Freelance Commissions
 
 ### Website Design and some graphic design
 
@@ -48,15 +57,16 @@ permalink: /cv/
 
 ### Photography
 
+- Feb 2022: studio A - 'Where I'd Rather Be' Art Exhibition Launch, Curl Curl NSW, Australia
 - Dec 2018, Jan 2019, Jun 2019: UNSW Global, Sydney, Australia
 - Jun 2019: UNSW Student Development International, Sydney, Australia
 
-## Volunteering works
+## Volunteering
 
 - Jan 2020 - Jan 2022: Advisor to Media and Marketing Team, CREATE UNSW
 - Jan 2019 - May 2019: Peer Mentor, UNSW Art & Design
 - Jan 2019: Australia Day in Sydney Volunteer
-- 2015, 2016, 2017, 2018: Open Day Volunteer, UNSW Art & Design
+- 2015, 2016, 2017 and 2018: Open Day Volunteer, UNSW Art & Design
 - Jul 2018 - Aug 2018: Artsweek Volunteer, Arc @ UNSW
 
 ## Projects and participation

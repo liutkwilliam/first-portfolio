@@ -1,6 +1,6 @@
 ---
 categories: 
-- ui ux web
+- ux ui web
 title: CREATE UNSW Website Revamping
 description: A website revamping for a UNSW student club CREATE.
 organisation: CREATE UNSW Student Club

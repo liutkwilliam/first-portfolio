@@ -1,9 +1,9 @@
 - name: About
   link: /about
-- name: Design
+- name: Portfolio
   link: /portfolio
-- name: UI UX Web
-  link: /ui-ux-web
+# - name: UI UX Web
+#   link: /ui-ux-web
 - name: Photography
   link: /photography
 # - name: Blog

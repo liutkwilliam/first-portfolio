@@ -1,7 +1,7 @@
 ---
 layout: portfoliosite
 categories: 
-- ui ux web
+- ux ui web
 title: Trail-n-Plan
 description: A graphics-styled animation portraying a nightmare from an unfinished crocodile animation assignment.
 organisation: Academy Xi - UX/UI Design Elevate Certificate
@@ -215,13 +215,13 @@ This diagram show how each of the features evaluated.
     {% endfor %}
 </div>
 
-### Prototype (via Adobe XD)
+<!-- ### Prototype (via Adobe XD)
 
 <div class="text-center">
 <iframe width="414" height="736" src="https://xd.adobe.com/embed/930f35ea-02a9-4420-aa6c-51c4e7268c36-c65c/?fullscreen" frameborder="0" allowfullscreen></iframe>
-</div>
+</div> -->
 
-## Future Development
+## Possible Future Development
 
 - Make a web-based platform to see every planned details on larger screens.
 - More custom functionality, fields, unit controls.

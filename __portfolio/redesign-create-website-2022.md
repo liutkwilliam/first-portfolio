@@ -1,6 +1,6 @@
 ---
 categories: 
-- ui ux web
+- ux ui web
 title: Redesigning CREATE UNSW Website in 2022
 description: A website revamping for a UNSW student club CREATE.
 organisation: CREATE UNSW Student Club

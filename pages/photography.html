@@ -9,6 +9,7 @@ permalink: /photography/
 		<div class="row">
 			<div class="col-md text-center">
 				<h1>{{ page.title }}</h1>
+				<br>
 				<p>For more photos, visit William's Instagram <a href="https://www.instagram.com/{{ site.instagram }}/">here</a>.</p>
 				<p>Contact me <a href="/contact">here</a> for collaborations and opportunites.</p>
 			</div>
@@ -43,5 +44,8 @@ permalink: /photography/
 	</section>
 	<section class="text-center">
 		<h4>Coming Soon / Working In Progress</h4>
+		{% for upcoming in site.data.upcoming-photos %}
+		<li>{{ upcoming.title }}</li>
+		{% endfor %}
 	</section>
 </div>

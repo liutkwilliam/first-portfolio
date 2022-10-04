@@ -1,6 +1,6 @@
 ---
 categories: 
-- ui ux web
+- ux ui web
 title: My Portfolio Website
 description: William Liu's personalised website portfolio.
 organisation: 

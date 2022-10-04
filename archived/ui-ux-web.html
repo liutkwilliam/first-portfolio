@@ -19,7 +19,7 @@ permalink: /ui-ux-web/
 			<div class="column-flex">
 				{% assign portfolios = site._portfolio | map: 'categories' | join: ','  | split: ',' | uniq %}
 				{% for portfolio in portfolios %}
-                {% if portfolio == 'ui ux web' %}
+                {% if portfolio == 'ux-ui-web' %}
                 {% assign ui = site._portfolio | sort:"date" | reverse %}
                 {% for _portfolio in ui %}
                 {% if _portfolio.categories contains portfolio %}

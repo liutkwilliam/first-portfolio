@@ -33,6 +33,9 @@ logo-reg: /images/logos/logo-landscape-colour.svg
 logo-black: /images/logos/logo-landscape-black.svg
 logo-white: /images/logos/logo-landscape-white.svg
 
+#FullCV
+fullcv: https://liutkwilliam.github.io/fullcv
+
 # Build settings
 markdown: kramdown
 plugins:

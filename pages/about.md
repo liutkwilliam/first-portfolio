@@ -25,6 +25,6 @@ William holds a Bachelor (with an Honours) degree in Media Arts (in 2D Animation
 <div class="row justify-content-center">
 	<div class="col-md-10">
 		{{ bio | markdownify }}
-		
+		<a href="{{ site.fullcv }}" class="btn btn-primary btn-lg">Click here to my digital CV</a>
 	</div>
 </div>

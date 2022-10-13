@@ -8,9 +8,9 @@ permalink: /about/
 {% capture bio %}
 # About William
 
-William is a Hong Kong-Australian designer passionate about Web, UI and UX Design. He is also experienced in 2D animation, photography, design and front-end website development. He is keen on blending his design skills in delivering simple, user-friendly websites and UI design.
+William is passionate about Web, UI and UX Design. He is also experienced in 2D animation, photography, design and front-end website development. He is keen on blending his design skills in delivering simple, user-friendly websites and UI design.
 
-Outside of design, William loves taking photos of lights, cityscapes at night and long exposure. He is also experienced in event photography, landscape and anything that captures his attention. He has been taking photos professionally and voluntary while in the university and for student clubs and projects.
+Outside of design, William loves taking photos of lights, city-scapes at night and long exposure. He is also experienced in event photography, landscape and anything that captures his attention. He has been taking photos professionally and voluntary while in the university and for student clubs and projects.
 
 William is recently picking up additional skills in frontend development such as ReactJS and Javascript. He wants to incorporate technical skills with his existing passion for design.
 

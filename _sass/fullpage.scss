@@ -52,16 +52,17 @@
       }
     }
     // bottom text
-    $bg-opacity: 0.75;
+    $bg-opacity: 0.9;
     .gradient {
       width: 100%;
       height: 100%;
       position: absolute;
-      background-image: linear-gradient(135deg, rgba($primary, $bg-opacity), rgba($secondary, $bg-opacity), rgba($website-third, $bg-opacity));
+      background-color: rgba($white, $bg-opacity);
+      // background-image: linear-gradient(135deg, rgba($primary, $bg-opacity), rgba($secondary, $bg-opacity), rgba($website-third, $bg-opacity));
       z-index: 1;
     }
     .overlay-content {
-      color: $white;
+      color: $black;
       position: absolute;
       z-index: 2;
       top: 45%;
@@ -71,6 +72,12 @@
       box-sizing: border-box;
       padding: 1em 2em;
       text-align: center;
+      .option-box {
+        padding-top: 1rem;
+        width: 40%;
+        min-width: 350px;
+        margin: auto;
+      }
     }
   }
 }

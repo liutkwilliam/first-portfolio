@@ -11,6 +11,11 @@ credit:
         <p>
             Are you are interested in what I am doing or want to enquire for more information, including collaborations and opportunities, let's chat!
         </p>
+        {% if site.email %}
+        <p class="contact-socials">
+            <i class="fa fa-lg fa-envelope-o"></i><a href="mailto:{{ site.email }}">Let's chat</a>
+        </p>
+        {% endif %}
     </div>
 </div>
 

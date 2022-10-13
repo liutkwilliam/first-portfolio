@@ -3,9 +3,9 @@ layout: default
 title: 
 description: William Liu's creative portfolio in photgraphy, 2D animation, design and website design.
 image: /images/townhall-cross-2022.jpg
-button: Design, Motion and Video
+button: Design, Motion and Video Portfolio
 btnlink: /portfolio
-button3: Photography
+button3: Photography Portfolio
 btnlink3: /photography
 ---
 <div class="bg-black without-header" id="fullpage">
@@ -13,14 +13,14 @@ btnlink3: /photography
         <img src="{{ page.image | prepend: site.baseurl }}" alt="homepage cover photo">
         <div class="gradient">
             <div class="overlay-content animated fadeIn">
-                <h1><b>Hi I am William Liu</b></h1>
-                <p class="h5">
+                <h1>Hi I am <spam class="text-primary">William Liu</spam></h1>
+                <p class="h4">
                     I am a designer, photographer, web and UI design enthusiast based in Sydney, Australia
                 </p>
-                <div class="pt-4">
+                <div class="option-box">
                     <p class="text-uppercase">Explore my portfolio</p>
-                    <a href="{{ page.btnlink | prepend: site.baseurl }}" class="btn btn-light btn-lg">{{ page.button }}</a>
-                    <a href="{{ page.btnlink3 | prepend: site.baseurl }}" class="btn btn-outline-light btn-lg">{{ page.button3 }}</a>
+                    <a href="{{ page.btnlink | prepend: site.baseurl }}" class="btn btn-primary btn-lg btn-block">{{ page.button }}</a>
+                    <a href="{{ page.btnlink3 | prepend: site.baseurl }}" class="btn btn-light btn-lg btn-block">{{ page.button3 }}</a>
                 </div>
             </div>
         </div>

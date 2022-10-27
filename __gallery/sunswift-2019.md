@@ -3,7 +3,9 @@ layout: gallery
 title: Sunswift
 description: selected Photos taken during my participation with UNSW Solar Racing Team Sunswift in 2019.
 categories: 
-- Event
+- event
+- documentations
+- behind the scenes
 organisation:
 foldername: sunswift-2019
 date: 2019-12-17 12:00:00 +1000

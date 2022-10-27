@@ -22,7 +22,7 @@ layout: page
           {{ content }}     
     </div>
     <div class="col-md-4">
-      <div class="sidenav-archive">
+      <div class="sideNav-archive">
         <h3>Recent Posts</h3>
           {% for post in site.posts limit:5 %}
             <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>

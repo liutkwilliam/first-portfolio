@@ -18,7 +18,7 @@ William holds a Bachelor (with an Honours) degree in Media Arts (in 2D Animation
 {% endcapture %}
 
 <div class="row justify-content-center">
-	<div class="col-md-5 profile-img">
+	<div class="col-md-5 profileImg">
 		<img src="{{ page.image }}" alt="ProfileImg">
 	</div>
 </div>

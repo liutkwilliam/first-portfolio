@@ -3,7 +3,7 @@ layout: gallery
 title: Portrait Photography
 description: Selected photos of portrait photography works.
 categories: 
-- Portraits
+- portrait
 organisation:
 foldername: portrait-photography
 date: 2018-03-10 12:00:00 +1000

@@ -3,7 +3,7 @@ layout: gallery
 title: Foreign Roots
 description: A fine arts photographic series of tree portraits expressing memories of my migration story.
 categories: 
-- Fine Arts
+- fine arts
 organisation:
 foldername: foreign-roots
 date: 2018-06-08 15:00:00 +1000

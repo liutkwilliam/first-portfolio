@@ -15,7 +15,9 @@ permalink: /photography/
 	<section>
 		<!--Event Photography-->
 			<div class="row">
-				<h2 class="pl-3">Event Photography</h2>
+				<div class="col-md-12">
+					<h3>Event Photography</h3>
+				</div>
 				<div class="columnFlex">
 					{% assign galleries = site._gallery | map: 'categories' | join: ','  | split: ',' | uniq %}
 					{% assign photos = site._gallery | sort:"date" | reverse %}				
@@ -32,7 +34,9 @@ permalink: /photography/
 			</div>
 		<!--Filtered Content-->
 		<div class="row">
-			<h2 class="pl-3">Others</h2>
+			<div class="col-md-12">
+				<h3>Others</h3>
+			</div>
 			<div class="columnFlex">
 				{% assign galleries = site._gallery | map: 'categories' | join: ','  | split: ',' | uniq %}
 				{% assign photos = site._gallery | sort:"date" | reverse %}				

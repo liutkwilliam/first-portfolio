@@ -8,7 +8,7 @@ layout: default
 				<p class="lead text-capitalize text-muted">Photography Portfolio</p>
 				<h1 class="text-primary">{{ page.title }}</h1>
 				<h5>{{ page.date | date: "%Y" }}</h5>
-				<p class="text-uppercase text-muted">Type: {{ page.categories | uniq | join: ", " }}</p>
+				<p class="text-uppercase text-muted">Type: {% assign cat = page.categories | uniq %}{{ cat | sort | join: ", " }}</p>
 				<p>{{ page.content }}</p>
 			</div>
 		</div>

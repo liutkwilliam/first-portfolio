@@ -20,7 +20,7 @@ function drawBasic() {
       ]);
 
       var options = {
-        title: 'A summary of users participation on one or more of the distanced acitivity',
+        title: 'A summary of users participation on one or more of the distanced activity',
         chartArea: {width: '50%'},
         colors: ['#4293d7'],
         width: 360,

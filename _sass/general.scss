@@ -1,9 +1,6 @@
 // Written by Tsz Kin LIU (William)
 
-//////////////
-// General //
-////////////
-
+// General
 html {
     scroll-behavior: smooth;
 }
@@ -13,7 +10,6 @@ body {
     margin: 0 auto;
     color: $black;
 }
-
 h2, h3 {
     &:after {
         content: "";
@@ -23,7 +19,6 @@ h2, h3 {
         position: relative;
     }
 }
-
 h2 {
     padding: 0.5rem 0;
     &:after {
@@ -32,7 +27,6 @@ h2 {
         background: $secondary;
     }
 }
-
 h3 {
     padding: 0.5rem;
     &:after {
@@ -41,30 +35,26 @@ h3 {
         background: $website-third;
     }
 }
-
-.page-content {
+main {
     min-height: 80vh!important;
 }
+$padding: 3rem;
 
 section {
-    padding-top: 4rem;
+    padding-top: $padding;
     &:last-child {
-        padding-bottom: 4rem;
-        &.gallery-head {
+        padding-bottom: $padding;
+        &.galleryHead {
             padding-bottom: 0rem;
         }
     }
     @media (max-width: 767.98px) {
-        padding-top: 2rem;
+        padding-top: $padding / 2;
         &:last-child {
-            padding-bottom: 2rem; 
+            padding-bottom: $padding / 2; 
         }
     }
 }
-
-/////////////////
-// Navigation //
-///////////////
 
 // header
 header {
@@ -93,21 +83,17 @@ header {
     }
 }
 
-.currentpage {
+.currentPage {
     color: $primary!important;
 }
 
-//////////////
-// Buttons //
-////////////
-
+// Buttons
 .btn {
     margin: 0.4rem 0.1rem;
     padding-left: 1.5em;
     padding-right: 1.5em;
     border-radius: 0.5rem;
 }
-
 #topBtn {
     position: fixed;
     bottom: 3rem;
@@ -135,10 +121,7 @@ header {
     }
   }
 
-///////////////////////
-// Portfolio Filter //
-/////////////////////
-
+// Portfolio Filter
 #myBtnContainer {
     a {
         text-transform: uppercase!important;
@@ -158,30 +141,23 @@ header {
     }
 }
 
-//////////////////////
-// Columns & grids //
-////////////////////
-
-// apply margin-top and bottom in classes of col
-[class*="col-"] {
+// Columns & grids
+[class*="col-"] { // apply margin-top and bottom in classes of col
     margin-top: 0.35rem;
     margin-bottom: 0.35rem;
 }
-
-.column-flex {
+.columnFlex {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin: auto;
 }
-
-.columns { // do not apply in filterdiv
+.columns { // do not apply in filterDiv
     display: block;
     float: left;
     margin: 0.5rem;
 }
-
-.profile-img {
+.profileImg {
     float: none;
     text-align: center;
     img {
@@ -191,10 +167,7 @@ header {
     }
 }
 
-////////////////
-// Animation //
-//////////////
-
+// Animation
 .animated {
     -webkit-animation-duration: 1s;
     animation-duration: 1s;
@@ -202,27 +175,25 @@ header {
     animation-fill-mode: both;
     -webkit-animation-delay: 0s;
     animation-delay: 0s;
- }
+}
 @-webkit-keyframes fadeIn {
     0% {opacity: 0}
     100% {opacity: 1}
- }
+}
 @keyframes fadeIn {
     0% {opacity: 0}
     100% {opacity: 1}
- }
+}
 .fadeIn {
     -webkit-animation-name: fadeIn;
     animation-name: fadeIn;
- }
-
- ///////////
+}
 
 // gradient strip
-#gradient-strip {
-    background-color: $primary;
-    background-image: $diagonal-bg;
-}
+// #gradient-strip {
+//     background-color: $primary;
+//     background-image: $diagonal-bg;
+// }
 
 // social buttons
 .fa {
@@ -230,8 +201,7 @@ header {
         text-decoration: none;
     }
 }
-
-.social-buttons {
+.socialList {
     ul {
         list-style-type: none;
         margin-block-start: 0;
@@ -260,22 +230,21 @@ header {
         }
     }
 }
+.contact-socials {
+    .fa {
+        padding: 0.5rem 0.75rem 0.5rem 0;
+    }
+}
 
-/////////////
-// Footer //
-///////////
-
+// Footer
 footer {
     padding: 1rem 0;
-    &.home-footer {
+    &.homeFooter {
         position: fixed;
         left: 0;
         right: 0;
         bottom: 0;
         z-index: 1;
-        // p, a {
-        //     color: $white!important;
-        // }
     }
     p {
         margin-bottom: 0;
@@ -289,10 +258,7 @@ footer {
     }
 }
 
-/////////
-// CV //
-///////
-
+// CV
 .skills-label {
     display: inline-block;
     margin: 0 0.5rem 0.5rem 0;
@@ -302,17 +268,8 @@ footer {
     border-radius: 0.625rem;
 }
 
-.contact-socials {
-    .fa {
-        padding: 0.5rem 0.75rem 0.5rem 0;
-    }
-}
-
-//////////
-// 404 //
-////////
-
-.notfoundpage {
+// 404
+.notFoundPage {
     margin: 1.5rem auto;
     h1 {
         margin: 2rem 0;

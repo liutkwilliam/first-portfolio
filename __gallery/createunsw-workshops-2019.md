@@ -3,7 +3,7 @@ layout: gallery
 title: CREATE UNSW Workshops
 description: This gallery showcases some of the best captures from Arduino workshops and CAD workshops run by CREATE UNSW.
 categories: 
-- Event
+- event
 organisation:
 foldername: createunsw-workshops-2019
 date: 2019-04-30 12:00:00 +1000

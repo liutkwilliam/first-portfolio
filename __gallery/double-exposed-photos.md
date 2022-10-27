@@ -3,7 +3,7 @@ layout: gallery
 title: Double Exposed Photos
 description: A fine arts photographic series of double exposed of cityscape and cut-out figures.
 categories: 
-- Fine Arts
+- fine arts
 organisation:
 foldername: double-exposed-photos
 date: 2016-11-02 18:00:00 +1000

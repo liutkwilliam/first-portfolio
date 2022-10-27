@@ -1,0 +1,35 @@
+{% assign galleries = site._gallery | map: 'categories' | join: ','  | split: ',' | uniq %}
+{% assign photos = site._gallery | sort:"date" | reverse %}
+
+{% for gallery in galleries %}
+    {% if gallery == 'event' %}
+        
+        {% for _gallery in photos %}
+            {% if _gallery.categories contains gallery %}
+                {% include gallery-filter.html %}
+            {% else %}
+                {% include gallery-filter.html %}
+            {% endif %}
+        {% endfor %}
+    {% endif %}
+{% endfor %}	
+
+
+
+
+{% assign galleries = site._gallery | map: 'categories' | join: ','  | split: ',' | uniq %}
+{% assign photos = site._gallery | sort:"date" | reverse %}
+
+{% for gallery in galleries %}
+    {% if gallery == 'event' %}
+        {% for _gallery in photos %}
+            {% if _gallery.categories contains gallery %}
+                {% include gallery-filter.html %}
+            {% endif %}
+        {% endfor %}
+    {% else %}
+        {% for _gallery in photos %}
+            {% include gallery-filter.html %}
+        {% endfor %}
+    {% endif %}
+{% endfor %}

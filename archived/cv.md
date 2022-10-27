@@ -3,7 +3,7 @@ layout: page
 title: CV
 description: Contact me for more information.
 image:
-permalink: /cv/
+permalink:
 ---
 # {{ page.title }}
 

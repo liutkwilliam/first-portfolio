@@ -9,35 +9,42 @@ permalink: /photography/
 		<div class="row">
 			<div class="col-md text-center">
 				<h1>{{ page.title }}</h1>
-				<br>
-				<p>For more photos, visit William's Instagram <a href="https://www.instagram.com/{{ site.instagram }}/">here</a>.</p>
-				<p>Contact me <a href="/contact">here</a> for collaborations and opportunites.</p>
 			</div>
 		</div>
 	</section>
 	<section>
+		<!--Event Photography-->
+			<div class="row">
+				<h2 class="pl-3">Event Photography</h2>
+				<div class="columnFlex">
+					{% assign galleries = site._gallery | map: 'categories' | join: ','  | split: ',' | uniq %}
+					{% assign photos = site._gallery | sort:"date" | reverse %}				
+					{% for gallery in galleries %}
+						{% if gallery == 'event' %}		
+							{% for _gallery in photos %}
+								{% if _gallery.categories contains gallery %}
+									{% include gallery-filter.html %}
+								{% endif %}
+							{% endfor %}
+						{% endif %}
+					{% endfor %}											
+				</div>				
+			</div>
 		<!--Filtered Content-->
 		<div class="row">
-			<div class="column-flex">
-				{% assign sorted = site._gallery | sort:"date" | reverse %}
-				{% for _gallery in sorted %}
-				<div class="columns animated fadeIn">
-					{% if _gallery.link %}
-					<a href="{{ _gallery.link }}">
-					{% else %}
-					<a href="{{ _gallery.url }}">
+			<h2 class="pl-3">Others</h2>
+			<div class="columnFlex">
+				{% assign galleries = site._gallery | map: 'categories' | join: ','  | split: ',' | uniq %}
+				{% assign photos = site._gallery | sort:"date" | reverse %}				
+				{% for gallery in galleries %}
+					{% if gallery == 'event' %}		
+						{% for _gallery in photos %}
+							{% if _gallery.categories contains gallery %}
+							{% else %}
+								{% include gallery-filter.html %}
+							{% endif %}
+						{% endfor %}
 					{% endif %}
-						<div class="imgcontainer" oncontextmenu="return false;">
-							<img src="/images/album/{{_gallery.foldername}}/{{_gallery.image}}" alt="{{ _gallery.slug }}">
-							<div class="overlay">
-								<div class="text">
-									<h6>{{ _gallery.title }}</h6>
-									<p class="text-uppercase">{{ _gallery.date | date: "%Y"}}</p>
-								</div>
-							</div>
-						</div>
-					</a>
-				</div>
 				{% endfor %}											
 			</div>				
 		</div>

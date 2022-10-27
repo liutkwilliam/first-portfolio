@@ -13,7 +13,7 @@ description:
 </section>
 <section>
 	<div class="row">
-		<div class="column-flex"> 
+		<div class="columnFlex"> 
 			{% for post in paginator.posts %}
 			<a href="{{ post.url | prepend: site.baseurl }}">
 				<div class="columns blog-card {{ post.categories }} shadow">

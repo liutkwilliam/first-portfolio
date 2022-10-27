@@ -3,7 +3,7 @@ layout: gallery
 title: studio A's 'Where I'd Rather Be' Art Exhibition Launch
 description: Selected photos of can-did photography from the launch of studio A's 'Where I'd Rather Be' Art Exhibition at Curl Curl Creative Space on 23 February 2022 
 categories: 
-- Event
+- event
 organisation:
 foldername: studioa-curl-curl-exhibition
 date: 2022-02-28 18:00:00 +1000

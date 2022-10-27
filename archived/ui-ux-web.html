@@ -16,7 +16,7 @@ permalink: /ui-ux-web/
     <section>
 		<!--Filtered Content-->
 		<div class="row">
-			<div class="column-flex">
+			<div class="columnFlex">
 				{% assign portfolios = site._portfolio | map: 'categories' | join: ','  | split: ',' | uniq %}
 				{% for portfolio in portfolios %}
                 {% if portfolio == 'ux-ui-web' %}
@@ -25,7 +25,7 @@ permalink: /ui-ux-web/
                 {% if _portfolio.categories contains portfolio %}
 				<div class="filterDiv show animated fadeIn shadow">
 					<a href="{% if _portfolio.link %}{{ _portfolio.link }}{% else %}{{ _portfolio.url }}{% endif %}">				
-						<div class="imgcontainer" oncontextmenu="return false;">
+						<div class="imgContainer" oncontextmenu="return false;">
 							<img src="/images/{% if _portfolio.folder %}{{ _portfolio.folder }}/{% endif %}{{ _portfolio.image }}" alt="{{ _portfolio.slug }}">
 							<div class="overlay">
 								<div class="text">

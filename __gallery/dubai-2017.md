@@ -26,5 +26,3 @@ images:
     - image_path: 20171224_DXB_DubaiTrip-0913.jpg
 ---
 William travelled to Dubai and Abu Dhabi during Christmas holiday in 2017.
-
-All rights reserved.

@@ -1,6 +1,6 @@
 ---
 layout: gallery
-title: Portrait Photography
+title: Portrait Photography Portfolio
 description: Selected photos of portrait photography works.
 categories: 
 - portrait

@@ -18,5 +18,3 @@ images:
     - image_path: astro-2019-005.jpg
 ---
 A showcase of William's astro photography work captured while on a trip travelling between South Australia and Northern Territory with Sunswift, UNSW Solar Racing Team for the World Solar Challenge 2019. This was also his first ever astro photography in Australia.
-
-All rights reserved.

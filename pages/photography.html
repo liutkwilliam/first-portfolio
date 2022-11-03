@@ -20,34 +20,41 @@ permalink: /photography/
 				</div>
 				<div class="columnFlex">
 					{% assign galleries = site._gallery | map: 'categories' | join: ','  | split: ',' | uniq %}
-					{% assign photos = site._gallery | sort:"date" | reverse %}				
-					{% for gallery in galleries %}
-						{% if gallery == 'event' %}		
-							{% for _gallery in photos %}
-								{% if _gallery.categories contains gallery %}
-									{% include gallery-filter.html %}
-								{% endif %}
-							{% endfor %}
+					{% assign photos = site._gallery | sort:"date" | reverse %}					
+					{% for _gallery in photos %}
+						{% if _gallery.categories contains 'event' %}
+							{% include gallery-filter.html %}
 						{% endif %}
-					{% endfor %}											
+					{% endfor %}										
 				</div>				
 			</div>
-		<!--Filtered Content-->
+		<!--Fine Arts Photography-->
 		<div class="row">
 			<div class="col-md-12">
-				<h3>Others</h3>
+				<h3>Fine Arts Photography</h3>
 			</div>
 			<div class="columnFlex">
 				{% assign galleries = site._gallery | map: 'categories' | join: ','  | split: ',' | uniq %}
 				{% assign photos = site._gallery | sort:"date" | reverse %}				
-				{% for gallery in galleries %}
-					{% if gallery == 'event' %}		
-						{% for _gallery in photos %}
-							{% if _gallery.categories contains gallery %}
-							{% else %}
-								{% include gallery-filter.html %}
-							{% endif %}
-						{% endfor %}
+				{% for _gallery in photos %}
+					{% if _gallery.categories contains 'fine arts' %}
+						{% include gallery-filter.html %}
+					{% endif %}
+				{% endfor %}											
+			</div>				
+		</div>
+		<!--Filtered Content-->
+		<div class="row">
+			<div class="col-md-12">
+				<h3>General Works</h3>
+			</div>
+			<div class="columnFlex">
+				{% assign galleries = site._gallery | map: 'categories' | join: ','  | split: ',' | uniq %}
+				{% assign photos = site._gallery | sort:"date" | reverse %}				
+				{% for _gallery in photos %}
+					{% if _gallery.categories contains 'event' or _gallery.categories contains 'fine arts' %}
+					{% else %}
+						{% include gallery-filter.html %}
 					{% endif %}
 				{% endfor %}											
 			</div>				

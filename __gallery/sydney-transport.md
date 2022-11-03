@@ -3,7 +3,7 @@ layout: gallery
 title: Sydney Transport
 description: Selected photos of Sydney transportation from the city.
 categories: 
-- Others
+- Transport
 organisation:
 foldername: sydney-transport
 date: 2021-03-28 12:00:00 +1000
@@ -43,5 +43,3 @@ images:
 Selected photos of Sydney transportation from the city. Including Sydney Trains, Light Rail, Metro and Ferries.
 
 Photos taken at various times throughout 2019 to 2022.
-
-All rights reserved.

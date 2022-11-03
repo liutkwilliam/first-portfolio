@@ -47,4 +47,4 @@ Artists appeared: Victoria Atkinson, Emily Crockford, Jaycee Kim, Catherine McGu
 
 Guests appeared: Shane Simpson AM (Chair of Board, studio A Limited), Trent Zimmerman MP (Federal Member for North Sydney).
 
-All rights reserved to William with usage permission granted to studio A Limited.
+All rights reserved to William with usage permission granted to studio A Limited and the guests appeared in the photos.

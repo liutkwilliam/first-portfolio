@@ -39,7 +39,7 @@ fullcv: https://liutkwilliam.github.io/fullcv
 # Build settings
 markdown: kramdown
 plugins:
-  - jekyll-feed
+  # - jekyll-feed
   - jekyll-paginate
 
 # sass:

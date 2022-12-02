@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Design, Motion and Video Portfolio
-description: Design portfolio includes various works including animation, graphic design, website designs, videography and etc.
+title: Design and Motion Portfolio
+description: Design and Motion Portfolio includes various works including animation, graphic design, website designs, videography and etc.
 permalink: /portfolio/
 ---
-<div class="container-xl">
+<div class="container-fluid">
 	<section>
 		<div class="row">
 			<div class="col-md text-center">
@@ -26,28 +26,22 @@ permalink: /portfolio/
 			</div>
 		</div>
 	</section>
-	<section>
-		<!--Filtered Content-->
-		<div class="row">
-			<div class="columnFlex">
-				{% assign sorted = site._portfolio | sort:"date" | reverse %}
-				{% for _portfolio in sorted %}
-				<div class="filterDiv {{ _portfolio.categories }} animated fadeIn shadow">
-					<a href="{% if _portfolio.link %}{{ _portfolio.link }}{% else %}{{ _portfolio.url }}{% endif %}">				
-						<div class="imgContainer" oncontextmenu="return false;">
-							<img src="/images/{% if _portfolio.folder %}{{ _portfolio.folder }}/{% endif %}{{ _portfolio.image }}" alt="{{ _portfolio.slug }}">
-							<div class="overlay">
-								<div class="text">
-									<h6>{{ _portfolio.title }}</h6>
-									<br>
-									<p class="text-uppercase">{{ _portfolio.categories | uniq | join: ", " }}</p>
-								</div>
-							</div>
-						</div>
-					</a>
-				</div>
-				{% endfor %}											
-			</div>				
+	<section class="boxes">
+		<div class="flexContainer">
+			{% assign sorted = site._portfolio | sort:"date" | reverse %}
+			{% for _portfolio in sorted %}
+			<div class="filterDiv {{ _portfolio.categories }} animated fadeIn shadow box-wrap">
+				<a href="{% if _portfolio.link %}{{ _portfolio.link }}{% else %}{{ _portfolio.url }}{% endif %}"  class="box-link">
+					<div class="box">
+						<img src="/images/{% if _portfolio.folder %}{{ _portfolio.folder }}/{% endif %}{{ _portfolio.image }}" alt="{{ _portfolio.slug }}">
+						<div class="overlay">
+							<h6>{{ _portfolio.title }}</h6>
+							<p class="text-uppercase">{{ _portfolio.categories | uniq | join: ", " }}</p>
+						</div>					
+					</div>
+				</a>
+			</div>
+			{% endfor %}
 		</div>
 	</section>
 </div>

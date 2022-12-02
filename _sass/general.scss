@@ -10,36 +10,33 @@ body {
     margin: 0 auto;
     color: $black;
 }
+h1 {
+    padding-bottom: .25rem;
+}
 h2, h3 {
     &:after {
         content: "";
         display: block;
-        margin: 0.25rem 0;
+        margin: .25rem 0;
         border-radius: 4rem;
         position: relative;
     }
 }
 h2 {
-    padding-bottom: 0.5rem;
     &:after {
         width: 6rem;
         height: 0.25rem;
         background: $secondary;
     }
 }
-h3 {
-    padding: 0.5rem;
-    // &:after {
-    //     width: 3rem;
-    //     height: 0.2rem;
-    //     background: $website-third;
-    // }
-}
 main {
     min-height: 80vh!important;
 }
+.container-fluid {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
 $padding: 3rem;
-
 section {
     padding-top: $padding;
     &:last-child {
@@ -56,13 +53,6 @@ section {
     }
 }
 
-// header
-header {
-    border-width: 0 0 1px 0;
-    border-color: rgba($light, 0.1);
-    border-style: solid;
-}
-
 // navbar
 .navbar-brand img {
     height: 60px;
@@ -70,7 +60,6 @@ header {
         height: 40px;
     }
 }
-
 .nav-item a {
     font-weight: 600;
     user-select: none; /* supported by Chrome and Opera */
@@ -82,9 +71,11 @@ header {
         text-decoration: underline;
     }
 }
-
 .currentPage {
     color: $primary!important;
+}
+.navbar-dark {
+    @include standard-transition;
 }
 
 // Buttons
@@ -128,14 +119,7 @@ header {
     }
 }
 .filterDiv {
-    margin: 0.5rem;
-    float: left;
-    position: relative;
-    padding-top: 0;
-    line-height: 1.25rem;
-    text-align: center;
     display: none;
-    background-color: $white;
     &.show {
         display: block;
     }
@@ -146,25 +130,22 @@ header {
     margin-top: 0.35rem;
     margin-bottom: 0.35rem;
 }
-.columnFlex {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: auto;
-}
-.columns { // do not apply in filterDiv
-    display: block;
-    float: left;
-    margin: 0.5rem;
-}
 .profileImg {
     float: none;
     text-align: center;
     img {
-        width: 15rem;
-        border-radius: 10rem;
-        margin: 1rem auto;
+        width: 20rem;
+        border-radius: 1rem;
+        margin: 1.5rem auto;
     }
+}
+.blog-image,
+.blog-images-insert p img {
+    display: block;
+    width: 80%;
+    min-width: 300px;
+    margin: 0 auto;
+    margin-bottom: 1.25rem;    
 }
 
 // Animation
@@ -188,12 +169,6 @@ header {
     -webkit-animation-name: fadeIn;
     animation-name: fadeIn;
 }
-
-// gradient strip
-// #gradient-strip {
-//     background-color: $primary;
-//     background-image: $diagonal-bg;
-// }
 
 // social buttons
 .fa {
@@ -258,16 +233,6 @@ footer {
     }
 }
 
-// CV
-.skills-label {
-    display: inline-block;
-    margin: 0 0.5rem 0.5rem 0;
-    padding: 0.2rem 0.7rem;
-    color: $secondary;
-    border: 2px solid rgba($secondary, 0.5);
-    border-radius: 0.625rem;
-}
-
 // 404
 .notFoundPage {
     margin: 1.5rem auto;
@@ -283,14 +248,7 @@ footer {
     }
 }
 
-////////////////////////
-// Responsive layout //
-//////////////////////
-
-.navbar-dark {
-    @include standard-transition;
-}
-
+// Responsive layout
 @media (max-width: 1199.98px) {
 
 }

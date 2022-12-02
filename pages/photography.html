@@ -4,7 +4,7 @@ title: Photography Portfolio
 description: Photography portfolio features what William captures.
 permalink: /photography/
 ---
-<div class="container-xl">
+<div class="container-fluid">
 	<section>
 		<div class="row">
 			<div class="col-md text-center">
@@ -12,52 +12,13 @@ permalink: /photography/
 			</div>
 		</div>
 	</section>
-	<section>
-		<!--Event Photography-->
-			<div class="row">
-				<div class="col-md-12">
-					<h3>Event Photography</h3>
-				</div>
-				<div class="columnFlex">
-					{% assign galleries = site._gallery | map: 'categories' | join: ','  | split: ',' | uniq %}
-					{% assign photos = site._gallery | sort:"date" | reverse %}					
-					{% for _gallery in photos %}
-						{% if _gallery.categories contains 'event' %}
-							{% include gallery-filter.html %}
-						{% endif %}
-					{% endfor %}										
-				</div>				
-			</div>
-		<!--Fine Arts Photography-->
-		<div class="row">
-			<div class="col-md-12">
-				<h3>Fine Arts Photography</h3>
-			</div>
-			<div class="columnFlex">
-				{% assign galleries = site._gallery | map: 'categories' | join: ','  | split: ',' | uniq %}
-				{% assign photos = site._gallery | sort:"date" | reverse %}				
-				{% for _gallery in photos %}
-					{% if _gallery.categories contains 'fine arts' %}
-						{% include gallery-filter.html %}
-					{% endif %}
-				{% endfor %}											
-			</div>				
-		</div>
-		<!--Filtered Content-->
-		<div class="row">
-			<div class="col-md-12">
-				<h3>General Works</h3>
-			</div>
-			<div class="columnFlex">
-				{% assign galleries = site._gallery | map: 'categories' | join: ','  | split: ',' | uniq %}
-				{% assign photos = site._gallery | sort:"date" | reverse %}				
-				{% for _gallery in photos %}
-					{% if _gallery.categories contains 'event' or _gallery.categories contains 'fine arts' %}
-					{% else %}
-						{% include gallery-filter.html %}
-					{% endif %}
-				{% endfor %}											
-			</div>				
+	<section class="boxes">
+		<div class="flexContainer">
+			{% assign galleries = site._gallery | map: 'categories' | join: ','  | split: ',' | uniq %}
+			{% assign photos = site._gallery | sort:"date" | reverse %}				
+			{% for _gallery in photos %}
+					{% include gallery-filter.html %}
+			{% endfor %}														
 		</div>
 	</section>
 	<section class="text-center">

@@ -18,14 +18,19 @@ layout: default
             <h5>Deliverables</h5>
             <p>{{ page.deliverables }}</p>
           {% endif %}
-          <hr>
-          <p>{{ page.content }}</p>
         </div>
       </div>
       <div class="col-md-5 d-flex">
         <div class="align-self-center">
           <img src="/images/{% if page.folder %}{{ page.folder }}/{% endif %}{{ page.image }}" alt="Image of {{ page.slug }}" class="img-fluid" oncontextmenu="return false;">
         </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="row">
+      <div class="col-md">
+        <p>{{ page.content }}</p>
       </div>
     </div>
   </section>

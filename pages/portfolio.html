@@ -33,9 +33,9 @@ permalink: /portfolio/
 			<div class="filterDiv {{ _portfolio.categories }} animated fadeIn shadow box-wrap">
 				<a href="{% if _portfolio.link %}{{ _portfolio.link }}{% else %}{{ _portfolio.url }}{% endif %}"  class="box-link">
 					<div class="box">
-						<img src="/images/{% if _portfolio.folder %}{{ _portfolio.folder }}/{% endif %}{{ _portfolio.image }}" alt="{{ _portfolio.slug }}">
+						<img src="/images/{% if _portfolio.folder %}{{ _portfolio.folder }}/{% endif %}{{ _portfolio.image }}" alt="{{ _portfolio.slug }}" class="cursor">
 						<div class="overlay">
-							<h6>{{ _portfolio.title }}</h6>
+							<h5>{{ _portfolio.title }}</h5>
 							<p class="text-uppercase">{{ _portfolio.categories | uniq | join: ", " }}</p>
 						</div>					
 					</div>

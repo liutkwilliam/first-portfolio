@@ -208,7 +208,7 @@ This diagram show how each of the features evaluated.
         <div class="card trailnplan">
             <img src="{{ site.baseurl }}/images/trail-n-plan/{{ screen.image }}" alt="Picture of {{screen.title}}" class="card-img-top shadow">
             <div class="card-body">
-                <h6>{{ screen.title }}</h6>
+                <h5>{{ screen.title }}</h5>
             </div>        
         </div>
     </div>

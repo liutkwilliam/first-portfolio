@@ -8,9 +8,9 @@ permalink: /about/
 {% capture bio %}
 # Hi I am William
 
-William has a keen interest in web, UI Design career (or equivalent), with knowledge in Web Development (HTML, CSS, JavaScript). He is also currently undertaking a Digital graphic design course to sharpen his skills.
+William has a keen interest in web, UI Design career (or equivalent), with experiences in Web Development (HTML, CSS, JavaScript). He is currently undertaking a digital graphic design course to sharpen the skill.
 
-On the side, William do love taking photos. He can take good landscape photo, documenting events and taking photos of a product (artwork).
+On the side, William is experienced photographer in various areas, including landscape photo, events photography and product photography. With over 5 years of experiences as a photographer and over 3 years for artwork documentation, he is a highly motivated practitioner in providing high quality photographs, accurately recording artwork details and entering information to the digital archiving system. He has also been continuously developing innovative methods in photo editing.
 {% endcapture %}
 
 <div class="row">

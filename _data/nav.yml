@@ -1,14 +1,15 @@
-- name: About
-  link: /about
-- name: Design and Motion
+
+- name: Design Portfolio
   link: /portfolio
 # - name: UI UX Web
 #   link: /ui-ux-web
-- name: Photography
+- name: Photography Portfolio
   link: /photography
 # - name: Blog
 #   link: /blog
-# - name: CV
-#   link: https://liutkwilliam.github.io/fullcv
+- name: About
+  link: /about
+- name: CV
+  link: https://liutkwilliam.github.io/fullcv
 # - name: Contact
 #   link: /contact

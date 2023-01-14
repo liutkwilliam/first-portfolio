@@ -2,7 +2,7 @@
 layout: default
 ---
 <!--main content-->
-<div class="container-fluid" oncontextmenu="return false;">
+<div class="container-xl" oncontextmenu="return false;">
   <section>
     <div class="row">
       <div class="col-md-7 d-flex">
@@ -50,7 +50,7 @@ layout: default
             class="cursor"
             >
 						<div class="overlay">
-							<h5>{{ image.title }}</h5>
+							<h6>{{ image.title }}</h6>
 						</div>					
 					</div>
 			</div>
@@ -72,7 +72,7 @@ layout: default
           src="/images/{% if page.folder %}{{ page.folder }}/{% endif %}{{ image.image_path }}"  
           alt="Image of {{ image.title }}">
           <div class="modal-text">
-            <h5>Image of {{ image.title }}</h5>
+            <h6>{{ image.title }}</h6>
           </div>
         </div>
 			</div>

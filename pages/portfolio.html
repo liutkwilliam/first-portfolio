@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Design and Motion Portfolio
+title: Design Portfolio
 description: Design and Motion Portfolio includes various works including animation, graphic design, website designs, videography and etc.
 permalink: /portfolio/
 ---
-<div class="container-fluid">
+<div class="container-xl">
 	<section>
 		<div class="row">
 			<div class="col-md text-center">
@@ -35,7 +35,7 @@ permalink: /portfolio/
 					<div class="box">
 						<img src="/images/{% if _portfolio.folder %}{{ _portfolio.folder }}/{% endif %}{{ _portfolio.image }}" alt="{{ _portfolio.slug }}" class="cursor">
 						<div class="overlay">
-							<h5>{{ _portfolio.title }}</h5>
+							<h6>{{ _portfolio.title }}</h6>
 							<p class="text-uppercase">{{ _portfolio.categories | uniq | join: ", " }}</p>
 						</div>					
 					</div>

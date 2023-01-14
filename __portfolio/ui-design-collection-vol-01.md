@@ -1,23 +1,21 @@
 ---
 categories: 
 - ux ui web
-title: Miscellaneous UI Designs
+title: UI Designs Collection Volume 1
 description:
 organisation: 
 deliverables: UI Designs
 feature: 
 date: 2022-02-01 12:00:00 +1000
 folder: ui-ux
-image: UIDesign011.png
-slug: misc-ui-design
+image: UIDesign-Vol01.png
+slug: ui-design-collection-vol-01
 link:
 images:
     - image_path: UIDesign001.png
       title: Sign Up Interface
     - image_path: UIDesign002.png
       title: Payment Page
-    - image_path: UIDesign003.png
-      title: App Product Hero Page
     - image_path: UIDesign004.png
       title: Calculator
     - image_path: UIDesign005.png
@@ -47,4 +45,4 @@ images:
     - image_path: UIDesign017.png
       title: To Do List
 ---
-This is my miscellaneous collection of UI Designs that I made in my spare time.
+This is my collection Volume 1 of UI Designs that I made in my spare time.

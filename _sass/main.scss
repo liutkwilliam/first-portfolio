@@ -4,13 +4,14 @@ $secondary: #3c69b2;
 $third: #3C4FA2;
 $dark: #404041;
 $light: #bebebe;
-$black: #000000;
+$black: #141414;
 $white: #FFFFFF;
 
 //responsive fonts
 $enable-responsive-font-sizes: true;
 
 // navbar
+$navbar-padding-x: 0;
 $navbar-dark-color: $light;
 $navbar-light-hover-color: $primary;
 $navbar-light-active-color: $primary;

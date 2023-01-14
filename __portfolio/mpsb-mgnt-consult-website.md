@@ -12,6 +12,13 @@ folder: mpsb-mgnt-consult-website
 image: mpsb-portfolio.png
 slug: mpsb-mgnt-consult-website
 link:
+images:
+    - image_path: mpsb-home.png
+      title: Home Page
+    - image_path: mpsb-service.png
+      title: Services Page
+    - image_path: mpsb-details.png
+      title: Services Detail Page
 ---
 Completed Website: [www.mpsb.com.au](http://www.mpsb.com.au)
 

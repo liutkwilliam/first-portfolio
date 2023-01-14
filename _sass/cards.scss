@@ -16,6 +16,9 @@
         @media (max-width: 575.98px) {	
 
         }
+        // &.two-grids {
+        //     grid-template-columns: 1fr 1fr;
+        // }
     }
 }
 .box-wrap {
@@ -31,7 +34,6 @@
     justify-items: center;
     background-color: $secondary;
     color: $white;
-    border-radius: .5rem;
     box-shadow: 0 3px 5px rgba($dark,0.6);
     @include standard-transition;
     img {
@@ -40,8 +42,6 @@
         width: 100%;
         aspect-ratio: 3 / 2;
         object-fit: cover;
-        border-radius: .5rem;
-
     }
     &:hover {
         background-color: darken($secondary, 10%);
@@ -59,6 +59,12 @@
         color: $white;
         text-align: center;
         padding: .5rem;
+    }
+}
+.with-radius {
+    border-radius: .5rem;
+    img {
+        border-radius: .5rem;
     }
 }
 

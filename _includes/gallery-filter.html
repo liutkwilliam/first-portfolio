@@ -1,6 +1,6 @@
 <div class="animated fadeIn shadow box-wrap">
     <a href="{% if _gallery.link %}{{ _gallery.link }}{% else %}{{ _gallery.url }}{% endif %}" class="box-link">
-        <div class="box">
+        <div class="box with-radius">
             <img src="/images/album/{{_gallery.foldername}}/{{_gallery.image}}" alt="{{ _gallery.slug }}" class="cursor">
             <div class="overlay">
                 <h6>{{ _gallery.title }}</h6>

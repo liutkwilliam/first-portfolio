@@ -49,9 +49,11 @@ layout: default
             onclick="openModal();currentSlide({{ forloop.index }})"
             class="cursor"
             >
+            {% if image.title %}
 						<div class="overlay">
 							<h6>{{ image.title }}</h6>
-						</div>					
+						</div>
+            {% endif %}					
 					</div>
 			</div>
 			{% endfor %}

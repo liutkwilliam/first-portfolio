@@ -26,22 +26,22 @@ permalink: /portfolio/
 			</div>
 		</div>
 	</section>
-	<section class="boxes">
-		<div class="flexContainer">
-			{% assign sorted = site._portfolio | sort:"date" | reverse %}
-			{% for _portfolio in sorted %}
-			<div class="filterDiv {{ _portfolio.categories }} animated fadeIn shadow box-wrap">
-				<a href="{% if _portfolio.link %}{{ _portfolio.link }}{% else %}{{ _portfolio.url }}{% endif %}"  class="box-link">
-					<div class="box with-radius">
-						<img src="/images/{% if _portfolio.folder %}{{ _portfolio.folder }}/{% endif %}{{ _portfolio.image }}" alt="{{ _portfolio.slug }}" class="cursor">
-						<div class="overlay">
-							<h6>{{ _portfolio.title }}</h6>
-							<p class="text-uppercase">{{ _portfolio.categories | uniq | join: ", " }}</p>
-						</div>					
-					</div>
-				</a>
+	<section>
+		<div class="row">
+			<div class="col-md">
+				<div class="card-columns">
+					{% assign sorted = site._portfolio | sort:"date" | reverse %}
+					{% for _portfolio in sorted %}
+						<div class="filterDiv {{ _portfolio.categories }} card animated fadeIn shadow" oncontextmenu="return false;">
+							<a href="{% if _portfolio.link %}{{ _portfolio.link }}{% else %}{{ _portfolio.url }}{% endif %}"  class="box-link">
+								<div>
+									<img src="/images/{% if _portfolio.folder %}{{ _portfolio.folder }}/{% endif %}{{ _portfolio.image }}" alt="{{ _portfolio.slug }}" class="card-img-top cursor">
+								</div>
+							</a>
+						</div>
+					{% endfor %}
+				</div>
 			</div>
-			{% endfor %}
 		</div>
 	</section>
 </div>

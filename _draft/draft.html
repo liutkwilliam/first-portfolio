@@ -39,3 +39,23 @@
         <script type="text/javascript" defer src="https://form.123formbuilder.com/embed/5989299.js" data-role="form" data-default-width="650px"></script>
     <!-- form.123formbuilder.com script ends here -->
 </div>
+
+
+	<!-- <section class="boxes">
+		<div class="flexContainer">
+			{% assign sorted = site._portfolio | sort:"date" | reverse %}
+			{% for _portfolio in sorted %}
+			<div class="filterDiv {{ _portfolio.categories }} animated fadeIn shadow box-wrap">
+				<a href="{% if _portfolio.link %}{{ _portfolio.link }}{% else %}{{ _portfolio.url }}{% endif %}"  class="box-link">
+					<div class="box with-radius">
+						<img src="/images/{% if _portfolio.folder %}{{ _portfolio.folder }}/{% endif %}{{ _portfolio.image }}" alt="{{ _portfolio.slug }}" class="cursor">
+						<div class="overlay">
+							<h6>{{ _portfolio.title }}</h6>
+							<p class="text-uppercase">{{ _portfolio.categories | uniq | join: ", " }}</p>
+						</div>					
+					</div>
+				</a>
+			</div>
+			{% endfor %}
+		</div>
+	</section> -->

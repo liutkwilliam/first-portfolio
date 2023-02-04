@@ -3,26 +3,64 @@ layout: default
 title: 
 description: William Liu's creative portfolio in photgraphy, 2D animation, design and website design.
 image: /images/UIDesign-overall.png
-button: Design Portfolio
-btnlink: /portfolio
-button3: Photography Portfolio
-btnlink3: /photography
 ---
-<div class="bg-black without-header" id="fullPage">
+<div class="bg-black" id="fullPage">
     <div class="full-img-container">
         <img src="{{ page.image | prepend: site.baseurl }}" alt="homepage cover photo">
         <div class="gradient">
             <div class="overlay-content animated fadeIn">
                 <h1>Hi I am <spam class="text-primary">William Liu</spam></h1>
                 <p class="h4">
-                    I am a designer, photographer, web and UI design enthusiast based in Sydney, Australia
+                    I am a photographer, graphic design, website designer and UI design enthusiast based in Sydney, Australia
                 </p>
                 <div class="option-box">
                     <p class="text-uppercase">Explore my portfolio</p>
-                    <a href="{{ page.btnlink | prepend: site.baseurl }}" class="btn btn-primary btn-lg btn-block">{{ page.button }}</a>
-                    <a href="{{ page.btnlink3 | prepend: site.baseurl }}" class="btn btn-light btn-lg btn-block">{{ page.button3 }}</a>
+                    <a href="#portfolio" class="btn btn-primary btn-lg btn-block">Design Portfolio</a>
+                    <a href="/photography" class="btn btn-light btn-lg btn-block">Photography Portfolio</a>
                 </div>
             </div>
         </div>
 	</div>
 </div>
+
+<div class="container-xl" id="portfolio">
+	<section>
+		<!--Type Filter-->
+		<div class="row">
+			<!--Display unless mobile screen size-->
+			<div class="col-md text-center">
+				<div id="myBtnContainer">
+					<a class="btn btn-sm btn-outline-primary active" onclick="filterSelection('all')">Show all</a>
+					{% assign cmap = site._portfolio | map: 'categories' | uniq %}
+					{% assign cats = cmap | sort %}
+					{% for cat in cats %}
+					<a class="btn btn-sm btn-outline-primary" onclick="filterSelection('{{ cat }}')">{{ cat }}</a>
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="row">
+			<div class="col-md">
+				<div class="card-columns">
+					{% assign sorted = site._portfolio | sort:"date" | reverse %}
+					{% for _portfolio in sorted %}
+						<div class="filterDiv {{ _portfolio.categories }} card animated fadeIn shadow" oncontextmenu="return false;">
+							<a href="{% if _portfolio.link %}{{ _portfolio.link }}{% else %}{{ _portfolio.url }}{% endif %}"  class="box-link">
+								<div class="box">
+									<img src="/images/{% if _portfolio.folder %}{{ _portfolio.folder }}/{% endif %}{{ _portfolio.image }}" alt="{{ _portfolio.slug }}" class="card-img-top cursor">
+                                    <div class="overlay">
+                                        <h5>{{ _portfolio.title }}</h5>
+                                        <p class="text-uppercase">{{ _portfolio.categories | uniq | join: ", " }}</p>
+                                    </div>	
+                                </div>
+							</a>
+						</div>
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+	</section>
+</div>
+<script src="{{ "/js/portfolio-grid.js" | relative_url }}"></script>

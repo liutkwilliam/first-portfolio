@@ -1,11 +1,6 @@
 // Full page
-.with-header {
-  height: 95vh;
-}
-.without-header {
-  height: 100vh;
-}
 #fullPage {
+  height: 100vh;
   position: relative;
   width: 100%;
   -webkit-box-pack: start;
@@ -55,8 +50,7 @@
       width: 100%;
       height: 100%;
       position: absolute;
-      background-color: rgba($white, $bg-opacity);
-      // background-image: linear-gradient(135deg, rgba($primary, $bg-opacity), rgba($secondary, $bg-opacity), rgba($website-third, $bg-opacity));
+      background-image: linear-gradient(to bottom, rgba($white, $bg-opacity), rgba($white, $bg-opacity) 80%, rgba($white, 1) 100%);
       z-index: 1;
     }
     .overlay-content {

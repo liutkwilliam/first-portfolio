@@ -201,13 +201,6 @@ section {
 // Footer
 footer {
     padding: 1rem 0;
-    &.homeFooter {
-        position: fixed;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        z-index: 1;
-    }
     p {
         margin-bottom: 0;
         color: $black;

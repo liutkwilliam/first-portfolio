@@ -1,9 +1,10 @@
-<div class="animated fadeIn shadow box-wrap">
+<div class="card animated fadeIn shadow" oncontextmenu="return false;">
     <a href="{% if _gallery.link %}{{ _gallery.link }}{% else %}{{ _gallery.url }}{% endif %}" class="box-link">
-        <div class="box with-radius">
+        <div class="box">
             <img src="/images/album/{{_gallery.foldername}}/{{_gallery.image}}" alt="{{ _gallery.slug }}" class="cursor">
             <div class="overlay">
-                <h6>{{ _gallery.title }}</h6>
+                <h5>{{ _gallery.title }}</h5>
+                <p class="text-uppercase">{{ _gallery.categories | uniq | join: ", " }}</p>
             </div>					
         </div>
     </a>

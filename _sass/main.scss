@@ -20,6 +20,14 @@ $navbar-nav-link-padding-x: .7rem;
 // jumbotron
 $jumbotron-bg: none;
 
+// responsive
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1440px
+) !default;
+
 // website variables
 $website-third: #3c4fa2;
 $site-grey: #dbdbdb;

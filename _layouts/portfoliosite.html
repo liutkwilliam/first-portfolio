@@ -35,57 +35,23 @@ layout: default
     </div>
   </section>
   {% if page.images %}
-  <section class="boxes">
-		<div class="flexContainer">
+  <section>
+		<div class="card-columns two-columns">
       {% for image in page.images %}
-			<div 
-      class="animated fadeIn shadow box-wrap"
-      oncontextmenu="return false;"
-      >
-					<div class="box">
-						<img 
-            src="/images/{% if page.folder %}{{ page.folder }}/{% endif %}{{ image.image_path }}" 
-            alt="Image of {{ images.title }}"
-            onclick="openModal();currentSlide({{ forloop.index }})"
-            class="cursor"
-            >
-            {% if image.title %}
-						<div class="overlay">
-							<h6>{{ image.title }}</h6>
-						</div>
-            {% endif %}					
-					</div>
-			</div>
+			<div class="card animated fadeIn shadow" oncontextmenu="return false;">
+				<img 
+          src="/images/{% if page.folder %}{{ page.folder }}/{% endif %}{{ image.image_path }}" 
+          alt="Image of {{ images.title }}"
+          class="card-img-top"
+        >
+        {% if image.title %}
+        <div class="card-body text-center text-white">
+          <h6>{{ image.title }}</h6>
+        </div>
+        {% endif %}					
+      </div>
 			{% endfor %}
 		</div>
 	</section>
   {% endif %}
 </div>
-
-{% if page.images %}
-<div id="myModal" class="modalGallery">
-	<span class="close " onclick="closeModal()">&times;</span>
-	<div class="modalContent">
-		{% for image in page.images %}
-		<div class="mySlides">
-			<div class="centerBox">
-        <div class="centerImage">
-          <img 
-          src="/images/{% if page.folder %}{{ page.folder }}/{% endif %}{{ image.image_path }}"  
-          alt="Image of {{ image.title }}">
-          <div class="modal-text">
-            <h6>{{ image.title }}</h6>
-          </div>
-        </div>
-			</div>
-		</div>
-
-    {% endfor %}
-	  
-	  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-	  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-	</div>
-</div>
-<script src="{{ "/js/modal-overlay.js" | relative_url }}"></script>
-{% endif %}

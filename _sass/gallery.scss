@@ -13,8 +13,8 @@
     @include media-breakpoint-only(xl) {
         column-count: 3;
     }
-    &.two-columns {
-        column-count: 2;
+    &.one-column {
+        column-count: 1;
     }
     .card {
         border-width: 0;

@@ -1,9 +1,16 @@
+// brand colors
+$BlueBrand01: #238dc6;
+$BlueBrand02: #3c69b2;
+$BlueBrand03: #3C4FA2;
+$BrandDark: #404041;
+$BrandLight: #bebebe;
+
+
 // variables
-$primary: #238dc6;
-$secondary: #3c69b2;
-$third: #3C4FA2;
-$dark: #404041;
-$light: #bebebe;
+$primary: $BlueBrand02;
+$secondary: $BlueBrand03;
+$dark: $BrandDark;
+$light: $BrandLight;
 $black: #141414;
 $white: #FFFFFF;
 

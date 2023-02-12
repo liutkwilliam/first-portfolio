@@ -3,8 +3,7 @@ layout: gallery
 title: Vivid Sydney 2022 
 description: Vivid Sydney 2022 returned after 2 years of cancellations. The event was held for 23 days from 27th May to 18th June, around Circular Quay, The Rocks, Barangaroo, Darling Harbour, The Goods Line and Central with a long light walk linking these districts. These photos are my best picks.
 categories: 
-- night
-- landscape
+- city, landscape and street
 organisation:
 foldername: vividsydney2022
 date: 2022-06-18 12:00:00 +1000

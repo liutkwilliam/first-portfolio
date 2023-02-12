@@ -3,7 +3,7 @@ layout: gallery
 title: Sydney Streets of Rozelle, Balmain
 description: Selected photos of street photography in Sydney Inner West suburbs of Rozelle and Balmain.
 categories: 
-- street
+- city, landscape and street
 organisation:
 foldername: sydney-rozelle-balmain
 date: 2022-07-12 12:00:00 +1000

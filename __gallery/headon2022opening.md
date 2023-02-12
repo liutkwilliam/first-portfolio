@@ -3,7 +3,7 @@ layout: gallery
 title: Head On Photo Festival 2022 Launch
 description: Selected photos of can-did photography from the launch of Head On Photo Festival 2022 at Bondi Pavilion, Sydney on 4 November 2022 
 categories: 
-- event
+- can-did & events
 organisation: Head On Foundation
 foldername: headon2022opening
 date: 2022-11-04 23:00:00 +1000

@@ -3,7 +3,7 @@ layout: gallery
 title: Sydney Transport
 description: Selected photos of Sydney transportation from the city.
 categories: 
-- transport
+- city, landscape and street
 organisation:
 foldername: sydney-transport
 date: 2021-03-28 12:00:00 +1000

@@ -3,7 +3,7 @@ layout: gallery
 title: Event Photographs Contribution to UNSW Global
 description: My event photographs contribution to UNSW Global in 2018
 categories: 
-- event
+- can-did & events
 organisation:
 foldername: unswglobal-contributions-event
 date: 2018-12-01 12:00:00 +1000

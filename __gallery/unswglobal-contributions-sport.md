@@ -3,8 +3,8 @@ layout: gallery
 title: Sport Photographs Contribution to UNSW Global
 description: My sport photographs contribution to UNSW Global in 2018
 categories: 
-- Event
-- Sport
+- event
+- sport
 organisation:
 foldername: unswglobal-contributions-sport
 date: 2018-03-01 12:00:00 +1000

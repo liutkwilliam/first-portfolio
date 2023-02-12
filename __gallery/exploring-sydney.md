@@ -3,7 +3,6 @@ layout: gallery
 title: Exploring Sydney
 description: Selected photos of Sydney Harbour, CBD and Vantage Points.
 categories: 
-- cityscape
 - landscape
 organisation:
 foldername: sydney

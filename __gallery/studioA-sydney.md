@@ -2,8 +2,8 @@
 layout: gallery
 title: Photography Works for studio A
 description: Selected photos of can-did photography while volunteering with studio A, a supported studio in Sydney, supporting artists living with intellectual disability.
-categories: 
-- behind the scenes
+categories:
+- documentations
 organisation:
 foldername: studio-a-public-work
 date: 2021-03-03 12:00:00 +1000

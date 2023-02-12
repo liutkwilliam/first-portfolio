@@ -20,7 +20,7 @@ layout: default
 			<div class="col-md">
 				<div class="card-columns">
 					{% for image in page.images %}
-						<div class="card" oncontextmenu="return false;">
+						<div class="card">
 							<img 
 							src="{{site.baseurl}}/images/album/{{page.foldername}}/{{image.image_path}}" 
 							alt="Image {{ forloop.index }} of {{ page.title }}" 

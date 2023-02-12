@@ -3,7 +3,7 @@ layout: gallery
 title: Event Photographs Contribution to UNSW Global
 description: My event photographs contribution to UNSW Global in 2018
 categories: 
-- Event
+- event
 organisation:
 foldername: unswglobal-contributions-event
 date: 2018-12-01 12:00:00 +1000
@@ -36,7 +36,6 @@ images:
     - image_path: unswglobal-2018-event-025.jpg
 ---
 My event photographs contribution to UNSW Global in 2018, event includes:
-- Sport Events
 - Outdoor Excursions
 - Variety Show
 - Student Exhibition

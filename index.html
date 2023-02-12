@@ -4,7 +4,7 @@ title:
 description: William Liu's creative portfolio in photgraphy, 2D animation, design and website design.
 image: /images/portfolio-cover.png
 ---
-<div class="bg-black" id="fullPage">
+<div id="fullPage">
     <div class="full-img-container">
         <img src="{{ page.image | prepend: site.baseurl }}" alt="homepage cover photo">
         <div class="gradient">
@@ -13,12 +13,10 @@ image: /images/portfolio-cover.png
                 <p class="h4">
                     I am a photographer, graphic design, website designer and UI design enthusiast based in Sydney, Australia
                 </p>
-                <div class="option-box">
-                    <p class="text-uppercase">Explore my portfolio</p>
-                    <a href="#portfolio" class="btn btn-primary btn-lg btn-block">Design Portfolio</a>
-                    <a href="/photography" class="btn btn-light btn-lg btn-block">Photography Portfolio</a>
-                </div>
             </div>
+			<div class="option-box animated fadeIn">
+				<a href="#portfolio">Scroll down or click here to my design portfolio</a>
+			</div>
         </div>
 	</div>
 </div>

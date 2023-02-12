@@ -17,7 +17,7 @@ description:
 			{% for post in paginator.posts %}
 			<a href="{{ post.url | prepend: site.baseurl }}">
 				<div class="columns blog-card {{ post.categories }} shadow">
-					<img src="/images/blog/{{ post.image | prepend: site.baseurl }}" alt="Image for {{ post.title }}" class="blog-card-image" oncontextmenu="return false;">
+					<img src="/images/blog/{{ post.image | prepend: site.baseurl }}" alt="Image for {{ post.title }}" class="blog-card-image">
 					<div class="card-body text-left">
 						<strong class="d-inline-block mb-2 text-primary text-capitalize">{{ post.categories }}</strong>    
 						<h5>{{ post.title | escape }}</h5>

@@ -2,7 +2,7 @@
 layout: default
 ---
 <!--main content-->
-<div class="container-xl" oncontextmenu="return false;">
+<div class="container-xl">
   <section>
     <div class="row">
       <div class="col-md-7 d-flex">
@@ -22,7 +22,7 @@ layout: default
       </div>
       <div class="col-md-5 d-flex">
         <div class="align-self-center">
-          <img src="/images/{% if page.folder %}{{ page.folder }}/{% endif %}{{ page.image }}" alt="Image of {{ page.slug }}" class="img-fluid" oncontextmenu="return false;">
+          <img src="/images/{% if page.folder %}{{ page.folder }}/{% endif %}{{ page.image }}" alt="Image of {{ page.slug }}" class="img-fluid">
         </div>
       </div>
     </div>
@@ -38,7 +38,7 @@ layout: default
   <section>
 		<div class="card-columns one-column">
       {% for image in page.images %}
-			<div class="card animated fadeIn shadow" oncontextmenu="return false;">
+			<div class="card animated fadeIn shadow">
 				<img 
           src="/images/{% if page.folder %}{{ page.folder }}/{% endif %}{{ image.image_path }}" 
           alt="Image of {{ images.title }}"

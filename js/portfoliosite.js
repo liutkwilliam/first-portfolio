@@ -15,7 +15,10 @@ $(function() {
 // return to the top
 
 // Go To Top
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function() {
+  scrollFunction();
+  progressFunction();
+};
 
 function scrollFunction() {
     if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
@@ -35,3 +38,10 @@ $("document").ready(function() {
   $("a[href^='http://']").attr("target", "_blank");
   $("a[href^='https://']").attr("target", "_blank");
 });
+
+function progressFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}

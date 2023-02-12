@@ -3,7 +3,6 @@ layout: gallery
 title: ASTRO
 description: A showcase of my astro photography work captured while on a trip travelling between South Australia and Northern Territory with Sunswift, UNSW Solar Racing Team for the World Solar Challenge 2019.
 categories: 
-- astro
 - night
 - landscape
 organisation:

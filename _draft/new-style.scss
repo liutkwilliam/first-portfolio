@@ -1,0 +1,38 @@
+// Navigation
+.new-header {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    padding: .5rem 0;
+    .new-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: .5rem 1rem;
+    }
+    .logo img{
+        height: 2.5rem;
+    }
+    .navlink {
+        color: lighten($dark, 20%);
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: .5rem;
+        font-weight: 600;
+        &:hover {
+            color: $primary;
+            text-decoration: underline;
+        }
+        &.show {
+            color: $primary;
+        }
+    }
+    ul {
+        list-style-type: none;
+        display: flex;
+        margin: 0;
+        li {
+            margin-left: .5rem;
+        }
+    }
+}

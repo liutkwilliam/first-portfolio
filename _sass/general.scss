@@ -404,7 +404,7 @@ footer {
       }
       .option-box {
         position: absolute;
-        bottom: .5rem;
+        bottom: 1rem;
         transform: translate(0%, -50%);
         text-align: center;
         width: 100%;
@@ -425,7 +425,7 @@ footer {
 .card-columns {
     column-gap:  1rem;
     @include media-breakpoint-only(sm) {
-        column-count: 2;
+        column-count: 1;
     }
     @include media-breakpoint-only(md) {
         column-count: 2;
@@ -436,8 +436,11 @@ footer {
     @include media-breakpoint-only(xl) {
         column-count: 3;
     }
-    &.one-column {
-        column-count: 1;
+    &.two-column {
+        column-count: 2;
+        @include media-breakpoint-only(sm) {
+            column-count: 1;
+        }
     }
     .card {
         border-width: 0;

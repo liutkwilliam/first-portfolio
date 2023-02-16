@@ -1,7 +1,7 @@
 ---
 categories: 
 - graphic design
-title: Wide Photo - Visual Guideline
+title: Wide Photo - Graphic Design Project
 description:
 organisation: 
 deliverables: A visual guideline, presentation slides templates, a social media post (Instagram) and a web banner

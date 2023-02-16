@@ -15,6 +15,8 @@ link:
 Wide Photo is a fictional company providing photography services based in Sydney. For the project, I have created the following:
 
 - A visual guideline
+
+Then based on the visual guideline, I created:
 - Presentation slides template
 - A social media post (Instagram)
 - A web banner

@@ -91,12 +91,6 @@ section {
         text-align: center;
     }
 }
-.navbar-dark {
-    @include standard-transition;
-    @media (max-width: 767.98px) {
-        background-color: $primary;
-    }
-}
 
 // buttons
 .btn {
@@ -415,10 +409,7 @@ footer {
   }
   
 .sticky-top {
-    &:hover {
-      background-color: $white;
-      transition: .6s;
-    }
+    background-color: $white;
 }
 
 // page-gallery

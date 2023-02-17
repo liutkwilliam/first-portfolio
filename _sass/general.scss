@@ -36,8 +36,18 @@ h2 {
 
 // layouts, columns & grids
 main {
-    min-height: 80vh!important;
+    padding-top: 3.5rem;
+    min-height: 90vh!important;
 }
+
+// scroll margin - anchored points
+$content-sticky-top: 2rem;
+[id] {
+    @media (min-height: $content-sticky-top) {
+      scroll-margin-top: $content-sticky-top;
+    }
+}
+
 $padding: 3rem;
 section {
     padding-top: $padding;
@@ -77,6 +87,11 @@ section {
 }
 
 // navbar
+.topmenu {
+    display: block!important;
+    z-index: 0!important;
+}
+
 .navbar-brand img {
     height: 40px;
 }
@@ -221,11 +236,12 @@ footer {
 .progress-container {
     position: fixed;
     top: 0;
+    right: 0;
     left: 0;
     width: 100%;
     height: 8px;
     background: $white;
-    opacity: 100%;
+    z-index: 1031;
     @media print {
         display: none;
     }
@@ -331,7 +347,7 @@ footer {
 
 // Full page
 #fullPage {
-    height: 90vh;
+    height: 95vh;
     position: relative;
     width: 100%;
     -webkit-box-pack: start;
@@ -407,10 +423,6 @@ footer {
       }
     }
   }
-  
-.sticky-top {
-    background-color: $white;
-}
 
 // page-gallery
 .card-columns {
@@ -495,15 +507,16 @@ footer {
         margin: auto;
         padding: 0;
         width: 90%;
+        min-width: 300px;
         max-height: subtract(100vh, $modal-dialog-margin * 2); // IE10/11
         overflow: hidden;
     }
     .close {
         color: $white;
         position: absolute;
-        top: 4rem;
+        top: 0;
         right: 2rem;
-        font-size: 80px;
+        font-size: 60px;
         &:hover, &:focus {
             color: $secondary;
             text-decoration: none;
@@ -522,6 +535,8 @@ footer {
             img {
                 max-width: 100%;
                 height: 80vh;
+                width: auto;
+                height: auto;
             }
             .modal-text {
                 margin: .5rem;

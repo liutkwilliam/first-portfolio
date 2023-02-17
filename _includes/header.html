@@ -1,20 +1,21 @@
 <!--header section-->
-<header class="sticky-top">
-	<div class="container-fluid">
-		<nav class="navbar navbar-expand-md navbar-light">
-			<a class="navbar-brand" href="{{'/'}}"><img alt="Page Logo" src="{{ site.logo-reg }}"></a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07XL" aria-controls="navbarsExample07XL" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="navbar-collapse collapse w-100 order-3 dual-collapse2" id="navbarsExample07XL">
-			<ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-				{% for item in site.data.nav %}
-				<li class="nav-item">
-				<a class="nav-link text-uppercase" href="{{site.baseurl}}{{item.link}}">{{ item.name }}</a>
-				</li>
-				{% endfor %}
-			</ul>
-			</div>
-		</nav>
-	</div>	
+<!-- <div class="progress-container">
+	<div class="progress-bar" id="myBar"></div>
+</div> -->
+<header>
+	<nav class="navbar navbar-expand-md navbar-light bg-white fixed-top" id="header">
+		<a class="navbar-brand" href="{{'/'}}"><img alt="Page Logo" src="{{ site.logo-reg }}"></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07XL" aria-controls="navbarsExample07XL" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="navbar-collapse collapse w-100 order-3 dual-collapse2" id="navbarsExample07XL">
+		<ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+			{% for item in site.data.nav %}
+			<li class="nav-item">
+			<a class="nav-link text-uppercase" href="{{site.baseurl}}{{item.link}}">{{ item.name }}</a>
+			</li>
+			{% endfor %}
+		</ul>
+		</div>
+	</nav>
 </header>

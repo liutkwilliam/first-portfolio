@@ -1,11 +1,13 @@
 function openModal() {
     document.getElementById("myModal").style.display = "block";
     document.body.style.overflow = "hidden";
+    document.getElementById("header").classList.add("topmenu");
   }
   
   function closeModal() {
     document.getElementById("myModal").style.display = "none";
     document.body.style.overflow = "auto";
+    document.getElementById("header").classList.remove("topmenu");
   }
   
   var slideIndex = 1;

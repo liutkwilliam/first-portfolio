@@ -43,16 +43,18 @@ layout: default
   {% if page.images %}
   <section>
 		<div class="card-columns two-column">
-      {% for image in page.images %}
+      {% assign images = page.images | sort:"date" | reverse %}	
+      {% for image in images %}
 			<div class="card animated fadeIn shadow">
 				<img 
           src="/images/{% if page.folder %}{{ page.folder }}/{% endif %}{{ image.image_path }}" 
           alt="Image of {{ images.title }}"
-          class="card-img-top"
+          onclick="openModal();currentSlide({{ forloop.index }})"
+          class="card-img-top cursor"
         >
         {% if image.title %}
         <div class="card-body text-center text-white">
-          <h6>{{ image.title }}</h6>
+          <h6>{{ image.title }} {% if image.date %}({{ image.date | date: "%Y"}}){% endif %}</h6>
         </div>
         {% endif %}					
       </div>
@@ -61,3 +63,25 @@ layout: default
 	</section>
   {% endif %}
 </div>
+
+{% if page.images %}
+<div id="myModal" class="modalGallery">
+	<span class="close" onclick="closeModal()">&times;</span>
+	<div class="modalContent">
+		{% for image in page.images %}
+		<div class="mySlides">
+			<div class="centerBox">
+				<div class="centerImage">
+					<img src="/images/{% if page.folder %}{{ page.folder }}/{% endif %}{{ image.image_path }}">
+				</div>
+			</div>
+		</div>
+	  	{% endfor %}
+	  
+	  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+	</div>
+</div>
+<script src="{{ "/js/modal-overlay.js" | relative_url }}"></script>
+{% endif %}

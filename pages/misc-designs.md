@@ -14,27 +14,38 @@ link:
 permalink: /misc-designs/
 images:
     - image_path: Melborne_RoadTrip_PersonalAlbum_V08.png
-      title: Melbourne Roadtrip Cover (Personal) (2017)
+      title: Melbourne Roadtrip Photo Album Cover
+      date: 2017-07-01 12:00:00 +1000
     - image_path: winter_finaltype-04.png
-      title: WinterType (2018)
+      title: WinterType
+      date: 2018-12-10 12:00:00 +1000
     - image_path: Aqua Blue Bird Abstract_Artboard 4.png
-      title: Aqua (2019)
+      title: Aqua
+      date: 2019-12-25 12:00:00 +1000
     - image_path: riding into 24-01.png
-      title: Riding between 2 and 4 (2020)
+      title: Riding between 2 and 4
+      date: 2020-01-25 12:00:00 +1000
     - image_path: "20200429 Illustrator - Sightseeing Sydney.png"
-      title: Sightseeing Sydney (2020)
+      title: Sightseeing Sydney
+      date: 2020-04-29 12:00:00 +1000
     - image_path: "20200505 Illustrator - Rat Shaped.png"
-      title: Little Mouse (2020)
+      title: Little Mouse
+      date: 2020-05-05 12:00:00 +1000
     - image_path: 20200506 Illustrator - City Tunnel.png
-      title: Wynyard Walk Tunnel (2020)
+      title: Wynyard Walk Tunnel
+      date: 2020-05-06 12:00:00 +1000
     - image_path: 20200804 Illustrator - Practice - Random.png
-      title: Abstract and Random Patterns (2020)
+      title: Abstract and Random Patterns
+      date: 2020-08-04 12:00:00 +1000
     - image_path: "sydney-harbour-illustrate-01.png"
-      title: Sydney Harbour Illustration (2020)
+      title: Sydney Harbour Illustration
+      date: 2020-09-10 12:00:00 +1000
     - image_path: 20210202 Illustrator - GeoRandom.png
-      title: Geometric Patterns (2021)
+      title: Geometric Patterns
+      date: 2021-02-02 12:00:00 +1000
     - image_path: 2022EuropeTripMap-01.png
-      title: My Europe Trip Map (2022)
+      title: My Europe Trip Map
+      date: 2022-09-20 12:00:00 +1000
 
 ---
 This is a collection of my miscellaneous design works. Some of them could be progress works.

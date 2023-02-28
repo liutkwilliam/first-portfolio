@@ -95,6 +95,13 @@ section {
 .navbar-brand img {
     height: 40px;
 }
+.logo-text {
+    padding-left: 1rem;
+    font-weight: 600;
+    @media (max-width: 380.98px) {
+        display: none;
+    }
+}
 .nav-item a {
     font-weight: 600;
     &:hover {
@@ -436,9 +443,6 @@ footer {
     @media (max-width: 575.98px) {
         column-count: 1;
     }
-    // @media (max-width: 1199.98px) {
-    //     column-count: 3;
-    // }
     &.two-column {
         column-count: 2;
         @media (max-width: 575.98px) {

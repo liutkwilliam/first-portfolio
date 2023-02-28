@@ -7,4 +7,14 @@ permalink: /about/
 ---
 # Hi I am William
 
-I am a well-organized, detail-focused, fast learner, constantly seeking new challenges and opportunities to improve my skill. I am keen in areas of photography, graphic design, website design and UI Design. I also had experience in participating team projects, event volunteering with providing customer services. I am excited to be part of a collaborative team pursuing towards exceptional outcomes.
+Born in Hong Kong, currently living in Sydney, Australia
+
+Welcome to my online design portfolio, I built this portfolio is not only showing my diverse range of design works and photos, I also demonstrate my passion in website design and coding (I am talking about HTML, CSS and Javascript). And I am constantly seeking new challenges and opportunities to improve my skill.
+
+What do you need to know about me:
+
+- I am experienced in Event Photography (of course there is more I need to learn from)
+- I am keen in keep updating my website design whenever new ideas come in
+- I am self-learning new frontend development skills (currently learning ReactJS)
+- I make some digital designs and illustrations.
+- I am learning French and Vietnamese

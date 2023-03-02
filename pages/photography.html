@@ -17,23 +17,27 @@ permalink: /photography/
 		<!--Display unless mobile screen size-->
 		<div class="col-md text-center">
 			<div id="myBtnContainer">
-				<a class="btn btn-sm btn-outline-primary active" onclick="filterSelection('all')">Show all</a>
 				{% assign cmap = site._gallery | map: 'categories' | uniq %}
 				{% assign cats = cmap | sort %}
 				{% for cat in cats %}
-				<a class="btn btn-sm btn-outline-primary" onclick="filterSelection('{{ cat }}')">{{ cat }}</a>
+				<a class="btn btn-sm btn-outline-primary" onclick="location.href='#{{ cat }}'">{{ cat }}</a>
 				{% endfor %}
 			</div>
 		</div>
 	</div>
 </section>
-<section>
+{% assign cmap = site._gallery | map: 'categories' | uniq %}
+{% assign cats = cmap | sort %}
+{% for cat in cats %}
+<section id="{{ cat }}">
 	<div class="row">
 		<div class="col-md">
+			<h2>{{ cat | upcase }}</h2>
 			<div class="card-columns">
-				{% assign photos = site._gallery | sort:"date" | reverse %}				
-				{% for _gallery in photos %}
-				<div class="filterDiv {{ _gallery.categories }} card animated fadeIn shadow">
+				{% assign galleries = site._gallery | sort:"date" | reverse %}				
+				{% for _gallery in galleries %}
+				{% if _gallery.categories contains cat %}
+				<div class="{{ _gallery.categories }} card animated fadeIn shadow">
 					<a href="{% if _gallery.link %}{{ _gallery.link }}{% else %}{{ _gallery.url }}{% endif %}" class="box-link">
 						<div class="box">
 							<img src="/images/album/{{_gallery.foldername}}/{{_gallery.image}}" alt="{{ _gallery.slug }}" class="cursor">
@@ -44,9 +48,11 @@ permalink: /photography/
 						</div>
 					</a>
 				</div>
+				{% endif %}
 				{% endfor %}
-			</div>	
-		</div>														
+			</div>
+		</div>
 	</div>
 </section>
+{% endfor %}
 <script src="{{ "/js/portfolio-grid.js" | relative_url }}"></script>

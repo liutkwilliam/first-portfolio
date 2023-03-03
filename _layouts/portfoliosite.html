@@ -68,8 +68,7 @@ layout: default
 <div id="myModal" class="modalGallery">
 	<span class="close" onclick="closeModal()">&times;</span>
 	<div class="modalContent">
-    {% assign images = page.images | sort:"date" | reverse %}	
-		{% for image in images %}
+		{% for image in page.images %}
 		<div class="mySlides">
 			<div class="centerBox">
 				<div class="centerImage">

@@ -1,9 +1,8 @@
 ---
 layout: aboutpage
 title: About
-description: William is passionate about 2D animation, photography, graphic design, and frontend website designer.
+description: Get to know me and what I am passionate about design.
 image: /images/2023-profile-web.jpg
-permalink: /about/
 ---
 # Hi I am William
 

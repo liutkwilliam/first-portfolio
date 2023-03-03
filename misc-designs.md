@@ -2,7 +2,7 @@
 layout: portfoliosite
 categories:
 title: Miscellaneous Design Works
-description: This is a collection of my miscellaneous design works
+description: Check out my collection of miscellaneous design works, including works in progress.
 image:
 organisation:
 deliverables:
@@ -11,7 +11,6 @@ date:
 folder: misc
 image: 
 link:
-permalink: /misc-designs/
 images:
     - image_path: Melborne_RoadTrip_PersonalAlbum_V08.png
       title: Melbourne Roadtrip Photo Album Cover

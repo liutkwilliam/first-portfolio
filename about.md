@@ -3,6 +3,7 @@ layout: aboutpage
 title: About
 description: Get to know me and what I am passionate about design.
 image: /images/2023-profile-web.jpg
+permalink: /about.html
 ---
 # Hi I am William
 

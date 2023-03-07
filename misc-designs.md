@@ -11,6 +11,7 @@ date:
 folder: misc
 image: 
 link:
+permalink: /misc-designs.html
 images:
     - image_path: Melborne_RoadTrip_PersonalAlbum_V08.png
       title: Melbourne Roadtrip Photo Album Cover

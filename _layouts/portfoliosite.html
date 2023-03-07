@@ -36,15 +36,14 @@ layout: default
   <section>
     <div class="row">
       <div class="col-md">
-        <p>{{ page.content }}</p>
+        <p>{{ content }}</p>
       </div>
     </div>
   </section>
   {% if page.images %}
   <section>
 		<div class="card-columns two-column">
-      {% assign images = page.images | sort:"date" | reverse %}	
-      {% for image in images %}
+      {% for image in page.images %}
 			<div class="card animated fadeIn shadow">
 				<img 
           src="/images/{% if page.folder %}{{ page.folder }}/{% endif %}{{ image.image_path }}" 
@@ -68,8 +67,7 @@ layout: default
 <div id="myModal" class="modalGallery">
 	<span class="close" onclick="closeModal()">&times;</span>
 	<div class="modalContent">
-    {% assign images = page.images | sort:"date" | reverse %}	
-		{% for image in images %}
+		{% for image in page.images %}
 		<div class="mySlides">
 			<div class="centerBox">
 				<div class="centerImage">

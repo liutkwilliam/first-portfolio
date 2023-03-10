@@ -1,7 +1,7 @@
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>{% if page.title %}{{ page.title | escape }} | {% endif %} {{ site.title | escape }}</title>
+	<title>{% if page.title %}{{ page.title | escape }} | {% endif %}{{ site.title | escape }}</title>
 	<!--The main.css has include bootstrap scss files-->
 	<link rel="stylesheet" href="{{ "/css/style.css" | relative_url }}">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,17 +21,17 @@
 	<script src="{{ "/js/portfoliosite.js" | relative_url }}"></script>
 	<!-- <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="/feed.xml"> -->
 	{% if page.description %}
-	<meta name="description" content="{{ page.description | strip_html }}" />
-	<meta property="og:description" content="{{ page.description | strip_html }}" />
+	<meta name="description" content="{{ page.description }}" />
+	<meta property="og:description" content="{{ page.description }}" />
 	{% else %}
-	<meta name="description" content="{{ site.description | strip_html }}">
+	<meta name="description" content="{{ site.description }}">
 	<meta property="og:description" content="{{ site.description }}" />
 	{% endif %}
 	<meta name="author" content="{{ site.title }}" />
 
 	{% if page.title %}
-	<meta property="og:title" content="{{ page.title }}" />
-	<meta property="twitter:title" content="{{ page.title }}" />
+	<meta property="og:title" content="{% if page.title %}{{ page.title | escape }} | {% endif %}{{ site.title | escape }}" />
+	<meta property="twitter:title" content="{% if page.title %}{{ page.title | escape }} | {% endif %}{{ site.title | escape }}" />
 	{% endif %}
 	{% if page.image %}
 	<meta name="image" content="{{ page.image }}" />

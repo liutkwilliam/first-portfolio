@@ -83,6 +83,10 @@ Artists appeared: Victoria Atkinson, Emily Crockford, Jaycee Kim, Catherine McGu
 
 Guests appeared: Shane Simpson AM (Chair of Board, studio A Limited), Trent Zimmerman MP (Federal Member for North Sydney), Shelly Simpson (Mud Australia), Ausgrid and Tim James MP (NSW NSW Member for Willoughby).
 
-All rights reserved to William with usage permission granted to studio A Limited and the guests appeared in the photos.
+Image: Tsz Kin (William) Liu and courtesy of studio A.
 
-This photo album is last updated in November 2022.
+[Visit studio A website](https://www.studioa.org.au)
+
+All rights reserved.
+
+Note: This photo album is last updated in November 2022.

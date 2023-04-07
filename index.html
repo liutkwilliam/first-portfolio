@@ -45,9 +45,9 @@ image: /images/portfolio-cover.png
 					{% assign sorted = site._portfolio | sort:"date" | reverse %}
 					{% for _portfolio in sorted %}
 						<div class="filterDiv {{ _portfolio.categories }} card animated fadeIn shadow">
-							<a href="{% if _portfolio.link %}{{ _portfolio.link }}{% else %}{{ _portfolio.url }}{% endif %}"  class="box-link">
+							<a href="{% if _portfolio.link %}{{ _portfolio.link }}{% else %}{{ _portfolio.url }}{% endif %}" class="box-link">
 								<div class="box">
-									<img src="/images/{% if _portfolio.folder %}{{ _portfolio.folder }}/{% endif %}{{ _portfolio.image }}" alt="{{ _portfolio.slug }}" class="card-img-top cursor">
+									<img src="/images/{% if _portfolio.folder %}{{ _portfolio.folder }}/{% endif %}{{ _portfolio.image }}" alt="{{ _portfolio.slug }}" class="cursor">
                                     <div class="overlay">
                                         <h5>{{ _portfolio.title }}</h5>
                                         <p class="text-uppercase">{{ _portfolio.categories | uniq | join: ", " }}</p>

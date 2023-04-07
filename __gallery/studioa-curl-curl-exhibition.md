@@ -30,6 +30,10 @@ The photos are published in studio A's social media including Facebook, Instagra
 
 studio A is a Sydney based arts company that provides professional development for artists with intellectual disabilities. Learn more their mission [here](https://www.studioa.org.au/about).
 
-Artists works appeared: Matthew Elliott, Emily Crockford, Lauren Kerjan, Daniel Kim, Catherine McGuiness, Meagan Pelham, Damian Showyin and Phil Sidney. 
+Artists works appeared: Matthew Elliott, Emily Crockford, Lauren Kerjan, Daniel Kim, Catherine McGuiness, Meagan Pelham, Damian Showyin and Phil Sidney.
 
-All rights reserved to William with usage permission granted to studio A Limited and their partners facilitated and supported the exhibition.
+Image: Tsz Kin (William) Liu and courtesy of studio A.
+
+[Visit studio A website](https://www.studioa.org.au)
+
+All rights reserved.

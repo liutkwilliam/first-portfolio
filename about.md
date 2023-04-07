@@ -13,8 +13,9 @@ Welcome to my online design portfolio, I built this portfolio is not only showin
 
 What do you need to know about me:
 
-- I am experienced in Event Photography (of course there is more I need to learn from)
+- I am experienced photographer including in event photography (of course there is more I need to learn from)
 - I am keen in keep updating my website design whenever new ideas come in
 - I am self-learning new frontend development skills (currently learning ReactJS)
 - I make some digital designs and illustrations.
+- I speak Cantonese and Mandarin.
 - I am learning French and Vietnamese

@@ -38,12 +38,7 @@ fullcv: https://liutkwilliam.github.io/fullcv
 
 # Build settings
 markdown: kramdown
-plugins:
-  # - jekyll-feed
-  - jekyll-paginate
 
-# sass:
-#   sass_dir: "/"
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -64,10 +59,6 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
-
-# run jnvsor/jekyll-php
-# php_path: /contactform.php
-# include: [.php]
 
 collections:
   _portfolio:
@@ -101,7 +92,3 @@ defaults:
       path: "__gallery"
     values:
       layout: "gallery"
-
-# pagination for blog
-paginate: 9
-paginate_path: "blog/page:num/"

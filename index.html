@@ -1,64 +1,20 @@
 ---
 layout: default
 title: 
-description: Check out my creative portfolio in photography, graphic design, website design and UI Design. Based in Sydney, Australia.
+description: A photographer, graphic design, website designer and UI design enthusiast based in Sydney, Australia.
 image: /images/portfolio-cover.png
 ---
-<div id="fullPage">
+<div class="fullPage">
     <div class="full-img-container">
         <img src="{{ page.image | prepend: site.baseurl }}" alt="homepage cover photo">
         <div class="gradient">
-            <div class="overlay-content animated fadeIn">
+            <div class="overlay-content pageTransition">
                 <h1>Hi I am <spam class="text-primary">William Liu</spam></h1>
                 <p class="h4">
                     I am a photographer, graphic design, website designer and UI design enthusiast based in Sydney, Australia
                 </p>
+				<a href="{{ '/portfolio' | prepend: site.baseurl }}" class="btn btn-primary btn-lg my-2">Click here to my design portfolio</a>
             </div>
-			<div class="option-box animated fadeIn">
-				<a href="#portfolio">Scroll down or click here to my design portfolio</a>
-			</div>
         </div>
 	</div>
 </div>
-
-<div class="container-xl" id="portfolio">
-	<section>
-		<!--Type Filter-->
-		<div class="row">
-			<!--Display unless mobile screen size-->
-			<div class="col-md text-center">
-				<div id="myBtnContainer">
-					<a class="btn btn-sm btn-outline-primary active" onclick="filterSelection('all')">Show all</a>
-					{% assign cmap = site._portfolio | map: 'categories' | uniq %}
-					{% assign cats = cmap | sort %}
-					{% for cat in cats %}
-					<a class="btn btn-sm btn-outline-primary" onclick="filterSelection('{{ cat }}')">{{ cat }}</a>
-					{% endfor %}
-				</div>
-			</div>
-		</div>
-	</section>
-	<section>
-		<div class="row">
-			<div class="col-md">
-				<div class="card-columns">
-					{% assign sorted = site._portfolio | sort:"date" | reverse %}
-					{% for _portfolio in sorted %}
-						<div class="filterDiv {{ _portfolio.categories }} card animated fadeIn shadow">
-							<a href="{% if _portfolio.link %}{{ _portfolio.link }}{% else %}{{ _portfolio.url }}{% endif %}" class="box-link">
-								<div class="box">
-									<img src="/images/{% if _portfolio.folder %}{{ _portfolio.folder }}/{% endif %}{{ _portfolio.image }}" alt="{{ _portfolio.slug }}" class="cursor">
-                                    <div class="overlay">
-                                        <h5>{{ _portfolio.title }}</h5>
-                                        <p class="text-uppercase">{{ _portfolio.categories | uniq | join: ", " }}</p>
-                                    </div>	
-                                </div>
-							</a>
-						</div>
-					{% endfor %}
-				</div>
-			</div>
-		</div>
-	</section>
-</div>
-<script src="{{ "/js/portfolio-grid.js" | relative_url }}"></script>

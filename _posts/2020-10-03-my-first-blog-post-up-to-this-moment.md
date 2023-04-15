@@ -1,5 +1,4 @@
 ---
-# layout: post
 title: My First Blog Post - Up to this moment
 date: 2020-10-03 12:00:00 +1000
 categories: Reflection

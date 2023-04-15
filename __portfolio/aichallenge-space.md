@@ -67,4 +67,4 @@ A big heart thanks to Andrew Hochradel for hosting this inspiring space-themed i
 
 ## References
 
-Image reference for[Day 1 Design Challenge](https://www.gannett-cdn.com/presto/2018/09/18/PBRE/de0dcc9c-2d01-46e4-92b4-584807e1ffa0-Screen_Shot_2018-09-18_at_00.40.05.png?crop=3792,2133,x0,y139&width=3200&height=1680&fit=bounds) (Accessed on 16 May 2020)
+Image reference for [Day 1 Design Challenge](https://www.gannett-cdn.com/presto/2018/09/18/PBRE/de0dcc9c-2d01-46e4-92b4-584807e1ffa0-Screen_Shot_2018-09-18_at_00.40.05.png?crop=3792,2133,x0,y139&width=3200&height=1680&fit=bounds) (Accessed on 16 May 2020)

@@ -14,7 +14,7 @@ link:
 ---
 Trail-n-Plan is a personal User Experience (UX) & User Interface (UI) project. It is prototyped in response to my friend's request who want to see a single-app that can plan and manage both trail route and logistics to collect user preferences and automate summaries for this trail running community. Unfortunately, there is yet any similar single-app that achieve it.
 
-<blockquote class="blockquote">
+<blockquote class="project-blockquote">
   <p>“An amateur trail / marathon runner feels complicated to manage manually entered logistic planning data for each group trail running exercises. How may we simplify and automate the planning and data & collection management?”</p>
 </blockquote>
 
@@ -72,20 +72,18 @@ A Google Form online survey is conducted, and received 27 responses.
 - Navigation occasionally becomes inaccurate on some tracks
 
 <div class="row">
-    <div class="col-12 col-md-12">
+    <div class="col-md">
         <div id="chart_div_3"></div>
     </div>
 </div>
 
-
-
-**Others** include: Other comments from trail runners on specific route, Others' performance on the track, Photograph of landmakrs or markes and recommended gear to bring.
+**Others** include: Other comments from trail runners on specific route, Others' performance on the track, Photograph of landmakrs or markes and recommended gear to bring.d
 
 <div class="row">
-    <div class="col-12 col-lg-6">
+    <div class="col-lg">
         <div id="chart_div_4"></div>
     </div>
-    <div class="col-12 col-lg-6">
+    <div class="col-lg">
         <div id="chart_div_5"></div>
     </div>
 </div>
@@ -98,10 +96,10 @@ Given the prototype idea does not have a preexisted reference, the analysis is s
 2. Event / logistics / planning or documenting applications
 
 <div class="row">
-    <div class="col-12 col-md-6">
+    <div class="col-md">
         <img src="/images/trail-n-plan/route-planning-compare.png" class="card-img-top">
     </div>
-    <div class="col-12 col-md-6">
+    <div class="col-md">
         <img src="/images/trail-n-plan/logistics-planning-compare.png" class="card-img-top">
     </div>
 </div>
@@ -164,10 +162,10 @@ This diagram show how each of the features evaluated.
 
 ## Font, colours
 
-<div class="row">
+<div class="row trailnplan">
     <div class="col-md">
         <h3>Colours</h3>
-        <div class="trailnplan">
+        <div>
             <span class="dot"></span>
             <span class="dot"></span>
             <span class="dot"></span>
@@ -178,7 +176,7 @@ This diagram show how each of the features evaluated.
         </div>
         <br>
         <h3>Typography</h3>
-        <div class="trailnplan">
+        <div>
             <p><b>Source Sans Pro (Bold)</b></p>
             <p>Source Sans Pro</p>
         </div>
@@ -202,11 +200,11 @@ This diagram show how each of the features evaluated.
 
 ### Selected preview
 
-<div class="row">
+<div class="row trailnplan">
     {% for screen in site.data.trailnplan-app %}
     <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-        <div class="card trailnplan">
-            <img src="{{ site.baseurl }}/images/trail-n-plan/{{ screen.image }}" alt="Picture of {{screen.title}}" class="card-img-top shadow">
+        <div class="card shadow h-100">
+            <img src="{{ site.baseurl }}/images/trail-n-plan/{{ screen.image }}" alt="Picture of {{screen.title}}" class="card-img-top">
             <div class="card-body">
                 <h5>{{ screen.title }}</h5>
             </div>        
@@ -214,12 +212,6 @@ This diagram show how each of the features evaluated.
     </div>
     {% endfor %}
 </div>
-
-<!-- ### Prototype (via Adobe XD)
-
-<div class="text-center">
-<iframe width="414" height="736" src="https://xd.adobe.com/embed/930f35ea-02a9-4420-aa6c-51c4e7268c36-c65c/?fullscreen" frameborder="0" allowfullscreen></iframe>
-</div> -->
 
 ## Possible Future Development
 

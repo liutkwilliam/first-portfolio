@@ -1,6 +1,7 @@
-
-- name: Work
+- name: Home
   link: /
+- name: Portfolio
+  link: /portfolio
 - name: Misc Designs
   link: /misc-designs
 - name: Photography

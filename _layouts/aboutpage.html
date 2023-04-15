@@ -2,16 +2,14 @@
 layout: page
 ---
 <div class="row">
-	<div class="col-md-5 profileImg">
-		<img src="{{ page.image }}" alt="ProfileImg">
+	<div class="col-md profileImg">
+		<img src="{{ page.image }}" alt="Profile Image">
 	</div>
 	<div class="col-md">
 		{{ content }}
-        <h5>Contact Me</h5>
-        <p class="contact-socials">
-            <i class="fa fa-lg fa-envelope-o"></i>liutk.william (@) gmail.com
-        </p>
         <div class="contact-socials">
+            <h5>Contact Me</h5>
+            <p><i class="fa fa-lg fa-envelope-o"></i> <a href="mailto:{{ site.email }}">liutk.william (@) gmail.com</a></p>
             <h5>Follow</h5>
             {% if site.facebook %}<p><i class="fa fa-lg fa-facebook"></i><a href="https://www.facebook.com/{{ site.facebook }}/">William - Tsz Kin LIU</a></p>{% endif %}
             {% if site.instagram %}<p><i class="fa fa-lg fa-instagram"></i><a href="https://www.instagram.com/{{ site.instagram }}/">@liutk.william</a></p>{% endif %}

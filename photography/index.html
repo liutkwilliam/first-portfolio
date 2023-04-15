@@ -1,0 +1,63 @@
+---
+layout: page
+title: Photography Portfolio
+description: Check out my photography portfolio features what I captures.
+permalink: /photography/
+---
+<section>
+	<div class="row">
+		<div class="col-md text-center">
+			<h1>{{ page.title }}</h1>
+		</div>
+	</div>
+</section>
+<section>
+	<!--Type Filter-->
+	<div class="row">
+		<!--Display unless mobile screen size-->
+		<div class="col-md text-center" id="myBtnContainer">
+			{% assign cmap = site._gallery | map: 'categories' | uniq %}
+			{% assign cats = cmap | sort %}
+			{% for cat in cats %}
+			<a class="btn btn-sm btn-outline-primary text-uppercase" onclick="location.href='#{{ cat }}'">{{ cat }}</a>
+			{% endfor %}
+		</div>
+	</div>
+</section>
+{% assign cmap = site._gallery | map: 'categories' | uniq %}
+{% assign cats = cmap | sort %}
+{% for cat in cats %}
+<section id="{{ cat }}">
+	<div class="row">
+		<div class="col-md">
+			<h2>{{ cat | upcase }}</h2>
+		</div>
+	</div>
+	<div class="row" data-masonry="{&quot;percentPosition&quot;: true }" style="position: relative; height: 690px;">
+		{% assign galleries = site._gallery | sort:"date" | reverse %}				
+		{% for _gallery in galleries %}
+		{% if _gallery.categories contains cat %}
+		<div class="col-sm-6 col-lg-4 mb-4" style="position: absolute;">
+			<div class="{{ _gallery.categories }} card pageTransition shadow">
+				<a href="{% if _gallery.link %}{{ _gallery.link }}{% else %}{{ _gallery.url }}{% endif %}" class="box-link">
+					<div class="box">
+						<img src="/images/album/{{_gallery.foldername}}/{{_gallery.image}}" alt="{{ _gallery.slug }}" class="cursor">
+						<div class="overlay">
+							<div class="centerBox">
+								<div>
+									<h5>{{ _gallery.title }}</h5>
+									<p class="text-uppercase">{{ _gallery.categories | uniq | join: ", " }}</p>
+								</div>
+							</div>
+						</div>					
+					</div>
+				</a>
+			</div>
+		</div>
+		{% endif %}
+		{% endfor %}
+	</div>
+</section>
+{% endfor %}
+<script src="{{ "/js/masonry.pkgd.min.js" | relative_url }}" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+<script src="{{ "/js/portfolio-grid.js" | relative_url }}"></script>

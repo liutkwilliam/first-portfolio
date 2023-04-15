@@ -14,8 +14,10 @@ gem "jekyll", "~> 4.3.2"
 # gem "github-pages", group: :jekyll_plugins
 # If you have any plugins, put them here!
 group :jekyll_plugins do
-  # gem "jekyll-feed", "~> 0.12"
-  # gem "jekyll-paginate"
+  gem "jekyll-feed", "~> 0.12"
+  gem "jekyll-paginate"
+  gem "jekyll-sitemap"
+  gem "jekyll-seo-tag"
 end
 
 # Performance-booster for watching directories on Windows

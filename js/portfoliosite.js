@@ -1,7 +1,7 @@
 // active link on current page function
 
 $(document).ready(function() {
-    $('.nav-link[href="/' + location.pathname.split("/")[1] + '"]').addClass('show');
+    $('.nav-link[href="/' + location.pathname.split("/")[1] + '"]').addClass('active');
 });
 
 // click anywhere to close the mobile menu
@@ -16,8 +16,8 @@ $(function() {
 
 // Go To Top
 window.onscroll = function() {
-  scrollFunction();
   progressFunction();
+  scrollFunction();
 };
 
 function scrollFunction() {
@@ -26,11 +26,6 @@ function scrollFunction() {
     } else {
     document.getElementById("topBtn").classList.remove('show');
     }
-}
-
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
 }
 
 // make external links to open in a new tab
@@ -44,4 +39,9 @@ function progressFunction() {
   var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
   var scrolled = (winScroll / height) * 100;
   document.getElementById("myBar").style.width = scrolled + "%";
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
 }

@@ -39,6 +39,11 @@ fullcv: https://liutkwilliam.github.io/fullcv
 # Build settings
 markdown: kramdown
 
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-paginate
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -64,24 +69,14 @@ collections:
   _portfolio:
       output: true
       permalink: /portfolio/:title/
-  posts:
-      output: true
-      permalink: /blog/:title/
   _gallery:
       output: true
       permalink: /photography/:title/
+  posts:
+      output: true
+      permalink: /blog/:title/
 
 defaults:
-  -
-    scope:
-      path: ""
-    values:
-      layout: "default"
-  -
-    scope:
-      path: "_posts"
-    values:
-      layout: "post"
   -
     scope:
       path: "__portfolio"
@@ -92,3 +87,12 @@ defaults:
       path: "__gallery"
     values:
       layout: "gallery"
+  -
+    scope:
+      path: "_posts"
+    values:
+      layout: "post"
+
+# pagination for Blog
+paginate: 9
+paginate_path: "blog/page:num/"

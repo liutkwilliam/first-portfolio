@@ -1,13 +1,16 @@
-function openModal() {
+  function openModal() {
     document.getElementById("myModal").style.display = "block";
     document.body.style.overflow = "hidden";
-    document.getElementById("header").classList.add("topmenu");
+    document.getElementById("header").classList.add("belowModal");
+    document.getElementById("barContainer").classList.add("belowModal");
+    
   }
   
   function closeModal() {
     document.getElementById("myModal").style.display = "none";
     document.body.style.overflow = "auto";
-    document.getElementById("header").classList.remove("topmenu");
+    document.getElementById("header").classList.remove("belowModal");
+    document.getElementById("barContainer").classList.remove("belowModal");
   }
   
   var slideIndex = 1;

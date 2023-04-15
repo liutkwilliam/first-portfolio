@@ -1,22 +1,29 @@
-<!--header section-->
-<!-- <div class="progress-container">
+<div class="progress-container" id="barContainer">
 	<div class="progress-bar" id="myBar"></div>
-</div> -->
-<header>
-	<nav class="navbar navbar-expand-md navbar-light bg-white fixed-top" id="header">
-		<a class="navbar-brand" href="{{'/'}}"><img alt="Page Logo" src="{{ site.logo-reg }}"><span class="logo-text">Tsz Kin LIU (William)</span></a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07XL" aria-controls="navbarsExample07XL" aria-expanded="false" aria-label="Toggle navigation">
-		<span class="navbar-toggler-icon"></span>
+</div>
+<header class="container-fluid">
+	<nav class="navbar navbar-expand-md bg-white fixed-top border-bottom my-1" id="header">
+		<a class="navbar-brand" href="{{ '/' }}">
+			<img alt="Page Logo" src="{{ site.logo-reg }}" style="height:40px;" class="d-inline-block align-text-middle pe-2">
+			Tsz Kin LIU (William)
+		</a>
+		<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
 		</button>
-		<div class="navbar-collapse collapse w-100 order-3 dual-collapse2" id="navbarsExample07XL">
-		<ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-			{% for item in site.data.nav %}
-			<li class="nav-item">
-			<a class="nav-link text-uppercase" href="{{site.baseurl}}{{item.link}}">{{ item.name }}</a>
-			</li>
-			{% endfor %}
-
-		</ul>
+		<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+			<div class="offcanvas-header">
+				<h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+			</div>
+			<div class="offcanvas-body">
+				<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+					{% for item in site.data.nav %}
+					<li class="nav-item">
+						<a class="nav-link" href="{{ item.link }}">{{ item.name }}</a>
+					</li>
+					{% endfor %}
+				</ul>
+			</div>
 		</div>
 	</nav>
 </header>

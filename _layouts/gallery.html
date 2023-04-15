@@ -1,39 +1,34 @@
 ---
-layout: default
+layout: page
 ---
-<div class="container-xl">
-	<section class="galleryHead">
-		<div class="row">
-			<div class="col-md text-md-left text-center">
-				<p class="lead text-capitalize text-muted">Photography</p>
-				<h1 class="text-primary">{{ page.title }}</h1>
-				<h5>{{ page.date | date: "%Y" }}</h5>
-				<p class="text-uppercase text-muted">Type: {% assign cat = page.categories | uniq %}{{ cat | sort | join: ", " }}</p>
-				<p>{{ page.content }}</p>
+<section class="galleryHead">
+	<div class="row">
+		<div class="col-md">
+			<p class="lead text-capitalize text-muted">Photography</p>
+			<h1 class="text-primary">{{ page.title }}</h1>
+			<h5>{{ page.date | date: "%Y" }}</h5>
+			<p class="text-uppercase text-muted">Type: {% assign cat = page.categories | uniq %}{{ cat | sort | join: ", " }}</p>
+			<p>{{ page.content }}</p>
+		</div>
+	</div>
+</section>
+<section>
+	<div class="row" data-masonry="{&quot;percentPosition&quot;: true }" style="position: relative; height: 690px;">
+		{% for image in page.images %}
+		<div class="col-sm-6 col-lg-4 mb-4" style="position: absolute;">
+			<div class="card cursor">
+				<img 
+				src="{{site.baseurl}}/images/album/{{page.foldername}}/{{image.image_path}}" 
+				alt="Image {{ forloop.index }} of {{ page.title }}" 
+				onclick="openModal();currentSlide({{ forloop.index }})"
+				class="card-img-top"
+				>
 			</div>
 		</div>
-	</section>
-</div>
-<div class="container-xl">
-	<section>
-		<div class="row">
-			<div class="col-md">
-				<div class="card-columns">
-					{% for image in page.images %}
-						<div class="card">
-							<img 
-							src="{{site.baseurl}}/images/album/{{page.foldername}}/{{image.image_path}}" 
-							alt="Image {{ forloop.index }} of {{ page.title }}" 
-							onclick="openModal();currentSlide({{ forloop.index }})"
-							class="card-img-top cursor"
-							>
-						</div>
-					{% endfor %}
-				</div>
-			</div>
-		</div>
-	</section>
-</div>
+		{% endfor %}
+	</div>
+	<script src="{{ "/js/masonry.pkgd.min.js" | relative_url }}" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+</section>
 
 <div id="myModal" class="modalGallery">
 	<span class="close" onclick="closeModal()">&times;</span>
@@ -47,10 +42,8 @@ layout: default
 			</div>
 		</div>
 	  	{% endfor %}
-	  
-	  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-	  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
 	</div>
 </div>
 <script src="{{ "/js/modal-overlay.js" | relative_url }}"></script>

@@ -9,10 +9,10 @@ exclude: true
     window.history.back();
   }
 </script>
-<div class="notFoundPage text-center">
-  <p><img src="{{'/images/404help.svg' | prepend: site.baseurl }}" class="logo-large" alt="404 error help image"></p>
+<div class="text-center my-5">
+  <img src="{{'/images/404help.svg' | prepend: site.baseurl }}" alt="404 error help image" class="my-5" style="width: 20rem;">
   <h1>Ouch!</h1>
-  <p>The page you were looking is not available. Check the url and try again.</p>
+  <p>The page you were looking is missing.</p>
   <div>
       <button class="btn btn-lg btn-outline-primary" onclick="goBack()">Go Back</button>
       <a href="{{'/' | prepend: site.baseurl }}" class="btn btn-lg btn-primary">Take me to homepage</a>

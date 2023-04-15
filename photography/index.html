@@ -38,7 +38,7 @@ permalink: /photography/
 		{% for _gallery in galleries %}
 		{% if _gallery.categories contains cat %}
 		<div class="col-sm-6 col-lg-4 mb-4" style="position: absolute;">
-			<div class="{{ _gallery.categories }} card pageTransition shadow">
+			<div class="{{ _gallery.categories }} card border-primary pageTransition">
 				<a href="{% if _gallery.link %}{{ _gallery.link }}{% else %}{{ _gallery.url }}{% endif %}" class="box-link">
 					<div class="box">
 						<img src="/images/album/{{_gallery.foldername}}/{{_gallery.image}}" alt="{{ _gallery.slug }}" class="cursor">

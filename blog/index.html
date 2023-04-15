@@ -15,7 +15,7 @@ description: Check out my latest blog
 	<div class="row">
 		{% for post in paginator.posts %}
 		<div class="col-sm-6 col-lg-4 mb-4">
-			<div class="card {{ post.categories }} pageTransition shadow">
+			<div class="card {{ post.categories }} border-primary pageTransition">
 				<img src="/images/blog/{{ post.image | prepend: site.baseurl }}" alt="Image for {{ post.title }}" class="card-img-top">
 				<div class="card-body">
 					<strong class="d-inline-block mb-2 text-primary text-capitalize">{{ post.categories }}</strong>    

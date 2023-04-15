@@ -16,7 +16,7 @@ layout: page
 	<div class="row" data-masonry="{&quot;percentPosition&quot;: true }" style="position: relative; height: 690px;">
 		{% for image in page.images %}
 		<div class="col-sm-6 col-lg-4 mb-4" style="position: absolute;">
-			<div class="card cursor">
+			<div class="card border-primary cursor">
 				<img 
 				src="{{site.baseurl}}/images/album/{{page.foldername}}/{{image.image_path}}" 
 				alt="Image {{ forloop.index }} of {{ page.title }}" 

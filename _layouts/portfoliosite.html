@@ -42,7 +42,7 @@ layout: page
   <div class="row" data-masonry="{&quot;percentPosition&quot;: true }" style="position: relative; height: 690px;">
     {% for image in page.images %}
     <div class="col-sm-6 mb-4" style="position: absolute;">
-      <div class="card border-primary shadow pageTransition cursor" onclick="openModal();currentSlide({{ forloop.index }})">
+      <div class="card border-primary pageTransition cursor" onclick="openModal();currentSlide({{ forloop.index }})">
         <img 
           src="/images/{% if page.folder %}{{ page.folder }}/{% endif %}{{ image.image_path }}" 
           alt="Image of {{ images.title }}"

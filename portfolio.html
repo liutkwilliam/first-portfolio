@@ -17,10 +17,10 @@ image: /images/portfolio-cover.png
 			{% assign sorted = site._portfolio | sort:"date" | reverse %}
 			{% for _portfolio in sorted %}
 			<div class="col-sm-6 col-lg-4 mb-4" style="position: absolute;">
-				<div class="card pageTransition shadow">
-					<a href="{% if _portfolio.link %}{{ _portfolio.link }}{% else %}{{ _portfolio.url }}{% endif %}" class="box-link">
+				<div class="card border-primary pageTransition">
+					<a href="{% if _portfolio.link %}{{ _portfolio.link }}{% else %}{{ _portfolio.url }}{% endif %}">
 						<div class="box">
-							<img src="/images/{% if _portfolio.folder %}{{ _portfolio.folder }}/{% endif %}{{ _portfolio.image }}" alt="{{ _portfolio.slug }}" class="cursor">
+							<img src="/images/{% if _portfolio.folder %}{{ _portfolio.folder }}/{% endif %}{{ _portfolio.image }}" alt="{{ _portfolio.slug }}" class="card-img-top">
 							<div class="overlay">
 								<div class="centerBox">
 									<div>

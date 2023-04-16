@@ -13,7 +13,7 @@ image: /images/portfolio-cover.png
 		</div>
 	</section>
 	<section>
-		<div class="row" data-masonry="{&quot;percentPosition&quot;: true }" style="position: relative; height: 690px;">
+		<div class="row" data-masonry="{&quot;percentPosition&quot;: true }">
 			{% assign sorted = site._portfolio | sort:"date" | reverse %}
 			{% for _portfolio in sorted %}
 			<div class="col-sm-6 col-lg-4 mb-4" style="position: absolute;">

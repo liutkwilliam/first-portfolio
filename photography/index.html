@@ -33,7 +33,7 @@ permalink: /photography/
 			<h2>{{ cat | upcase }}</h2>
 		</div>
 	</div>
-	<div class="row" data-masonry="{&quot;percentPosition&quot;: true }" style="position: relative; height: 690px;">
+	<div class="row" data-masonry="{&quot;percentPosition&quot;: true }">
 		{% assign galleries = site._gallery | sort:"date" | reverse %}				
 		{% for _gallery in galleries %}
 		{% if _gallery.categories contains cat %}

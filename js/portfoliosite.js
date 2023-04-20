@@ -1,7 +1,7 @@
 // active link on current page function
 
 $(document).ready(function() {
-    $('.nav-link[href="/' + location.pathname.split("/")[1] + '"]').addClass('active');
+    $('.nav-link[href="/' + location.pathname.split("/")[1] + '"]').addClass('active-link');
 });
 
 // click anywhere to close the mobile menu

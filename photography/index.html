@@ -33,7 +33,7 @@ permalink: /photography/
 			<h2>{{ cat | upcase }}</h2>
 		</div>
 	</div>
-	<div class="row" data-masonry='{"percentPosition": true }'>
+	<div class="row project-section" data-masonry='{"percentPosition": true }'>
 		{% assign galleries = site._gallery | sort:"date" | reverse %}				
 		{% for _gallery in galleries %}
 		{% if _gallery.categories contains cat %}
@@ -41,7 +41,7 @@ permalink: /photography/
 			<div class="{{ _gallery.categories }} card border-primary pageTransition">
 				<a href="{% if _gallery.link %}{{ _gallery.link }}{% else %}{{ _gallery.url }}{% endif %}" class="box-link">
 					<div class="box">
-						<img src="/images/album/{{_gallery.foldername}}/{{_gallery.image}}" alt="{{ _gallery.slug }}" class="cursor">
+						<img src="/images/album/{{_gallery.foldername}}/{{_gallery.image}}" alt="{{ _gallery.slug }}" class="card-img-top cursor">
 						<div class="overlay">
 							<div class="centerBox">
 								<div>

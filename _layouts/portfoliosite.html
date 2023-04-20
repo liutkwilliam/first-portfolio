@@ -39,7 +39,7 @@ layout: page
 
 {% if page.images %}
 <section>
-  <div class="row" data-masonry='{"percentPosition": true }'>
+  <div class="row project-section" data-masonry='{"percentPosition": true }'>
     {% for image in page.images %}
     <div class="col-sm-6 mb-4">
       <div class="card border-primary pageTransition cursor" onclick="openModal();currentSlide({{ forloop.index }})">

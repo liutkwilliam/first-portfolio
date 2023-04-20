@@ -1,20 +1,22 @@
 <section>
     <div class="row">
-      <div class="card-columns">
-        {% for image in page.images %}
-          <div class="card border-primary pageTransition cursor" onclick="openModal();currentSlide({{ forloop.index }})">
-            <img 
-              src="/images/{% if page.folder %}{{ page.folder }}/{% endif %}{{ image.image_path }}" 
-              alt="Image {{ forloop.index }} of {{ page.title }}"
-              class="card-img-top"
-            >
-            {% if image.title %}
-            <div class="card-body text-center text-primary">
-              <h6>{{ image.title }} {% if image.date %}({{ image.date | date: "%Y"}}){% endif %}</h6>
+      <div class="col-md">
+        <div class="card-columns">
+          {% for image in page.images %}
+            <div class="card border-primary pageTransition cursor" onclick="openModal();currentSlide({{ forloop.index }})">
+              <img 
+                src="/images/{% if page.folder %}{{ page.folder }}/{% endif %}{{ image.image_path }}" 
+                alt="Image {{ forloop.index }} of {{ page.title }}"
+                class="card-img-top"
+              >
+              {% if image.title %}
+              <div class="card-body text-center text-primary">
+                <h6>{{ image.title }} {% if image.date %}({{ image.date | date: "%Y"}}){% endif %}</h6>
+              </div>
+              {% endif %}					
             </div>
-            {% endif %}					
-          </div>
-        {% endfor %}
+          {% endfor %}
+        </div>
       </div>
     </div>
 </section>

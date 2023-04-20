@@ -31,13 +31,15 @@ filtered: false
 		</div>
 	</div>
 	<div class="row">
-		<div class="card-columns">
-			{% assign galleries = site._gallery | sort:"date" | reverse %}				
-			{% for card in galleries %}
-			{% if card.categories contains cat %}
-				{% include portfolio-box.html %}
-			{% endif %}
-			{% endfor %}
+		<div class="col-md">
+			<div class="card-columns">
+				{% assign galleries = site._gallery | sort:"date" | reverse %}				
+				{% for card in galleries %}
+				{% if card.categories contains cat %}
+					{% include portfolio-box.html %}
+				{% endif %}
+				{% endfor %}
+			</div>
 		</div>
 	</div>
 </section>

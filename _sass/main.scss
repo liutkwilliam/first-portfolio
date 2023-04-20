@@ -23,8 +23,8 @@ $navbar-light-active-color: $primary;
 $navbar-nav-link-padding-x: .7rem;
 $nav-link-font-weight: 500;
 
-// 1d. jumbotron
-$jumbotron-bg: none;
+// 1d. card
+$card-border-radius: 0;
 
 // 1e. responsive
 $container-max-widths: (
@@ -229,6 +229,10 @@ section {
 }
 
 // 4d. Boxes for cards
+.project-section {
+  min-height: 50vh;
+}
+
 .box {
   align-items: center;
   justify-items: center;

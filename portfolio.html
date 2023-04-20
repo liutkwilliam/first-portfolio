@@ -14,7 +14,7 @@ permalink: /portfolio/
 		</div>
 	</section>
 	<section>
-		<div class="row" data-masonry='{"percentPosition": true }'>
+		<div class="row project-section" data-masonry='{"percentPosition": true }'>
 			{% assign sorted = site._portfolio | sort:"date" | reverse %}
 			{% for _portfolio in sorted %}
 			<div class="col-sm-6 col-lg-4 mb-4">

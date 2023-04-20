@@ -4,6 +4,7 @@ title: Design Portfolio
 description: Check out my creative portfolio in photography, graphic design, website design and UI Design.
 image: /images/portfolio-cover.png
 permalink: /portfolio/
+filtered: false
 ---
 <div class="container-xl" id="portfolio">
 	<section>
@@ -12,31 +13,26 @@ permalink: /portfolio/
 				<h1>{{ page.title }}</h1>
 			</div>
 		</div>
+		<div class="row">
+			<div class="col-md text-center" id="myBtnContainer">
+				<a class="btn btn-sm btn-outline-primary active text-uppercase" onclick="filterSelection('all')">Show all</a>
+				{% assign cmap = site._portfolio | map: 'categories' | uniq %}
+				{% assign cats = cmap | sort %}
+				{% for cat in cats %}
+				<a class="btn btn-sm btn-outline-primary text-uppercase" onclick="filterSelection('{{ cat }}')">{{ cat }}</a>
+				{% endfor %}
+			</div>
+		</div>
 	</section>
 	<section>
-		<div class="row project-section" data-masonry='{"percentPosition": true }'>
-			{% assign sorted = site._portfolio | sort:"date" | reverse %}
-			{% for _portfolio in sorted %}
-			<div class="col-sm-6 col-lg-4 mb-4">
-				<div class="card border-primary pageTransition">
-					<a href="{% if _portfolio.link %}{{ _portfolio.link }}{% else %}{{ _portfolio.url }}{% endif %}">
-						<div class="box">
-							<img src="/images/{% if _portfolio.folder %}{{ _portfolio.folder }}/{% endif %}{{ _portfolio.image }}" alt="{{ _portfolio.slug }}" class="card-img-top">
-							<div class="overlay">
-								<div class="centerBox">
-									<div>
-										<h5>{{ _portfolio.title }}</h5>
-										<p class="text-uppercase">{{ _portfolio.categories | uniq | join: ", " }}</p>
-									</div>
-								</div>
-							</div>	
-						</div>
-					</a>
-				</div>
+		<div class="row">
+			<div class="card-columns">
+				{% assign sorted = site._portfolio | sort:"date" | reverse %}
+				{% for card in sorted %}		
+					{% include portfolio-box.html %}
+				{% endfor %}
 			</div>
-			{% endfor %}
 		</div>
-		<script src="{{ "/js/masonry.pkgd.min.js" | relative_url }}" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
 	</section>
 </div>
 <script src="{{ "/js/portfolio-grid.js" | relative_url }}"></script>

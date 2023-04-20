@@ -5,7 +5,7 @@ description: Selected photos of can-did photography from the the 40th Year of th
 categories: 
 - can-did & events
 organisation:
-foldername: sydmardigras40
+folder: sydmardigras40
 date: 2018-03-03 23:00:00 +1000
 image: sydmardigras40-007.jpg
 images:

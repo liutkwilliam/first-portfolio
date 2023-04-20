@@ -5,7 +5,7 @@ description: A fine arts photographic series of tree portraits expressing memori
 categories: 
 - fine arts
 organisation:
-foldername: foreign-roots
+folder: foreign-roots
 date: 2018-06-08 15:00:00 +1000
 slug: foreign-roots
 image: williamliu_a2_final_004.jpg

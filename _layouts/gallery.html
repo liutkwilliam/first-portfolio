@@ -12,38 +12,6 @@ layout: page
 		</div>
 	</div>
 </section>
-<section>
-	<div class="row project-section" data-masonry='{"percentPosition": true }'>
-		{% for image in page.images %}
-		<div class="col-sm-6 col-lg-4 mb-4">
-			<div class="card border-primary cursor">
-				<img 
-				src="{{site.baseurl}}/images/album/{{page.foldername}}/{{image.image_path}}" 
-				alt="Image {{ forloop.index }} of {{ page.title }}" 
-				onclick="openModal();currentSlide({{ forloop.index }})"
-				class="card-img-top"
-				>
-			</div>
-		</div>
-		{% endfor %}
-	</div>
-	<script src="{{ "/js/masonry.pkgd.min.js" | relative_url }}" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
-</section>
+{% include portfolio-image.html %}
 
-<div id="myModal" class="modalGallery">
-	<span class="close" onclick="closeModal()">&times;</span>
-	<div class="modalContent">
-		{% for image in page.images %}
-		<div class="mySlides">
-			<div class="centerBox">
-				<div class="centerImage">
-					<img src="{{site.baseurl}}/images/album/{{page.foldername}}/{{image.image_path}}">
-				</div>
-			</div>
-		</div>
-	  	{% endfor %}
-		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-		<a class="next" onclick="plusSlides(1)">&#10095;</a>
-	</div>
-</div>
-<script src="{{ "/js/modal-overlay.js" | relative_url }}"></script>
+{% include portfolio-modal.html %}

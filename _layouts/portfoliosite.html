@@ -38,45 +38,9 @@ layout: page
 </section>
 
 {% if page.images %}
-<section>
-  <div class="row project-section" data-masonry='{"percentPosition": true }'>
-    {% for image in page.images %}
-    <div class="col-sm-6 mb-4">
-      <div class="card border-primary pageTransition cursor" onclick="openModal();currentSlide({{ forloop.index }})">
-        <img 
-          src="/images/{% if page.folder %}{{ page.folder }}/{% endif %}{{ image.image_path }}" 
-          alt="Image of {{ images.title }}"
-          class="card-img-top"
-        >
-        {% if image.title %}
-        <div class="card-body text-center text-primary">
-          <h6>{{ image.title }} {% if image.date %}({{ image.date | date: "%Y"}}){% endif %}</h6>
-        </div>
-        {% endif %}					
-      </div>
-    </div>
-    {% endfor %}
-  </div>
-  <script src="{{ "/js/masonry.pkgd.min.js" | relative_url }}" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
-</section>
+  {% include portfolio-image.html %}
 {% endif %}
 
 {% if page.images %}
-<div id="myModal" class="modalGallery">
-	<span class="close" onclick="closeModal()">&times;</span>
-	<div class="modalContent">
-		{% for image in page.images %}
-		<div class="mySlides">
-			<div class="centerBox">
-				<div class="centerImage">
-					<img src="/images/{% if page.folder %}{{ page.folder }}/{% endif %}{{ image.image_path }}">
-				</div>
-			</div>
-		</div>
-    {% endfor %}
-	  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-	  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-	</div>
-</div>
-<script src="{{ "/js/modal-overlay.js" | relative_url }}"></script>
+  {% include portfolio-modal.html %}
 {% endif %}

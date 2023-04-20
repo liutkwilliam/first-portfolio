@@ -5,7 +5,7 @@ description: Vivid Sydney 2022 returned after 2 years of cancellations. The even
 categories: 
 - city, landscape and street
 organisation:
-foldername: vividsydney2022
+folder: vividsydney2022
 date: 2022-06-18 12:00:00 +1000
 image: vividsydney2022-bestpicks-17.jpg
 images:

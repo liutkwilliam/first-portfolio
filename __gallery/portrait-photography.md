@@ -5,7 +5,7 @@ description: Selected photos of portrait photography works.
 categories: 
 - portrait
 organisation:
-foldername: portrait-photography
+folder: portrait-photography
 date: 2018-03-10 12:00:00 +1000
 image: 20170401_SYD_UNSWPhotoClub_WatsonsBay-0185.jpg
 images:

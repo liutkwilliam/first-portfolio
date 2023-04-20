@@ -5,7 +5,7 @@ description: A fine arts photographic series of double exposed of cityscape and 
 categories: 
 - fine arts
 organisation:
-foldername: double-exposed-photos
+folder: double-exposed-photos
 date: 2016-11-02 18:00:00 +1000
 image: WilliamLIU_2405_AT3_Print_012.jpg
 images:

@@ -5,7 +5,7 @@ description: Travelled to Dubai and Abu Dhabi, UAE during Christmas holiday in 2
 categories: 
 - city, landscape and street
 organisation:
-foldername: dubai-2017
+folder: dubai-2017
 date: 2017-12-30 12:00:00 +1000
 image: 20171224_DXB_DubaiTrip-0634-Edit.jpg
 images:

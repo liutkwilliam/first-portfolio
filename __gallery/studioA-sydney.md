@@ -5,36 +5,36 @@ description: Selected photos of can-did photography while working with studio A,
 categories:
 - can-did & events
 organisation:
-foldername: studio-a-public-work
+folder: studio-a-public-work
 date: 2022-11-02 23:00:00 +1000
 image: 20221102-IMG_6725.jpg
 images:
   - image_path: 20210303-IMG_8438.jpg
-    title: Thom Roberts and Shane Simpson AM
+    title: Sketching for Archibald Prize Entry
     date: 2021-03-03 23:00:00 +10:00 
   - image_path: 20210303-IMG_8486.jpg
-    title: Thom Roberts and Shane Simpson AM
+    title: Sketching for Archibald Prize Entry
     date: 2021-03-03 23:00:00 +10:00 
   - image_path: 20210310_IMG_8551.jpg
-    title: Emily Crockford and Trent Zimmerman MP
+    title: Sketching for Archibald Prize Entry
     date: 2021-03-10 23:00:00 +10:00 
   - image_path: 20210310_IMG_8595.jpg
-    title: Emily Crockford and Trent Zimmerman MP
+    title: Sketching for Archibald Prize Entry
     date: 2021-03-10 23:00:00 +10:00
   - image_path: 20210310_IMG_8602.jpg
-    title: Emily Crockford
+    title: Sketching for Archibald Prize Entry
     date: 2021-03-10 23:00:00 +10:00
   - image_path: 20210310_IMG_8616.jpg
-    title: Jaycee Kim
+    title: Sketching for Archibald Prize Entry
     date: 2021-03-10 23:00:00 +10:00
   - image_path: 20210310_IMG_8624.jpg
-    title: studio A
+    title: Sketching for Archibald Prize Entry
     date: 2021-03-10 23:00:00 +10:00
   - image_path: 20210310_IMG_8645.jpg
-    title: Victoria Atkinson
+    title: Sketching for Archibald Prize Entry
     date: 2021-03-10 23:00:00 +10:00
   - image_path: 20210310_IMG_8679.jpg
-    title: Jaycee Kim, Victoria Atkinson, Emily Crockford and Trent Zimmerman MP
+    title: Sketching for Archibald Prize Entry
     date: 2021-03-10 23:00:00 +10:00
   - image_path: 20220202-IMG_1935.jpg
     title: Thom Roberts and Shelley Simpson
@@ -77,15 +77,17 @@ Selected photos of can-did photography while William is working with studio A, a
 
 The photos are published in studio A's social media including Facebook, Instagram and LinkedIn. 
 
-studio A is a Sydney based arts company that provides professional development for artists with intellectual disabilities. Learn more their mission [here](https://www.studioa.org.au/about).
+studio A is a Sydney based arts company that provides professional development for artists with intellectual disabilities. Learn more their mission [here](https://www.studioa.org.au/).
 
-Artists appeared: Victoria Atkinson, Emily Crockford, Jaycee Kim, Catherine McGuinness, Thom Roberts, Meagan Pelham, Daniel Kim.
+Artists (in the order of appearance): 
 
-Guests appeared: Shane Simpson AM (Chair of Board, studio A Limited), Trent Zimmerman MP (Federal Member for North Sydney), Shelly Simpson (Mud Australia), Ausgrid and Tim James MP (NSW NSW Member for Willoughby).
+Victoria Atkinson, Emily Crockford, Jaycee Kim, Catherine McGuinness, Thom Roberts, Meagan Pelham, Daniel Kim
+
+Guests appeared:
+
+Shane Simpson AM (Chair of Board, studio A Limited), Trent Zimmerman MP (Federal Member for North Sydney), Shelly Simpson (Mud Australia), Ausgrid, Tim James MP (NSW NSW Member for Willoughby)
 
 Image: Tsz Kin (William) Liu and courtesy of studio A.
-
-[Visit studio A website](https://www.studioa.org.au)
 
 All rights reserved.
 

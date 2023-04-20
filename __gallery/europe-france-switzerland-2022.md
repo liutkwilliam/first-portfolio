@@ -5,7 +5,7 @@ description: Selected photos of travel photography in France (Paris, Chamonoix) 
 categories: 
 - city, landscape and street
 organisation:
-foldername: europe-france-switzerland-2022
+folder: europe-france-switzerland-2022
 date: 2022-09-13 12:00:00 +1000
 image: 20220908-IMG_1192.jpg
 images:

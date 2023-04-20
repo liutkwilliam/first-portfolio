@@ -1,0 +1,17 @@
+<div id="myModal" class="modalGallery">
+	<a class="close fa fa-times" onclick="closeModal()"></a>
+	<div class="modalContent">
+		{% for image in page.images %}
+		<div class="mySlides">
+			<div class="centerBox">
+				<div class="centerImage">
+					<img src="/images/{% if page.folder %}{{ page.folder }}/{% endif %}{{ image.image_path }}">
+				</div>
+			</div>
+		</div>
+    {% endfor %}
+	  <a class="prev fa fa-chevron-left" onclick="plusSlides(-1)"></a>
+	  <a class="next fa fa-chevron-right" onclick="plusSlides(1)"></a>
+	</div>
+</div>
+<script src="{{ "/js/modal-overlay.js" | relative_url }}"></script>

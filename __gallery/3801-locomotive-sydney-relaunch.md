@@ -5,7 +5,7 @@ description: Australian Locomotive 3801 relaunched in Sydney on 13th March 2021 
 categories: 
 - city, landscape and street
 organisation:
-foldername: locomotive-3801-sydney-relaunch
+folder: locomotive-3801-sydney-relaunch
 date: 2021-03-13 12:00:00 +1000
 image: locomotive-3801-sydney-relaunch-001.jpg
 images:

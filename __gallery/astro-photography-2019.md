@@ -5,7 +5,7 @@ description: A showcase of my astro photography work captured while on a trip tr
 categories: 
 - city, landscape and street
 organisation:
-foldername: astro-2019
+folder: astro-2019
 date: 2019-10-17 12:00:00 +1000
 image: astro-2019-001.jpg
 images:

@@ -5,7 +5,7 @@ description: Selected photos of street photography in Sydney Inner West suburbs 
 categories: 
 - city, landscape and street
 organisation:
-foldername: sydney-rozelle-balmain
+folder: sydney-rozelle-balmain
 date: 2022-07-12 12:00:00 +1000
 image: sydney-rozelle-balmain-03.jpg
 images:

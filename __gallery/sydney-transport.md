@@ -5,7 +5,7 @@ description: Selected photos of Sydney transportation from the city.
 categories: 
 - city, landscape and street
 organisation:
-foldername: sydney-transport
+folder: sydney-transport
 date: 2021-03-28 12:00:00 +1000
 image: 20211221-IMG_3471.jpg
 images:

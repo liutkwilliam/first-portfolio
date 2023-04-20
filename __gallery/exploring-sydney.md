@@ -5,7 +5,7 @@ description: Selected photos of Sydney Harbour, CBD and Vantage Points.
 categories: 
 - city, landscape and street
 organisation:
-foldername: sydney
+folder: sydney-photos
 date: 2020-07-07 12:00:00 +1000
 image: 20171108_SYD_ClassicVantage-0100.jpg
 images:

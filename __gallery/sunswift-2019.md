@@ -5,7 +5,7 @@ description: selected Photos taken during my participation with UNSW Solar Racin
 categories: 
 - can-did & events
 organisation:
-foldername: sunswift-2019
+folder: sunswift-2019
 date: 2019-12-17 12:00:00 +1000
 image: 20191015-SS-BWSC19-IMG_1792.jpg
 images:

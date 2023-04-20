@@ -6,7 +6,7 @@ categories:
 - can-did & events
 - sport
 organisation:
-foldername: unswglobal-contributions-sport
+folder: unswglobal-contributions-sport
 date: 2018-03-01 12:00:00 +1000
 image: unswglobal-2018-sport-008.jpg
 images:

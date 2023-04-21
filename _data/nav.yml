@@ -10,5 +10,5 @@
 #   link: /blog
 - name: About
   link: /about
-- name: CV
-  link: https://liutkwilliam.github.io/fullcv
+# - name: CV
+#   link: https://liutkwilliam.github.io/fullcv

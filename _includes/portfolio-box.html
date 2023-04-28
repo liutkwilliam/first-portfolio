@@ -1,4 +1,4 @@
-<div class="{% if page.filtered == true %}filterDiv {% endif %}{{ card.categories }} card border-primary pageTransition">
+<div class="{% if page.filtered == true %}filterDiv {% endif %}{{ card.categories }} card shadow border-primary pageTransition">
     <a href="{% if card.link %}{{ card.link }}{% else %}{{ card.url }}{% endif %}">
         <img src="/images/{% if card.folder %}{{ card.folder }}/{% endif %}{{ card.image }}" alt="{{ card.slug }}" class="card-img-top">
         <div class="box">

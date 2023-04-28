@@ -1,6 +1,6 @@
 ---
 layout: gallery
-title: Event Photographs Contribution to UNSW Global
+title: Event Photographs @ UNSW Global
 description: My event photographs contribution to UNSW Global in 2018
 categories: 
 - can-did & events

@@ -3,7 +3,7 @@ layout: gallery
 title: Portrait Photography Portfolio
 description: Selected photos of portrait photography works.
 categories: 
-- portrait
+- objects, portraits and still
 organisation:
 folder: portrait-photography
 date: 2018-03-10 12:00:00 +1000

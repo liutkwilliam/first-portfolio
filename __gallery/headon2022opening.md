@@ -28,3 +28,5 @@ Selected photos of can-did photography from the launch of Head On Photo Festival
 The photos are published in Head On Photo Festival's website, social media including Facebook, Instagram and LinkedIn.
 
 All rights reserved to William with usage permission granted to Head On Foundation.
+
+<a href="https://www.headon.org.au/" class="btn btn-primary">Visit Head On Photo Festival Website</a>

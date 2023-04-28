@@ -34,6 +34,8 @@ Artists works appeared:
 
 Matthew Elliott, Emily Crockford, Lauren Kerjan, Daniel Kim, Catherine McGuiness, Meagan Pelham, Damian Showyin and Phil Sidney.
 
-Image: Tsz Kin (William) Liu and courtesy of studio A.
+Image: Tsz Kin (William) Liu and artworks courtesy of studio A.
 
 All rights reserved.
+
+<a href="https://www.studioa.org.au/" class="btn btn-primary">Visit studio A Website</a>

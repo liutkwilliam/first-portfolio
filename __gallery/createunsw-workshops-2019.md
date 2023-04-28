@@ -35,6 +35,6 @@ While William was studying at UNSW, he joined CREATE UNSW, a student-led maker c
 
 Photos taken between February 2019 and April 2019.
 
-More info about CREATE UNSW can be visited [here](https://www.createunsw.com.au).
-
 All rights reserved to William with usage permission granted to CREATE NSW Inc. (CREATE UNSW).
+
+<a href="https://www.createunsw.com.au" class="btn btn-primary">Visit CREATE UNSW Website</a>

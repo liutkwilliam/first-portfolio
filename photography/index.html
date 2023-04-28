@@ -16,7 +16,7 @@ filtered: false
 			{% assign cmap = site._gallery | map: 'categories' | uniq %}
 			{% assign cats = cmap | sort %}
 			{% for cat in cats %}
-			<a class="btn btn-sm btn-outline-primary text-uppercase" onclick="location.href='#{{ cat }}'">{{ cat }}</a>
+			<a class="btn btn-sm btn-outline-primary text-uppercase m-1" onclick="location.href='#{{ cat }}'">{{ cat }}</a>
 			{% endfor %}
 		</div>
 	</div>

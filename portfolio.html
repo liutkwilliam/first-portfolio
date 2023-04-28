@@ -15,11 +15,11 @@ filtered: true
 		</div>
 		<div class="row">
 			<div class="col-md text-center" id="myBtnContainer">
-				<a class="btn btn-sm btn-outline-primary active text-uppercase" onclick="filterSelection('all')">Show all</a>
+				<a class="btn btn-sm btn-outline-primary active text-uppercase m-1" onclick="filterSelection('all')">Show all</a>
 				{% assign cmap = site._portfolio | map: 'categories' | uniq %}
 				{% assign cats = cmap | sort %}
 				{% for cat in cats %}
-				<a class="btn btn-sm btn-outline-primary text-uppercase" onclick="filterSelection('{{ cat }}')">{{ cat }}</a>
+				<a class="btn btn-sm btn-outline-primary text-uppercase m-1" onclick="filterSelection('{{ cat }}')">{{ cat }}</a>
 				{% endfor %}
 			</div>
 		</div>

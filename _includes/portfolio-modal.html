@@ -6,12 +6,23 @@
 			<div class="centerBox">
 				<div class="centerImage">
 					<img src="/images/{% if page.folder %}{{ page.folder }}/{% endif %}{{ image.image_path }}">
+					{% if image.title %}<p class="modal-text">{{ image.title }}</p>{% endif %}
 				</div>
 			</div>
+
 		</div>
     {% endfor %}
-	  <a class="prev fa fa-chevron-left" onclick="plusSlides(-1)"></a>
-	  <a class="next fa fa-chevron-right" onclick="plusSlides(1)"></a>
+	<div class="prev">
+		<a class="arrows" onclick="plusSlides(-1)">
+			<span class="fa fa-chevron-left" ></span>
+		</a>
+		
+	</div>
+	<div class="next">
+		<a class="arrows" onclick="plusSlides(1)">
+			<span class="fa fa-chevron-right"></span>
+		</a>
+	</div>
 	</div>
 </div>
 <script src="{{ "/js/modal-overlay.js" | relative_url }}"></script>

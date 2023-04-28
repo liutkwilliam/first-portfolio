@@ -87,8 +87,10 @@ Guests appeared:
 
 Shane Simpson AM (Chair of Board, studio A Limited), Trent Zimmerman MP (Federal Member for North Sydney), Shelly Simpson (Mud Australia), Ausgrid, Tim James MP (NSW NSW Member for Willoughby)
 
-Image: Tsz Kin (William) Liu and courtesy of studio A.
+Image: Tsz Kin (William) Liu and artworks courtesy of studio A.
 
 All rights reserved.
 
 Note: This photo album is last updated in November 2022.
+
+<a href="https://www.studioa.org.au/" class="btn btn-primary">Visit studio A Website</a>

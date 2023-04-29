@@ -1,5 +1,9 @@
 // bootstrap card columns add for 2 column
 .card-columns {
+    column-count: 4!important;
+    @media (max-width: 1199.98px) {
+        column-count: 3!important;
+    }
     @media (max-width: 991.98px) {
         column-count: 2!important;
     }

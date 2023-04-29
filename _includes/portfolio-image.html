@@ -3,7 +3,7 @@
       <div class="col-md">
         <div class="card-columns">
           {% for image in page.images %}
-            <div class="card shadow border-primary pageTransition cursor" onclick="openModal();currentSlide({{ forloop.index }})">
+            <div class="card shadow pageTransition cursor" onclick="openModal();currentSlide({{ forloop.index }})">
               <img 
                 src="/images/{% if page.folder %}{{ page.folder }}/{% endif %}{{ image.image_path }}" 
                 alt="Image {{ forloop.index }} of {{ page.title }}"

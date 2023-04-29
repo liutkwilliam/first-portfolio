@@ -32,15 +32,13 @@ The videos are published on Sunswift's social media including Facebook, Instagra
 
 ## More about the project
 
-### About Sunswift
+##### About Sunswift
 
-Sunswift is a UNSW student project, within the UNSW Engineering Faculty and it is a member of UNSW The Future Vehicles. This project is operated independently, with Faculty's support, from its mechanical and electrical team to business and software team.
-
-Sunswift is comprised of 40+ undergraduate students who believe in pushing the limits of technology to inspire sustainable action. The team designs, built and race a solar-electric car for the biannual Bridgestone World Solar Challenge.
+Sunswift is a UNSW student project, within the UNSW Engineering Faculty. comprised of 40+ undergraduate students who believe in pushing the limits of technology to inspire sustainable action. The team designs, built and race a solar-electric car for the biannual Bridgestone World Solar Challenge.
 
 [Visit Sunswift Website](https://www.sunswift.com)
 
-### About the Bridgestone World Solar Challenge
+##### About the Bridgestone World Solar Challenge
 
 Bridgestone World Solar Challenge is a biannual event, it is aimed to promote innovating technology and challenge solar car teams comprised by tertiary and secondary students worldwide, to travel a vehicle powered only by the energy of the sun, for over 3000km from Darwin in Northern Territory to Adelaide in South Australia
 

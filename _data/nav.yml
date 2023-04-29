@@ -1,10 +1,10 @@
 - name: Home
   link: /
-- name: Portfolio
+- name: Design Portfolio
   link: /portfolio
 - name: Misc Designs
   link: /misc-designs
-- name: Photography
+- name: Photography Portfolio
   link: /photography
 # - name: Blog
 #   link: /blog

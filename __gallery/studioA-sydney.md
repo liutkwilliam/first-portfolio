@@ -77,7 +77,7 @@ Selected photos of can-did photography while William is working with studio A, a
 
 The photos are published in studio A's social media including Facebook, Instagram and LinkedIn. 
 
-studio A is a Sydney based arts company that provides professional development for artists with intellectual disabilities. Learn more their mission [here](https://www.studioa.org.au/).
+studio A is a Sydney based arts company that provides professional development for artists with intellectual disabilities.
 
 Artists (in the order of appearance): 
 

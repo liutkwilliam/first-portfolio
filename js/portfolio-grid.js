@@ -4,12 +4,12 @@ function filterSelection(c) {
   x = document.getElementsByClassName("filterDiv");
   if (c == "all") c = "";
   for (i = 0; i < x.length; i++) {
-    w3RemoveClass(x[i], "show");
-    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+    filterRemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) filterAddClass(x[i], "show");
   }
 }
 
-function w3AddClass(element, name) {
+function filterAddClass(element, name) {
   var i, arr1, arr2;
   arr1 = element.className.split(" ");
   arr2 = name.split(" ");
@@ -18,7 +18,7 @@ function w3AddClass(element, name) {
   }
 }
 
-function w3RemoveClass(element, name) {
+function filterRemoveClass(element, name) {
   var i, arr1, arr2;
   arr1 = element.className.split(" ");
   arr2 = name.split(" ");

@@ -61,9 +61,14 @@
             transform: translate(0%, -50%);
             width: 100%;
             margin: auto;
-            box-sizing: border-box;
             padding: 1em 2em;
             text-align: center;
+            .home-links {
+                margin: auto;
+                margin-top: 1.5rem;
+                max-width: 600px;
+                min-width: 330px;
+            }
         }
     }
 }

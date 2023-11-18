@@ -7,6 +7,8 @@ categories:
 organisation:
 folder: studioa-curl-curl-exhibition
 date: 2022-02-28 18:00:00 +1000
+feature:
+not-show:
 image: 20220223-Image-12.jpg
 images:
   - image_path: 20220223-Image-01.jpg

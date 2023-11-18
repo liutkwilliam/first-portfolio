@@ -7,6 +7,8 @@ categories:
 organisation:
 folder: sydney-photos
 date: 2020-07-07 12:00:00 +1000
+feature:
+not-show: true
 image: 20171108_SYD_ClassicVantage-0100.jpg
 images:
   - image_path: 20170318_SYD_AfterTheRain_WilliamLiu-0059.jpg

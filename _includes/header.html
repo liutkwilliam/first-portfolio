@@ -1,23 +1,25 @@
 <div class="progress-container" id="barContainer">
 	<div class="progress-bar" id="myBar"></div>
 </div>
-<header class="container-fluid">
-	<nav class="navbar navbar-expand-md navbar-light bg-white fixed-top border-bottom my-1" id="header">
-		<a class="navbar-brand" href="{{ '/' }}">
-			<img alt="Page Logo" src="{{ site.logo-reg }}" style="height:40px;" class="d-inline-block align-text-middle pr-2">
-			Tsz Kin LIU (William)
-		</a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars" aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
+<!--Header-->
+<header>
+	<div class="container-fluid">
+		<nav class="navbar navbar-expand-md navbar-light bg-white fixed-top py-2" id="header">
+			<a class="navbar-brand" href="{{ '/' }}">
+				<img alt="Page Logo" src="{{ site.logo-reg }}" style="height:40px;" class="d-inline-block align-text-middle pr-2">
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars" aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="navbar-collapse collapse w-100 order-3 dual-collapse2" id="navbars">
-			<ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-				{% for item in site.data.nav %}
-				<li class="nav-item">
-				<a class="nav-link" href="{{site.baseurl}}{{item.link}}">{{ item.name }}</a>
-				</li>
-				{% endfor %}
-			</ul>
+				<ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+					{% for item in site.data.nav %}
+					<li class="nav-item">
+						<a class="nav-link" href="{{site.baseurl}}{{item.link}}">{{ item.name }}</a>
+					</li>
+					{% endfor %}
+				</ul>
 			</div>
-	</nav>
+		</nav>
+	</div>
 </header>

@@ -1,17 +1,17 @@
 ---
-layout: portfoliosite
 categories: 
 - graphic design
 title: Art Curious
 description: A publication design mock up inspired by my first visit to the Art Gallery of New South Wales (Sydney, Australia).
 organisation:
 deliverables: Publication Design Prototype
-feature:
 date: 2018-10-26 12:00:00 +1000
 folder: art-curious
 image: ArtCurious_BookletPreview.png
 slug: art-curious
 link:
+feature: true
+not-show:
 images:
     - image_path: ArtCurious_Booklet-Spread1.png
       title: Cover Page Spread

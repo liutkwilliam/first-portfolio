@@ -5,12 +5,13 @@ title: Sunswift Events Infographic
 description: A motion design of Sunswift events in infographic maps.
 organisation: UNSW Solar Racing Team Sunswift
 deliverables: Website Motion Design
-feature:
 date: 2019-03-30 18:00:00 +1000
 folder: web-animation
 image: BWSC_Animation/SS-Infographics-BWSC.gif
 slug: sunswift-events-infographics
 link:
+feature:
+not-show: true
 ---
 I have created 3 motion design based on the supplied graphics of UNSW Sunswift's attempted events' map and route map for the UNSW Solar Racing Team Sunswift's website event page, this includes:
 

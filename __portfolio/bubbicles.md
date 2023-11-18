@@ -10,6 +10,8 @@ folder:
 image: 20170607_UNSWAD_ProjectionMapping-0107.jpg
 slug: bubbicles
 link:
+feature:
+not-show:
 ---
 Animation Duration: 01:36:00
 

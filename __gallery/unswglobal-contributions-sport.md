@@ -7,6 +7,8 @@ categories:
 organisation:
 folder: unswglobal-contributions-sport
 date: 2018-03-01 12:00:00 +1000
+feature:
+not-show:
 image: unswglobal-2018-sport-008.jpg
 images:
     - image_path: unswglobal-2018-sport-001.jpg

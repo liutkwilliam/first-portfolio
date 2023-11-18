@@ -7,6 +7,8 @@ categories:
 organisation:
 folder: sunswift-2019
 date: 2019-12-17 12:00:00 +1000
+feature:
+not-show:
 image: 20191015-SS-BWSC19-IMG_1792.jpg
 images:
     - image_path: 20190318-SS-TrackDay-0017.jpg

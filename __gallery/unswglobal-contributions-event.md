@@ -7,6 +7,8 @@ categories:
 organisation:
 folder: unswglobal-contributions-event
 date: 2018-12-01 12:00:00 +1000
+feature:
+not-show:
 image: unswglobal-2018-event-018.jpg
 images:
     - image_path: unswglobal-2018-event-001.jpg

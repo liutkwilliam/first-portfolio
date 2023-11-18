@@ -7,6 +7,8 @@ categories:
 organisation:
 folder: sydmardigras40
 date: 2018-03-03 23:00:00 +1000
+feature:
+not-show:
 image: sydmardigras40-007.jpg
 images:
   - image_path: sydmardigras40-001.jpg

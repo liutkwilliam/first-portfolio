@@ -27,14 +27,6 @@ $nav-link-font-weight: 500;
 $card-border-radius: 0;
 $card-columns-margin: 1.25rem;
 
-// 1e. responsive
-$container-max-widths: (
-  sm: 540px,
-  md: 720px,
-  lg: 960px,
-  xl: 1440px
-) !default;
-
 // 1f. Import Bootstrap
 @import 'bootstrap/bootstrap';
 
@@ -45,15 +37,6 @@ $website-third: #3c4fa2;
 $speed: all .15s ease-in-out;
 $diagonal-bg: linear-gradient(135deg, $BlueBrand01, $BlueBrand02, $BlueBrand03);
 $trailnplan: #4293d7, #8ac1f1, #ffffff, #ff9782, #e1d830, #6e7f10, #333333;
-
-// 2b. Social Media
-$facebook: #1877f2;
-$instagram: #282828;
-$twitter: #1da1f2;
-$pinterest: #bd081c;
-$reddit: #ff4500;
-$linkedin: #007bb5;
-$email: #606060;
 
 // 2c. transition
 @mixin standard-transition {
@@ -75,6 +58,7 @@ body {
   font-size: 1rem;
   margin: 0 auto;
   color: $black;
+  margin-top: 2rem;
 }
 
 // 3b. Buttons
@@ -85,7 +69,7 @@ body {
 
 #topBtn {
   position: fixed;
-  bottom: 3rem;
+  bottom: 3.5rem;
   right: 0;
   z-index: 99;
   font-size: 1.5rem;
@@ -95,7 +79,6 @@ body {
   background-image: $diagonal-bg;
   background-color: $primary;
   color: $white;
-  cursor: pointer;
   padding: 0.6rem 1.25rem;
   border-radius: 1rem 0 0 1rem;
   @include standard-transition;
@@ -111,16 +94,6 @@ body {
 }
 
 // 3c. Images
-.profileImg {
-  float: none;
-  text-align: center;
-  img {
-      width: 25rem;
-      border-radius: 1rem;
-      margin: 1.5rem auto;
-  }
-}
-
 .blog-image {
   display: block;
   width: 80%;
@@ -185,15 +158,6 @@ body {
   }
 }
 
-// 3g. Cursor Pointer 
-.cursor {
-  cursor: pointer;
-  @include standard-transition;
-  &:hover {
-      opacity: 0.7;
-  }
-}
-
 // 4. Layouts, columns & grids //
 
 // 4a. Scroll Margin - Anchored Points
@@ -252,20 +216,6 @@ footer {
   }
 }
 
-// 6b. Contact
-.contact-socials {
-  .fa {
-      padding: .5rem 0;
-      width: 2rem;
-  }
-  a {
-    text-decoration: none;
-    &:hover {
-      text-decoration: underline;
-    }
-  }
-}
-
 // 7. Progress Bar //
 .progress-container {
   position: fixed;
@@ -296,3 +246,7 @@ footer {
 @import 'fullpage';
 @import 'portfolio';
 @import 'specific';
+
+.fullPage2 {
+  height: 100vh;
+}

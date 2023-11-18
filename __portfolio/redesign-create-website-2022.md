@@ -10,6 +10,8 @@ folder: create-website
 image: CREATE-2022.png
 slug: redesign-create-website-2022
 link:
+feature:
+not-show:
 images:
     - image_path: create-2022-work-progress-2.png
       title: Collected Branding Information and design an UI system 

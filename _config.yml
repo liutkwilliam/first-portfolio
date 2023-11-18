@@ -19,9 +19,9 @@
 # in the templates via {{ site.myvariable }}.
 
 # Site setting
-title: "Tsz Kin LIU (William)"
+title: William - Tsz Kin LIU | Sydney Based Photographer, Graphic Designer and Website Designer
 email: liutk.william@gmail.com
-description: Check out my creative portfolio in photography, graphic design, website design and UI Design. Based in Sydney, Australia.
+description: Based in Sydney, Australia. William is passionate about photography, graphic design, website design and UI Design.
 baseurl: ""
 url: "https://liutkwilliam.github.io"
 facebook: liutk.william
@@ -68,7 +68,7 @@ plugins:
 collections:
   _portfolio:
       output: true
-      permalink: /portfolio/:title/
+      permalink: /projects/:title/
   _gallery:
       output: true
       permalink: /photography/:title/

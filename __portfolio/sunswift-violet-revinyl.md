@@ -6,11 +6,12 @@ description: A vehicle revinyl for a solar car for the World Solar Challenge 201
 date: 2019-09-19 20:00:00 +1000
 organisation: UNSW Solar Racing Team Sunswift
 deliverables: Vehicle Vinyl Graphic Design
-feature:
 folder: sunswift
 image: 20190928-SS-BWSC19-IMG_8792.jpg
 slug: sunswift-violet-revinyl
 link:
+feature:
+not-show: true
 images:
     - image_path: 20191013-SS-BWSC19-IMG_1312.jpg
       title: Sunswift VIolet during the Bridgestone World Solar Challenge (2019)

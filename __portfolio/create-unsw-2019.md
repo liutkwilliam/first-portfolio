@@ -7,9 +7,11 @@ organisation: CREATE UNSW Student Club
 deliverables: Website Development and User Interface Design
 date: 2019-02-11 00:00:00 +1000
 folder: create-website
-image: new_createunsw_website-2020-cover.png
+image: createunsw-2020-mockup-laptop.jpg
 slug: create-unsw-2019
 link:
+feature:
+not-show:
 images:
     - image_path: createunsw_webprototype_version1.PNG
       title: Website Prototyping via Adobe XD

@@ -7,6 +7,8 @@ categories:
 organisation:
 folder: double-exposed-photos
 date: 2016-11-02 18:00:00 +1000
+feature:
+not-show: true
 image: WilliamLIU_2405_AT3_Print_012.jpg
 images:
     - image_path: WilliamLIU_2405_AT3_Print_012.jpg

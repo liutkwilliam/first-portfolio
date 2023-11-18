@@ -7,6 +7,8 @@ categories:
 organisation:
 folder: europe-france-switzerland-2022
 date: 2022-09-13 12:00:00 +1000
+feature:
+not-show:
 image: 20220908-IMG_1192.jpg
 images:
     - image_path: 20220815-IMG_4409.jpg

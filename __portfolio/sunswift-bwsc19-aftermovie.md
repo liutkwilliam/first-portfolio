@@ -10,6 +10,8 @@ folder: sunswift
 image: sunswift-bwsc19-gif.gif
 slug: sunswift-bwsc19-aftermovie
 link:
+feature:
+not-show: true
 ---
 Sunswift BWSC19 Aftermovie is a video work by William.  He recorded the best moments during Sunswift's adventure to the Bridgestone World Solar Challenge 2019 with the race team of Sunswift, a Solar Car Racing Team from the University of New South Wales.
 

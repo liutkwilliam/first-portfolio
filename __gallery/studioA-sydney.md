@@ -7,6 +7,8 @@ categories:
 organisation:
 folder: studio-a-public-work
 date: 2022-11-02 23:00:00 +1000
+feature:
+not-show:
 image: 20221102-IMG_6725.jpg
 images:
   - image_path: 20210303-IMG_8438.jpg

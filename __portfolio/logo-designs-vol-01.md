@@ -5,12 +5,13 @@ title: Logo Design Challenge Volume 01
 description:
 organisation: 
 deliverables: Logo Designs
-feature: 
 date: 2021-10-16 12:00:00 +1000
 folder: aichallenge-logodesign
 image: Illustrator-Sep20Oct15_ChallengeCover.png
 slug: logo-design-challenge
 link:
+feature:
+not-show: true
 images:
     - image_path: Illustrator-Sep20Oct15_Challenge01.png
       title: Typographic Logo

@@ -3,18 +3,18 @@ layout: page
 title: Design Portfolio
 description: Check out my creative portfolio in photography, graphic design, website design and UI Design.
 image: /images/portfolio-cover.png
-permalink: /portfolio/
+permalink: /projects/
 filtered: true
 ---
 <div id="portfolio">
 	<section>
 		<div class="row">
-			<div class="col-md text-center">
+			<div class="col">
 				<h1>{{ page.title }}</h1>
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-md text-center" id="myBtnContainer">
+			<div class="col" id="myBtnContainer">
 				<a class="btn btn-sm btn-outline-primary active text-uppercase m-1" onclick="filterSelection('all')">Show all</a>
 				{% assign cmap = site._portfolio | map: 'categories' | uniq %}
 				{% assign cats = cmap | sort %}
@@ -26,7 +26,7 @@ filtered: true
 	</section>
 	<section>
 		<div class="row">
-			<div class="col-md">
+			<div class="col">
 				<div class="card-columns">
 					{% assign sorted = site._portfolio | sort:"date" | reverse %}
 					{% for card in sorted %}		

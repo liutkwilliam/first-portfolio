@@ -1,5 +1,4 @@
 ---
-layout: portfoliosite
 categories: 
 - animation
 title: A Half-Awake Animator
@@ -11,6 +10,8 @@ folder: hons-animation
 image: adad4011-trim.gif
 slug: a-half-awake-animator
 link:
+feature:
+not-show: true
 ---
 A Half-awake Animator is a 3-minute graphics-styled animation. Portraying Willy, a representation of the author (William) who woke up from a nightmare dreamt invaded by a crocodile and felt anxious to remember from completing a crocodile animation assignment.
 

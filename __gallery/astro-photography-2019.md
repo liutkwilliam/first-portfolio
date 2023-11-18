@@ -7,6 +7,8 @@ categories:
 organisation:
 folder: astro-2019
 date: 2019-10-17 12:00:00 +1000
+feature:
+not-show: true
 image: astro-2019-001.jpg
 images:
     - image_path: astro-2019-001.jpg

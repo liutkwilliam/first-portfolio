@@ -6,12 +6,13 @@ title: MPSB Management Consulting Website
 description: A website design and frontend development for MPSB Management Consulting.
 organisation: MPSB Management Consulting
 deliverables: Website design, frontend development and logo design
-feature:
 date: 2021-12-07 12:00:00 +1000
 folder: mpsb-mgnt-consult-website
 image: mpsb-portfolio.png
 slug: mpsb-mgnt-consult-website
 link:
+feature:
+not-show:
 images:
     - image_path: mpsb-home.png
       title: Home Page

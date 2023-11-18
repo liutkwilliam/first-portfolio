@@ -1,6 +1,6 @@
 // full page
 .fullPage {
-    height: 92vh;
+    height: 100vh;
     position: relative;
     width: 100%;
     -webkit-box-pack: start;
@@ -64,8 +64,8 @@
             padding: 1em 2em;
             text-align: center;
             .home-links {
+                display: flex;
                 margin: auto;
-                margin-top: 1.5rem;
                 max-width: 600px;
                 min-width: 330px;
             }

@@ -5,12 +5,13 @@ title: Sunswift Team Update Series 2019
 description: A video series documenting the team's technical updates in preparation for the World Solar Challenge 2019.
 organisation: UNSW Solar Racing Team Sunswift
 deliverables: Video Documentation
-feature:
 date: 2019-09-03 08:00:00 +1000
 folder: sunswift
 image: 2019-ss-video-update.gif
 slug: sunswift-team-update-2019
 link:
+feature:
+not-show: true
 ---
 Sunswift Team Update 2019 is a video series curated, documented and edited by William. The video series include a mechanical team and software team update respectively, showing how Sunswift was preparing for the Bridgestone World Solar Challenge taking place in October 2019.
 

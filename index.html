@@ -3,6 +3,7 @@ layout: default
 title: 
 description: A photographer, graphic design, website designer and UI design enthusiast based in Sydney, Australia.
 image: /images/portfolio-cover.png
+profile-image: /images/2023-profile-web.jpg
 ---
 <div class="fullPage">
     <div class="full-img-container">
@@ -14,10 +15,29 @@ image: /images/portfolio-cover.png
                     I am a photographer, graphic design, website designer and UI design enthusiast based in Sydney, Australia
                 </p>
                 <div class="home-links">
-                    <a href="{{ '/portfolio' | prepend: site.baseurl }}" class="btn btn-primary btn-lg btn-block my-2">Click Here to Design Portfolio</a>
-                    <a href="{{ '/photography' | prepend: site.baseurl }}" class="btn btn-dark btn-lg btn-block my-2">Click Here to Photography Portfolio</a>
+                    <a href="{{ '/projects' | prepend: site.baseurl }}" class="btn btn-primary btn-lg btn-block m-2">Design Projects</a>
+                    <a href="{{ '/photography' | prepend: site.baseurl }}" class="btn btn-dark btn-lg btn-block m-2">Photography Portfolio</a>
                 </div>
             </div>
         </div>
 	</div>
+</div>
+<div class="d-flex align-items-center fullPage2">
+    <div class="container-xl">
+        <div class="row d-flex align-items-center">
+            <div class="col-md order-md-2">
+                <img src="{{ page.profile-image }}" class="rounded-lg my-3 mx-auto d-block" style="width: 25rem;" alt="Profile Image">
+            </div>
+            <div class="col-md order-md-1">
+                <div class="mb-4">
+                    {% capture aboutMe %}{% include about.md %}{% endcapture %}
+                    {{ aboutMe | markdownify }}
+                </div>
+                <div>
+                    <h5>Contact Me</h5>
+                    <p><i class="fa fa-lg fa-envelope-o"></i><a href="mailto:liutk.william@gmail.com" class="ml-2">liutk.william (@) gmail.com</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

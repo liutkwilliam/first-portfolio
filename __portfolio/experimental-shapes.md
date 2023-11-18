@@ -5,12 +5,13 @@ title: Experimental Shapes
 description: An experimentation of various shapes in a motion graphics animation.
 organisation:
 deliverables: 2D Experimental Animation
-feature:
 date: 2016-06-03 12:00:00 +1000
 folder:
 image: experimental-gif.gif
 slug: experimental-shapes
 link:
+feature:
+not-show: true
 ---
 An experimentation of various shapes in a motion graphics animation, designed based on a selected soundtrack. Edited with Adobe After Effects. 
 

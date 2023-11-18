@@ -5,12 +5,13 @@ title: Eat
 description: A PacMan inspired stop-frame animation.
 organisation:
 deliverables: Stop-motion animation
-feature:
 date: 2015-08-20 18:00:00 +1000
 folder:
 image: eat-gif.gif
 slug: eat-visualmusic
 link:
+feature:
+not-show: true
 ---
 William chooses PacMan as the stop-motion animation subject in light of the movie PIXELS released in March 2015.
 

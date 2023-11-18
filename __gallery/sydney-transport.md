@@ -7,6 +7,8 @@ categories:
 organisation:
 folder: sydney-transport
 date: 2021-03-28 12:00:00 +1000
+feature:
+not-show:
 image: 20211221-IMG_3471.jpg
 images:
     - image_path: 20170401_SYD_UNSWPhotoClub_WatsonsBay-0010.jpg

@@ -6,3 +6,4 @@ _site
 _drafts
 _assets
 .vscode
+node_modules

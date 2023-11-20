@@ -3,8 +3,6 @@ categories:
 - animation
 title: Experimental Shapes
 description: An experimentation of various shapes in a motion graphics animation.
-organisation:
-deliverables: 2D Experimental Animation
 date: 2016-06-03 12:00:00 +1000
 folder:
 image: experimental-gif.gif
@@ -13,7 +11,7 @@ link:
 feature:
 not-show: true
 ---
-An experimentation of various shapes in a motion graphics animation, designed based on a selected soundtrack. Edited with Adobe After Effects. 
+A 2D experimental animation of various shapes in a motion graphics animation, designed based on a selected soundtrack. Edited with Adobe After Effects. 
 
 Soundtrack: Silent Partner: Ticker.
 

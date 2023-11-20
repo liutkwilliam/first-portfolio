@@ -1,10 +1,9 @@
 ---
 categories: 
 - videography
+- video editing
 title: Sunswift BWSC19 Aftermovie
 description: A highlight video documenting the adventure of Sunswift solar car team to the World Solar Challenge 2019.
-organisation: UNSW Solar Racing Team Sunswift
-deliverables: Video Documentation, Short-Movie
 date: 2019-11-20 18:00:00 +1000
 folder: sunswift
 image: sunswift-bwsc19-gif.gif

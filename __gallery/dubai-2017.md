@@ -1,6 +1,6 @@
 ---
 layout: gallery
-title: Dubai amd Abu Dhabi
+title: Travel in Dubai amd Abu Dhabi
 description: Travelled to Dubai and Abu Dhabi, UAE during Christmas holiday in 2017
 categories: 
 - city, landscape and street

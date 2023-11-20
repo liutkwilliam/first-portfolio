@@ -1,9 +1,8 @@
 ---
 categories: 
 - videography
+- video editing
 title: Sunswift Team Update Series 2019
-description: A video series documenting the team's technical updates in preparation for the World Solar Challenge 2019.
-organisation: UNSW Solar Racing Team Sunswift
 deliverables: Video Documentation
 date: 2019-09-03 08:00:00 +1000
 folder: sunswift

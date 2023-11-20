@@ -3,8 +3,6 @@ categories:
 - graphic design
 title: Art Curious
 description: A publication design mock up inspired by my first visit to the Art Gallery of New South Wales (Sydney, Australia).
-organisation:
-deliverables: Publication Design Prototype
 date: 2018-10-26 12:00:00 +1000
 folder: art-curious
 image: ArtCurious_BookletPreview.png
@@ -26,4 +24,4 @@ Art Curious is a publication design mock up. Inspired by my first visit to the A
 
 The cover page design includes a large three-dimensional question symbol to express the curiosity to the gallery. While the inside spreads are aimed to deliver clear and short introduction of different areas in the gallery, with colourful images to attract visitors' attention.
 
-**Artist impression rendered via Adobe Dimension CC
+**The publication mock up is rendered via Adobe Dimension CC

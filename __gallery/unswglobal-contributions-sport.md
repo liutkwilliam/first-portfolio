@@ -1,6 +1,6 @@
 ---
 layout: gallery
-title: Sport Photographs @ UNSW Global
+title: Sport Photography @ UNSW Global
 description: My sport photographs contribution to UNSW Global in 2018
 categories: 
 - can-did & events

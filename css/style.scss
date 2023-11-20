@@ -1,46 +1,52 @@
-// Option A: Include all of Bootstrap
-
-// Include any default variable overrides here (though functions won't be available)
-// 0. Brand Colors //
+// Brand Colors //
 $BlueBrand01: #238dc6;
 $BlueBrand02: #3c69b2;
 $BlueBrand03: #3C4FA2;
 $BrandDark: #404041;
 $BrandLight: #bebebe;
 
-// 1. Overwite Bootstrap variables //
+// Option A: Include all of Bootstrap
 
-// 1a. Colors
+// Include any default variable overrides here (though functions won't be available)
+
+// A1. Colors
 $primary: $BlueBrand02;
 $secondary: $BlueBrand01;
 $dark: $BrandDark;
 $light: $BrandLight;
 
-// 1b. responsive fonts
+// A2. responsive fonts
 $enable-responsive-font-sizes: true;
 
-// 1c. navbar
+// A3. navbar
 $navbar-padding-x: 1rem;
 $navbar-light-hover-color: $primary;
 $navbar-light-active-color: $primary;
 $navbar-nav-link-padding-x: .7rem;
 $nav-link-font-weight: 500;
 
-// 1d. card
+// A4. card
 $card-border-radius: 0;
 $card-columns-margin: 1.25rem;
+
+// A5. Max Container Width
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1600px
+) !default;
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
 // Then add additional custom code here
 
-// 2. Website variables //
+// 2. Website variables
 
 // 2a. variables
 $website-third: #3c4fa2;
 $speed: all .15s ease-in-out;
 $diagonal-bg: linear-gradient(135deg, $BlueBrand01, $BlueBrand02, $BlueBrand03);
-$trailnplan: #4293d7, #8ac1f1, #ffffff, #ff9782, #e1d830, #6e7f10, #333333;
 
 // 2c. transition
 @mixin standard-transition {
@@ -51,7 +57,7 @@ $trailnplan: #4293d7, #8ac1f1, #ffffff, #ff9782, #e1d830, #6e7f10, #333333;
     transition: $speed;
 }
 
-// 3. Site Setting //
+// 3. Site Setting
 
 // 3a. General
 html {
@@ -64,6 +70,10 @@ body {
   color: $black;
 }
 
+h1 {
+    color: $primary;
+}
+
 // 3b. Buttons
 .btn {
   padding-left: 1.5rem;
@@ -72,7 +82,7 @@ body {
 
 #topBtn {
   position: fixed;
-  bottom: 3.5rem;
+  bottom: 4.5rem;
   right: 0;
   z-index: 99;
   font-size: 1.5rem;
@@ -86,8 +96,12 @@ body {
   border-radius: 1rem 0 0 1rem;
   @include standard-transition;
   transform: translate(100px, 0);
+  opacity: 0.7;
   &.show {
       transform: translate(0, 0);
+  }
+  &:hover {
+    opacity: 1;
   }
   @media (max-width: 767.98px) {
       padding: 0.5rem 1rem;
@@ -156,12 +170,12 @@ body {
 
 // 3f. Icons
 .fa {
-  &:hover {
-      text-decoration: none;
-  }
+    &:hover {
+        text-decoration: none;
+    }
 }
 
-// 4. Layouts, columns & grids //
+// 4. Layouts, columns & grids
 
 // 4a. Scroll Margin - Anchored Points
 $content-sticky-top: 2rem;
@@ -177,9 +191,6 @@ section {
   padding-top: $padding;
   &:last-child {
       padding-bottom: $padding;
-      &.galleryHead {
-          padding-bottom: 0rem;
-      }
   }
   @media (max-width: 767.98px) {
       padding-top: $padding / 2;
@@ -195,28 +206,18 @@ section {
   margin-bottom: .5rem;
 }
 
-// 5. Paginate Indexing
-.page-index{
-  a {
-      padding: 0 0.5rem;
-  }
-}
-
-// 6. Footer, credits and contacts //
+// 6. Footer, credits and contacts
 
 // 6a. Footer
 footer {
-  a {
-      color: $black;
-      text-decoration: none;
-      padding: .5rem;
-      &:hover {
+    a.fa {
+        margin: 0 1rem;
         color: $primary;
-      }
-  }
-  .fa {
-      margin: 0 .5rem;
-  }
+        @include standard-transition;
+        &:hover {
+            color: lighten($primary, 35%);
+        }
+    }
 }
 
 // 7. Progress Bar //
@@ -233,34 +234,30 @@ footer {
       display: none;
   }
 }
+
 .progress-bar {
   height: .25rem;
   background: $secondary;
   width: 0%;
 }
 
-// 8 custom for navbar
+// 8. custom for navbar
 .active-link {
   font-weight: 500!important;
   color: $primary!important;
 }
 
-// full page
+// 9. full page
 .fullPage {
     height: 100vh;
     position: relative;
     width: 100%;
-    -webkit-box-pack: start;
-    -webkit-justify-content: flex-start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-    .full-img-container,
-    .video-container {
+    .full-cover-container {
         position: absolute;
         top: 0;
         bottom: 0;
         width: 100%;
-        min-height: 100%; 
+        min-height: 100%;
         overflow: hidden;
         object-fit: cover;
         img {
@@ -285,7 +282,8 @@ footer {
             @media (max-width: 1280px) {
             /* Make video to at least 100% wide and tall */
             min-width: 100%; 
-            height: 100%; 
+            height: 100%;
+            object-fit: cover;
         
             /* Setting width & height to auto prevents the browser from stretching or squishing the video */
             width: auto;
@@ -293,23 +291,20 @@ footer {
         }
         // bottom text
         $bg-opacity: 0.8;
-        .gradient {
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            background-image: linear-gradient(to bottom, rgba($white, 1) 8%, rgba($white, $bg-opacity) 20%, rgba($white, $bg-opacity) 85%, rgba($white, 1) 100%);
-            z-index: 1;
-        }
-        .overlay-content {
+        .homepage-overlay {
             color: $black;
             position: absolute;
-            z-index: 2;
-            top: 50%;
-            transform: translate(0%, -50%);
-            width: 100%;
-            margin: auto;
-            padding: 1em 2em;
+            z-index: 1;
+            top: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             text-align: center;
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(to bottom, rgba($white, 1) 8%, rgba($white, $bg-opacity) 20%, rgba($white, $bg-opacity) 85%, rgba($white, 1) 100%);
+            margin: auto;
+            padding: 1rem 2rem;
             .home-links {
                 display: flex;
                 margin: auto;
@@ -320,34 +315,24 @@ footer {
     }
 }
 
-// bootstrap card columns add for 2 column
+// 10. bootstrap card columns add for 2 column
 .card-columns {
     column-count: 3!important;
-@media (max-width: 991.98px) {
-    column-count: 2!important;
-}
-@media (max-width: 767.98px) {
-    column-count: 1!important;
-}
+    &.portfolio-column {
+        column-count: 2!important;
+    }
+    @media (max-width: 991.98px) {
+        column-count: 2!important;
+    }
+    @media (max-width: 767.98px) {
+        column-count: 1!important;
+    }
 }
 
-// Boxes
+// 11. Portoflio boxes and overlay
 .box {
-align-items: center;
-justify-items: center;
-background-color: $primary;
-color: $white;
-box-shadow: 0 3px 5px rgba($dark,0.6);
-@include standard-transition;
-img {
-    position: relative;
-    display: block;
-    width: 100%;
-}
-&:hover {
-    .overlay {
-        opacity: .9;
-    }
+    align-items: center;
+    justify-items: center;
 }
 .overlay {
     position: absolute;
@@ -355,132 +340,119 @@ img {
     opacity: 0;
     width: 100%;
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: $white;
+    padding: 2rem;
     @include standard-transition;
-    background-color: $primary;
-    .centerBox {
-        display: flex;
-        width: 100%;
-        height: 100%;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        color: $white;
-        div {
-        padding: 1rem;
-        }
+    background-color: rgba($dark, 0.9);
+    opacity: 0;
+    &:hover {
+        opacity: 1;
     }
-}
 }
 
-// Modal 
+// 12. Modal 
 .modalGallery {
-display: none;
-position: fixed;
-z-index: $zindex-modal;
-left: 0;
-top: 0;
-width: 100%;
-height: 100%;
-overflow: hidden;
-background-color: rgba($dark, 0.95);
-.modalContent {
-    position: relative;
-    margin: auto;
-    padding: 0;
-    width: 90%;
-    min-width: 300px;
-    max-height: subtract(100vh, $modal-dialog-margin * 2); // IE10/11
-    overflow: hidden;
-}
-.close {
-    color: $white;
-    position: absolute;
-    top: 1rem;
-    right: 2rem;
-    font-size: 40px;
-    user-select: none;
-    -webkit-user-select: none;
-    cursor: pointer;
-    &:hover {
-        color: $secondary;
-    }
-}
-.mySlides {
     display: none;
-}
-.centerBox {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    .centerImage {
-        text-align: center;
-        img {
-            max-height: 80vh;
-            // width: auto;
-            max-width: 100%;
-        }
-        .modal-text {
-            margin: .5rem;
-            color: $white;
+    position: fixed;
+    z-index: $zindex-modal;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba($dark, 0.95);
+    .modalContent {
+        position: relative;
+        margin: auto;
+        padding: 0;
+        width: 100%;
+        min-width: 300px;
+        max-height: 100vh;
+        overflow: hidden;
+    }
+    .close {
+        color: $white;
+        position: absolute;
+        top: 1rem;
+        right: 2rem;
+        font-size: 40px;
+        z-index: 2;
+        user-select: none;
+        -webkit-user-select: none;
+        cursor: pointer;
+        &:hover {
+            color: $secondary;
         }
     }
-}
-.prev,
-.next {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    .arrows {
+    .modalSlides {
+        display: none;
+    }
+    .modalContentCenter {
         display: flex;
         align-items: center;
         justify-content: center;
         height: 100vh;
-        width: 4rem;
-        cursor: pointer;
-        color: $white;
-        font-weight: bold;
-        font-size: 1.2rem;
-        transition: 0.6s ease;
-        user-select: none;
-        -webkit-user-select: none;
-        text-decoration: none;
-        &:hover {
-            color: rgba($secondary, 0.8);
+        img {
+            max-height: 80vh;
+            max-width: 100%;
         }
     }
-}
-.prev {
-    left: 0;
-}
-.next {
-    right: 0;
-}
+    .prev,
+    .next {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        .arrows {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 80vh;
+            margin: 10vh 0;
+            width: 4rem;
+            cursor: pointer;
+            color: $white;
+            font-weight: bold;
+            font-size: 1.2rem;
+            transition: 0.6s ease;
+            user-select: none;
+            -webkit-user-select: none;
+            text-decoration: none;
+            &:hover {
+                color: rgba($secondary, 0.8);
+            }
+        }
+    }
+    .prev {
+        left: 0;
+    }
+    .next {
+        right: 0;
+    }
 }
 
-// Place below modal when triggered
-.belowModal {
-display: block!important;
-z-index: 0!important;
-}
-
-// Filters
+// 13. Filters
 .filterDiv {
-display: none!important;
-&.show {
-    display: inline-block!important;
-}
+    display: none!important;
+    &.show {
+        display: inline-block!important;
+    }
 }
 
-// Trail-n-Plan
+// 14. Trail-n-Plan
+$trailnplan: #4293d7, #8ac1f1, #ffffff, #ff9782, #e1d830, #6e7f10, #333333;
+
 .project-blockquote{
     color: $secondary;
     font-size: 2rem;
     text-align: center;
     padding: 0.75rem 2.5rem;
-  }
+}
   
-  .trailnplan {
+.trailnplan {
     font-family: 'Source Sans Pro', sans-serif;
     &.card {
         border: 0 solid transparent;
@@ -493,30 +465,10 @@ display: none!important;
         border-radius: 4rem;
         box-shadow: 0 2px 4px 0 rgba($black, 0.2), 0 4px 8px 0 rgba($black, 0.19);
         display: inline-block;
-        &:nth-of-type(1) {
-            background-color: #4293d7;
-        }
-        &:nth-of-type(2) {
-            background-color: #8ac1f1;
-        }
-        &:nth-of-type(3) {
-            background-color: #ffffff;
-        }
-        &:nth-of-type(4) {
-            background-color: #ff9782;
-        }
-        &:nth-of-type(5) {
-            background-color: #e1d830;
-        }
-        &:nth-of-type(6) {
-            background-color: #6e7f10;
-        }
-        &:nth-of-type(7) {
-            background-color: #333333;
+        @for $i from 1 to 7 {
+            &:nth-of-type#{$i} {
+                background-color: nth($trailnplan, $i);
+            }
         }
     }
-}
-
-.fullPage2 {
-    height: 100vh;
 }

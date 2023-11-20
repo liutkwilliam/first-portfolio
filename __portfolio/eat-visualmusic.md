@@ -3,8 +3,6 @@ categories:
 - animation
 title: Eat 
 description: A PacMan inspired stop-frame animation.
-organisation:
-deliverables: Stop-motion animation
 date: 2015-08-20 18:00:00 +1000
 folder:
 image: eat-gif.gif

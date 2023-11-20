@@ -1,9 +1,7 @@
 ---
 categories: 
 - animation
-title: Sunswift Events Infographic
-description: A motion design of Sunswift events in infographic maps.
-organisation: UNSW Solar Racing Team Sunswift
+title: Sunswift Events Motion Infographic
 deliverables: Website Motion Design
 date: 2019-03-30 18:00:00 +1000
 folder: web-animation

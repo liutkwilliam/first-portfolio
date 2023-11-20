@@ -3,8 +3,6 @@ categories:
 - animation
 title: BUBBICLES
 description: A collaborative architectural projection mapping work inspired by childhood fun.
-organisation:
-deliverables: Projection Mapping Animation
 date: 2017-06-07 18:00:00 +1000
 folder: 
 image: 20170607_UNSWAD_ProjectionMapping-0107.jpg

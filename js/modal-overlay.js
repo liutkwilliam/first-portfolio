@@ -1,16 +1,11 @@
   function openModal() {
     document.getElementById("myModal").style.display = "block";
-    document.body.style.overflow = "hidden";
-    document.getElementById("header").classList.add("belowModal");
-    document.getElementById("barContainer").classList.add("belowModal");
-    
+    document.body.style.overflow = "hidden";  
   }
   
   function closeModal() {
     document.getElementById("myModal").style.display = "none";
     document.body.style.overflow = "auto";
-    document.getElementById("header").classList.remove("belowModal");
-    document.getElementById("barContainer").classList.remove("belowModal");
   }
   
   var slideIndex = 1;
@@ -26,7 +21,7 @@
   
   function showSlides(n) {
     var i;
-    var slides = document.getElementsByClassName("mySlides");
+    var slides = document.getElementsByClassName("modalSlides");
     var dots = document.getElementsByClassName("demo");
     var captionText = document.getElementById("caption");
     if (n > slides.length) {slideIndex = 1}

@@ -2,9 +2,7 @@
 categories: 
 - animation
 title: Chances to Win
-description: A graphical animation, illustrating a story of 5 characters playing in a board-game.
-organisation:
-deliverables: Motion Graphics
+description: Amotion graphics animation, illustrating a story of 5 characters playing in a board-game.
 date: 2017-05-29 12:00:00 +1000
 folder: chances-to-win
 image: soma3408-trim.gif
@@ -13,7 +11,7 @@ link:
 feature:
 not-show: true
 ---
-CHANCES TO WIN is a graphical animation, illustrating a story of 5 characters playing in a board-game, the characters themselves don't have any changes in facial expression, instead, there's sounds and effects to interpret the feelings when they are stepping on a particular block in the game.
+CHANCES TO WIN is a motion graphics animation, illustrating a story of 5 characters playing in a board-game, the characters themselves don't have any changes in facial expression, instead, there's sounds and effects to interpret the feelings when they are stepping on a particular block in the game.
 
 ## Story Board Sketches
 

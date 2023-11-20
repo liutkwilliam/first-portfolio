@@ -1,17 +1,22 @@
 ---
 layout: page
 ---
-<section class="galleryHead">
+<section>
 	<div class="row">
 		<div class="col">
-			<p class="lead text-capitalize text-muted">Photography</p>
 			<h1 class="text-primary">{{ page.title }}</h1>
 			<h5>{{ page.date | date: "%Y" }}</h5>
-			<p class="text-uppercase text-muted">Type: {% assign cat = page.categories | uniq %}{{ cat | sort | join: ", " }}</p>
+			<p class="text-uppercase">Photography</p>
+			<p class="text-uppercase">{% assign cat = page.categories | uniq %}{{ cat | sort | join: ", " }}</p>
+		</div>
+	</div>
+</section>
+<section>
+	<div class="row">
+		<div class="col">
 			<p>{{ page.content }}</p>
 		</div>
 	</div>
 </section>
 {% include portfolio-image.html %}
-
 {% include portfolio-modal.html %}

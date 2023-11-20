@@ -1,6 +1,6 @@
 ---
 layout: gallery
-title: Sunswift
+title: Event photography for Sunswift
 description: selected Photos taken during my participation with UNSW Solar Racing Team Sunswift in 2019.
 categories: 
 - can-did & events

@@ -4,8 +4,6 @@ categories:
 title: Sunswift Solar Car VIolet Revinyl 2019
 description: A vehicle revinyl for a solar car for the World Solar Challenge 2019.
 date: 2019-09-19 20:00:00 +1000
-organisation: UNSW Solar Racing Team Sunswift
-deliverables: Vehicle Vinyl Graphic Design
 folder: sunswift
 image: 20190928-SS-BWSC19-IMG_8792.jpg
 slug: sunswift-violet-revinyl

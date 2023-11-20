@@ -13,40 +13,44 @@ description: Check out my latest blog
 </section>
 <section>
 	<div class="row">
-		{% for post in paginator.posts %}
-		<div class="col-sm-6 col-lg-4 mb-4">
-			<div class="card {{ post.categories }} shadow pageTransition">
-				<img src="/images/blog/{{ post.image | prepend: site.baseurl }}" alt="Image for {{ post.title }}" class="card-img-top">
-				<div class="card-body">
-					<strong class="d-inline-block mb-2 text-primary text-capitalize">{{ post.categories }}</strong>    
-					<h5>{{ post.title | escape }}</h5>
-					<p>{{ post.date | date: "%A, %d %B %Y" }}</p>
-					<a href="{{ post.url | prepend: site.baseurl }}" class="btn btn-primary">Read This One</a>
+		<div class="col">
+			<div class="card-columns">
+				{% for post in paginator.posts %}
+				<div class="card {{ post.categories }}">
+					<img src="/images/blog/{{ post.image | prepend: site.baseurl }}" alt="Image for {{ post.title }}" class="card-img-top">
+					<div class="card-body">
+						<strong class="d-inline-block mb-2 text-primary text-capitalize">{{ post.categories }}</strong>    
+						<h5>{{ post.title | escape }}</h5>
+						<p>{{ post.date | date: "%A, %d %B %Y" }}</p>
+						<a href="{{ post.url | prepend: site.baseurl }}" class="btn btn-primary">Read This One</a>
+					</div>
 				</div>
+				{% endfor %}
 			</div>
 		</div>
-		{% endfor %}
 	</div>
 <section>
 	<div class="row">
-		<div class="col page-index">
-			{% if paginator.total_pages > 1 %}
-				{% if paginator.previous_page %}
-					<a href="{{ paginator.previous_page_path | prepend: site.baseurl }}">Previous</a>
-				{% endif %}
+		<div class="col">
+			<ul class="pagination">
+				{% if paginator.total_pages > 1 %}
+					{% if paginator.previous_page %}
+						<li class="page-item"><a class="page-link" href="{{ paginator.previous_page_path | prepend: site.baseurl }}">Previous</a></li>
+					{% endif %}
 					{% for page in (1..paginator.total_pages) %}
 						{% if page == paginator.page %}
-							<em>{{ page }}</em>
+							<li class="page-item"><a class="page-link" href="#">{{ page }}</a></li>
 						{% elsif page == 1 %}
-							<a href="{{ '/' | relative_url }}">{{ page }}</a>
+							<li class="page-item"><a class="page-link" href="{{ '/' | relative_url }}">{{ page }}</a></li>
 						{% else %}
-							<a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a>
+							<li class="page-item"><a class="page-link" href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a></li>
 						{% endif %}
 					{% endfor %}
-				{% if paginator.next_page %}
-					<a href="{{ paginator.next_page_path | prepend: site.baseurl }}">Next</a>
+					{% if paginator.next_page %}
+						<li class="page-item"><a class="page-link" href="{{ paginator.next_page_path | prepend: site.baseurl }}">Next</a></li>
+					{% endif %}
 				{% endif %}
-			{% endif %}
+			</ul>
 		</div>
 	</div>
 </section>

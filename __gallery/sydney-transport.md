@@ -1,6 +1,6 @@
 ---
 layout: gallery
-title: Sydney Transport
+title: Photo Walk @ Sydney Transport
 description: Selected photos of Sydney transportation from the city.
 categories: 
 - city, landscape and street

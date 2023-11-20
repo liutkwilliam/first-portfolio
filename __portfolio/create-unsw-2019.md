@@ -3,8 +3,6 @@ categories:
 - ux ui web
 title: CREATE UNSW Website Revamping
 description: A website revamping for a UNSW student club CREATE.
-organisation: CREATE UNSW Student Club
-deliverables: Website Development and User Interface Design
 date: 2019-02-11 00:00:00 +1000
 folder: create-website
 image: createunsw-2020-mockup-laptop.jpg
@@ -24,7 +22,7 @@ images:
     - image_path: new_createunsw_website-2020-projects.png
       title: "Website Layout Improvement in 2020 - Projects Page"
 ---
-William revamped the layout and colour scheme of the UNSW Student club CREATE UNSW, with applying his creative knowledge and website development skills in HTML, CSS and Jekyll Scripting.
+William revamped the layout and colour scheme of the UNSW Student club CREATE UNSW in 2019, with applying his creative design and website development skills in HTML, CSS and Jekyll Scripting.
 
 The website revamping is initially launched in February 2019, then the latest version is completed in June 2020.
 

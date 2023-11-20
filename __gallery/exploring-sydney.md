@@ -1,6 +1,6 @@
 ---
 layout: gallery
-title: Exploring Sydney
+title: Photo Walk in Sydney
 description: Selected photos of Sydney Harbour, CBD and Vantage Points.
 categories: 
 - city, landscape and street

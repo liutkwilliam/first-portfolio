@@ -2,14 +2,13 @@
 	<span class="close fa fa-times" onclick="closeModal()"></span>
 	<div class="modalContent">
 		{% for image in page.images %}
-		<div class="mySlides">
-			<div class="centerBox">
-				<div class="centerImage">
+		<div class="modalSlides">
+			<div class="modalContentCenter">
+				<div class="div">
 					<img src="/images/{% if page.folder %}{{ page.folder }}/{% endif %}{{ image.image_path }}">
-					{% if image.title %}<p class="modal-text">{{ image.title }}</p>{% endif %}
+					{% if image.title %}<p class="text-center text-white my-4">{{ image.title }}</p>{% endif %}
 				</div>
 			</div>
-
 		</div>
     {% endfor %}
 	<div class="prev">

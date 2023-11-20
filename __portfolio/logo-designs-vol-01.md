@@ -2,8 +2,6 @@
 categories: 
 - graphic design
 title: Logo Design Challenge Volume 01
-description:
-organisation: 
 deliverables: Logo Designs
 date: 2021-10-16 12:00:00 +1000
 folder: aichallenge-logodesign

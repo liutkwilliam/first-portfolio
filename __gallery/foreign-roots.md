@@ -1,6 +1,6 @@
 ---
 layout: gallery
-title: Foreign Roots
+title: Foreign Roots | Fine Arts Photography
 description: A fine arts photographic series of tree portraits expressing memories of my migration story.
 categories: 
 - fine arts

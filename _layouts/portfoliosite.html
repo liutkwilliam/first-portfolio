@@ -5,20 +5,12 @@ layout: page
   <div class="row">
     <div class="col-md-7 d-flex align-self-center">
       <div>
-        {% if page.categories %}
-          <p class="lead text-uppercase text-muted">{{ page.categories | uniq | join: ", " }}</p>
-        {% endif %}
         <h1 class="text-primary">{{ page.title }}</h2>
         {% if page.date %}
           <p>{{ page.date | date: "%Y"}}</p>
-        {% endif %}
-        {% if page.organisation %}
-          <h5>Completed for</h5>
-          <p>{{ page.organisation }}</p>
-        {% endif %}
-        {% if page.deliverables %}
-          <h5>Deliverables</h5>
-          <p>{{ page.deliverables }}</p>
+        {% endif %}  
+        {% if page.categories %}
+          <p class="text-uppercase">{{ page.categories | uniq | join: ", " }}</p>
         {% endif %}
       </div>
     </div>

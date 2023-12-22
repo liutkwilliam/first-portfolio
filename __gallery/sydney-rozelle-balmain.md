@@ -1,12 +1,14 @@
 ---
 layout: gallery
-title: Sydney Streets of Rozelle, Balmain
+title: Photo Walk at Sydney Streets of Rozelle and Balmain
 description: Selected photos of street photography in Sydney Inner West suburbs of Rozelle and Balmain.
 categories: 
 - city, landscape and street
 organisation:
 folder: sydney-rozelle-balmain
 date: 2022-07-12 12:00:00 +1000
+feature:
+not-show:
 image: sydney-rozelle-balmain-03.jpg
 images:
     - image_path: sydney-rozelle-balmain-01.jpg

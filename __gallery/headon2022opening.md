@@ -7,7 +7,9 @@ categories:
 organisation: Head On Foundation
 folder: headon2022opening
 date: 2022-11-04 23:00:00 +1000
-image: 20221104-headon2022opening-012.jpeg
+feature:
+not-show:
+image: WebRes-Headonphotofest2022-WilliamLiu-IMG_7396.jpg
 images:
   - image_path: 20221104-headon2022opening-001.jpeg
   - image_path: 20221104-headon2022opening-002.jpeg
@@ -20,7 +22,7 @@ images:
   - image_path: 20221104-headon2022opening-009.jpeg
   - image_path: 20221104-headon2022opening-010.jpeg
   - image_path: 20221104-headon2022opening-011.jpeg
-  - image_path: 20221104-headon2022opening-012.jpeg
+  - image_path: WebRes-Headonphotofest2022-WilliamLiu-IMG_7396.jpg
   - image_path: 20221104-headon2022opening-013.jpeg
 ---
 Selected photos of can-did photography from the launch of Head On Photo Festival 2022 at Bondi Pavilion, Sydney on 4 November 2022

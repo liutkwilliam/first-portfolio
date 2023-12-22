@@ -5,12 +5,13 @@ title: UI Designs Collection Volume 1
 description:
 organisation: 
 deliverables: UI Designs
-feature: 
 date: 2022-02-01 12:00:00 +1000
 folder: ui-ux
 image: UIDesign-Vol01.png
 slug: ui-design-collection-vol-01
 link:
+feature:
+not-show: true
 images:
     - image_path: UIDesign001.png
       title: Sign Up Interface

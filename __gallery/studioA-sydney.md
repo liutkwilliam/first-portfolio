@@ -1,12 +1,14 @@
 ---
 layout: gallery
-title: Photography Works for studio A
+title: Can-did in-studio photography for studio A
 description: Selected photos of can-did photography while working with studio A, a supported studio in Sydney, supporting artists living with intellectual disability.
 categories:
 - can-did & events
 organisation:
 folder: studio-a-public-work
 date: 2022-11-02 23:00:00 +1000
+feature:
+not-show:
 image: 20221102-IMG_6725.jpg
 images:
   - image_path: 20210303-IMG_8438.jpg

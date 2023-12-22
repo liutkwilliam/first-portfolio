@@ -1,15 +1,13 @@
-<div class="{% if page.filtered == true %}filterDiv {{ card.categories }}{% endif %} card shadow pageTransition">
+{% if card.not-show == true %}
+{% else %}
+<div class="{% if page.filtered == true %}filterDiv {{ card.categories }}{% endif %} card">
     <a href="{% if card.link %}{{ card.link }}{% else %}{{ card.url }}{% endif %}">
         <img src="/images/{% if card.folder %}{{ card.folder }}/{% endif %}{{ card.image }}" alt="{{ card.slug }}" class="card-img-top">
         <div class="box">
             <div class="overlay">
-                <div class="centerBox">
-                    <div>
-                        <h5>{{ card.title }}</h5>
-                        <p class="text-uppercase">{{ card.categories | uniq | join: ", " }}</p>
-                    </div>
-                </div>
-            </div>	
+                <h5 class="text-uppercase">{{ card.title }}</h5>
+            </div>
         </div>
     </a>
 </div>
+{% endif %}

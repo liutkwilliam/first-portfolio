@@ -1,12 +1,14 @@
 ---
 layout: gallery
-title: Sunswift
+title: Event photography for Sunswift
 description: selected Photos taken during my participation with UNSW Solar Racing Team Sunswift in 2019.
 categories: 
 - can-did & events
 organisation:
 folder: sunswift-2019
 date: 2019-12-17 12:00:00 +1000
+feature:
+not-show:
 image: 20191015-SS-BWSC19-IMG_1792.jpg
 images:
     - image_path: 20190318-SS-TrackDay-0017.jpg

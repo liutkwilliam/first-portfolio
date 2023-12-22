@@ -4,29 +4,19 @@ title: Design Portfolio
 description: Check out my creative portfolio in photography, graphic design, website design and UI Design.
 image: /images/portfolio-cover.png
 permalink: /portfolio/
-filtered: true
+filtered: false
 ---
 <div id="portfolio">
 	<section>
 		<div class="row">
-			<div class="col-md text-center">
+			<div class="col">
 				<h1>{{ page.title }}</h1>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md text-center" id="myBtnContainer">
-				<a class="btn btn-sm btn-outline-primary active text-uppercase m-1" onclick="filterSelection('all')">Show all</a>
-				{% assign cmap = site._portfolio | map: 'categories' | uniq %}
-				{% assign cats = cmap | sort %}
-				{% for cat in cats %}
-				<a class="btn btn-sm btn-outline-primary text-uppercase m-1" onclick="filterSelection('{{ cat }}')">{{ cat }}</a>
-				{% endfor %}
 			</div>
 		</div>
 	</section>
 	<section>
 		<div class="row">
-			<div class="col-md">
+			<div class="col">
 				<div class="card-columns">
 					{% assign sorted = site._portfolio | sort:"date" | reverse %}
 					{% for card in sorted %}		

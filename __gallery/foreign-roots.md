@@ -1,6 +1,6 @@
 ---
 layout: gallery
-title: Foreign Roots
+title: Foreign Roots | Fine Arts Photography
 description: A fine arts photographic series of tree portraits expressing memories of my migration story.
 categories: 
 - fine arts
@@ -8,6 +8,8 @@ organisation:
 folder: foreign-roots
 date: 2018-06-08 15:00:00 +1000
 slug: foreign-roots
+feature:
+not-show: true
 image: williamliu_a2_final_004.jpg
 images:
     - image_path: williamliu_a2_final_001.jpg

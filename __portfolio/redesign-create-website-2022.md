@@ -1,15 +1,15 @@
 ---
 categories: 
-- ux ui web
+- website design
 title: Redesigning CREATE UNSW Website in 2022
 description: A website revamping for a UNSW student club CREATE.
-organisation: CREATE UNSW Student Club
-deliverables: Website Development and User Interface Design
 date: 2022-01-26 00:00:00 +1000
 folder: create-website
 image: CREATE-2022.png
 slug: redesign-create-website-2022
 link:
+feature:
+not-show:
 images:
     - image_path: create-2022-work-progress-2.png
       title: Collected Branding Information and design an UI system 

@@ -1,46 +1,36 @@
 ---
-layout: page
+layout: default
 ---
-<section>
-  <div class="row">
-    <div class="col-md-7 d-flex align-self-center">
-      <div>
-        {% if page.categories %}
-          <p class="lead text-uppercase text-muted">{{ page.categories | uniq | join: ", " }}</p>
-        {% endif %}
-        <h1 class="text-primary">{{ page.title }}</h2>
-        {% if page.date %}
-          <p>{{ page.date | date: "%Y"}}</p>
-        {% endif %}
-        {% if page.organisation %}
-          <h5>Completed for</h5>
-          <p>{{ page.organisation }}</p>
-        {% endif %}
-        {% if page.deliverables %}
-          <h5>Deliverables</h5>
-          <p>{{ page.deliverables }}</p>
-        {% endif %}
+<div class="fullPage">
+  <div class="full-cover-container">
+    <img src="/images/{% if page.folder %}{{ page.folder }}/{% endif %}{{ page.image }}" alt="Image of {{ page.slug }}" alt="homepage cover photo">
+      <div class="homepage-overlay">
+          <div>
+            <h1 class="text-primary">{{ page.title }}</h2>
+              {% if page.date %}
+                <p>{{ page.date | date: "%Y"}}</p>
+              {% endif %}  
+              {% if page.categories %}
+                <p class="text-uppercase">{{ page.categories | uniq | join: ", " }}</p>
+              {% endif %}
+          </div>
+      </div>
+  </div>
+</div>
+<div class="container-xl">
+  <section id="section-begin">
+    <div class="row d-flex justify-content-center">
+      <div class="col-md-6">
+        <p>{{ content }}</p>
       </div>
     </div>
-    {% if page.image %}
-    <div class="col-md-5">
-      <img src="/images/{% if page.folder %}{{ page.folder }}/{% endif %}{{ page.image }}" alt="Image of {{ page.slug }}" class="img-fluid rounded float-right">
-    </div>
-    {% endif %}
-  </div>
-</section>
-<section>
-  <div class="row">
-    <div class="col-md">
-      <p>{{ content }}</p>
-    </div>
-  </div>
-</section>
-
-{% if page.images %}
-  {% include portfolio-image.html %}
-{% endif %}
-
-{% if page.images %}
-  {% include portfolio-modal.html %}
-{% endif %}
+  </section>
+  
+  {% if page.images %}
+    {% include portfolio-image.html %}
+  {% endif %}
+  
+  {% if page.images %}
+    {% include portfolio-modal.html %}
+  {% endif %}
+</div>

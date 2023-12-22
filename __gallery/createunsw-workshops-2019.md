@@ -7,6 +7,8 @@ categories:
 organisation:
 folder: createunsw-workshops-2019
 date: 2019-04-30 12:00:00 +1000
+feature:
+not-show:
 image: createunsw-workshops-2019-006.jpg
 images:
     - image_path: createunsw-workshops-2019-001.jpg

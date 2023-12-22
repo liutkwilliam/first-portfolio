@@ -2,15 +2,14 @@
 categories: 
 - graphic design
 title: Social Media Graphics Volume 01
-description:
-organisation: 
 deliverables: Social Media Graphics
-feature: 
 date: 2021-05-30 12:00:00 +1000
 folder: socialmedia-graphics
 image: socialmedia-graphics-cover.png
 slug: socialmedia-graphics-vol01
 link:
+feature:
+not-show: true
 images:
     - image_path: socialmedia-graphics-001.png
     - image_path: socialmedia-graphics-002.png

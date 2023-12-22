@@ -7,6 +7,8 @@ categories:
 organisation:
 folder: locomotive-3801-sydney-relaunch
 date: 2021-03-13 12:00:00 +1000
+feature:
+not-show:
 image: locomotive-3801-sydney-relaunch-001.jpg
 images:
     - image_path: locomotive-3801-sydney-relaunch-001.jpg

@@ -1,5 +1,4 @@
 ---
-layout: portfoliosite
 categories: 
 - ux ui web
 title: Trail-n-Plan
@@ -11,6 +10,8 @@ folder: trail-n-plan
 image: post-report-designs-01.png
 slug: trail-n-plan
 link:
+feature:
+not-show:
 ---
 Trail-n-Plan is a personal User Experience (UX) & User Interface (UI) project. It is prototyped in response to my friend's request who want to see a single-app that can plan and manage both trail route and logistics to collect user preferences and automate summaries for this trail running community. Unfortunately, there is yet any similar single-app that achieve it.
 
@@ -203,7 +204,7 @@ This diagram show how each of the features evaluated.
 <div class="row trailnplan">
     {% for screen in site.data.trailnplan-app %}
     <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-        <div class="card shadow h-100">
+        <div class="card h-100">
             <img src="{{ site.baseurl }}/images/trail-n-plan/{{ screen.image }}" alt="Picture of {{screen.title}}" class="card-img-top">
             <div class="card-body">
                 <h5>{{ screen.title }}</h5>

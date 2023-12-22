@@ -1,16 +1,15 @@
 ---
-layout: portfoliosite
 categories:
 - graphic design
 title: Illustrator Daily Creative Challenge (May 11 - May 22)
 description: Building Illustrator skills in 9 space-themed challenges
-organisation:
-deliverables:
 date: 2020-05-17 12:00:00 +1000
 folder: aichallenge-space
 image: aichallenge-space-000.png
 slug: aichallenge-space
 link:
+feature:
+not-show:
 images:
     - image_path: aichallenge-space-001.png
       title: Day 1 - Spaceship Icon

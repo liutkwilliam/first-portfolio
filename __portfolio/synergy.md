@@ -10,6 +10,8 @@ folder:
 image: 20180523_CREATE_Synergy_MediaNight-0009.jpg
 slug: synergy
 link:
+feature:
+not-show: true
 ---
 SYNERGY is a collaborating interactive light installation for the Vivid Sydney light festival 2018.
 

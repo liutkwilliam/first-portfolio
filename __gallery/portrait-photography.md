@@ -7,6 +7,8 @@ categories:
 organisation:
 folder: portrait-photography
 date: 2018-03-10 12:00:00 +1000
+feature:
+not-show: true
 image: 20170401_SYD_UNSWPhotoClub_WatsonsBay-0185.jpg
 images:
     - image_path: 20170401_SYD_UNSWPhotoClub_WatsonsBay-0185.jpg

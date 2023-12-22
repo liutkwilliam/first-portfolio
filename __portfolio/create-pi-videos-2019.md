@@ -3,14 +3,13 @@ categories:
 - videography
 title: Celestial Pancake - Bumping in for Vivid Sydney 2019 Video Highlights
 description: A video project produced while participating in a student project team CREATE UNSW Project Illuminate.
-organisation: CREATE UNSW Student Project Team - Project Illuminate
-deliverables: Video Documentations
-feature:
 date: 2019-05-26 12:00:00 +1000
 folder: 
 image: vivid19-gif.gif
 slug: create-pi-videos-2019
 link:
+feature:
+not-show: true
 ---
 William produced two highlights videos while participating in a student project team <b>CREATE UNSW Project Illuminate</b>, documenting the progress of bumping in for their light installation Celestial Pancake in Vivid Sydney 2019.
 

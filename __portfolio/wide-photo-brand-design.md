@@ -5,12 +5,13 @@ title: Wide Photo - Graphic Design Project
 description:
 organisation: 
 deliverables: A visual guideline, presentation slides templates, a social media post (Instagram) and a web banner
-feature: 
 date: 2022-11-30 12:00:00 +1000
 folder: widephoto-brand
 image: widephotos-brand_Artboard-0.png
 slug: widephoto-brand
 link:
+feature:
+not-show:
 ---
 Wide Photo is a fictional company providing photography services based in Sydney. For the project, I have created the following:
 

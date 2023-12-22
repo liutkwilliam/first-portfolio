@@ -7,6 +7,8 @@ categories:
 organisation:
 folder: trick-photos-2018
 date: 2018-03-24 23:00:00 +1000
+feature:
+not-show:
 image: trick-photos-2018-002.jpg
 images:
     - image_path: trick-photos-2018-001.jpg

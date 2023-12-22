@@ -7,6 +7,8 @@ categories:
 organisation:
 folder: food-photos-2017
 date: 2017-09-01 23:00:00 +1000
+feature:
+not-show:
 image: food-photos-2017-005.jpg
 images:
     - image_path: food-photos-2017-001.jpg

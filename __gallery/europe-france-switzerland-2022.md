@@ -1,12 +1,14 @@
 ---
 layout: gallery
-title: Travel in Europe 2022 - France and Switzerland
+title: Travel in France and Switzerland
 description: Selected photos of travel photography in France (Paris, Chamonoix) and Switzerland between mid-August and early September in 2022.
 categories: 
 - city, landscape and street
 organisation:
 folder: europe-france-switzerland-2022
 date: 2022-09-13 12:00:00 +1000
+feature:
+not-show:
 image: 20220908-IMG_1192.jpg
 images:
     - image_path: 20220815-IMG_4409.jpg

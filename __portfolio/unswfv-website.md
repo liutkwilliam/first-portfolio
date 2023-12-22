@@ -6,12 +6,13 @@ title: UNSW Future Vehicles
 description: A website and branding design completed for UNSW Future Vehicles.
 organisation: UNSW Future Vehicles
 deliverables: Overall branding, website, social media graphics
-feature:
 date: 2020-05-21 16:00:00 +1000
 folder: unswfv-project
 image: unswfv-futurevehiclesvision-01.png
 slug: unswfv-website
 link:
+feature:
+not-show: true
 images:
     - image_path: unswfv-homepage.png
       title: Website Design and Development

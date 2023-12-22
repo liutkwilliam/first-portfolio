@@ -8,7 +8,7 @@ organisation: Incognito Art Show
 folder: incognitoartshow2023
 date: 2023-07-15 23:00:00 +1000
 feature:
-not-show:
+not-show: true
 image: WebRes-Headonphotofest2022-WilliamLiu-IMG_7396.jpg
 images:
   - image_path: 20221104-headon2022opening-001.jpeg

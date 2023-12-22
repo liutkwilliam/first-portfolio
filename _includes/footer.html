@@ -1,13 +1,13 @@
 <!--footer section-->
-<div class="container-fluid py-2">
-	<footer class="d-flex flex-wrap justify-content-between align-items-center">
-		<div class="text-center text-md-left">
-			<a href="{{ '/' }}" class="mr-2 mb-0 d-inline-block text-decoration-none">
+<div class="container-fluid py-4">
+	<footer class="row d-flex flex-wrap justify-content-between align-items-center">
+		<div class="col-md text-center text-md-left d-block d-md-inline-flex">
+			<a href="{{ '/' }}" class="text-decoration-none py-md-2 py-4 pr-md-4 ">
 				<img alt="Page Logo" src="{{ site.logo-reg }}" style="height:20px;">
 			</a>
-			<span class="mb-0 text-body-secondary">@ {{ 'now' | date: "%Y" }}, William - Tsz Kin LIU</span>
+			<span class="d-block d-md-inline-flex py-2">@ {{ 'now' | date: "%Y" }}, William - Tsz Kin LIU</span>
 		</div>
-		<div class="text-center text-md-right">
+		<div class="col-md text-center text-md-right py-2">
 			{% if site.email %}<a href="mailto:{{ site.email }}/" class="fa fa-lg fa-envelope-o"></a>{% endif %}
 			{% if site.instagram %}<a href="https://www.instagram.com/{{ site.instagram }}/" class="fa fa-lg fa-instagram"></a>{% endif %}
 			{% if site.linkedin %}<a href="https://www.linkedin.com/in/{{ site.linkedin }}/" class="fa fa-lg fa-linkedin"></a>{% endif %}

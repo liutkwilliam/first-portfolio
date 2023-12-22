@@ -2,8 +2,10 @@
 $BlueBrand01: #238dc6;
 $BlueBrand02: #3c69b2;
 $BlueBrand03: #3C4FA2;
-$BrandDark: #404041;
-$BrandLight: #bebebe;
+$BrandDark: #060606;
+$BrandLight: #f5f5f5;
+
+$darkmode: #55A6FF;
 
 // Option A: Include all of Bootstrap
 
@@ -68,6 +70,8 @@ body {
   font-size: 1rem;
   margin: 0 auto;
   color: $black;
+  background-color: $light;
+  @include standard-transition;
 }
 
 h1 {
@@ -91,7 +95,7 @@ h1 {
   outline: none;
   background-image: $diagonal-bg;
   background-color: $primary;
-  color: $white;
+  color: $light;
   padding: 0.6rem 1.25rem;
   border-radius: 1rem 0 0 1rem;
   @include standard-transition;
@@ -105,7 +109,7 @@ h1 {
   }
   @media (max-width: 767.98px) {
       padding: 0.5rem 1rem;
-      font-size: 1.25rem;
+      font-size: 1rem;
       bottom: 6rem;
   }
 }
@@ -228,7 +232,7 @@ footer {
   left: 0;
   width: 100%;
   height: .25rem;
-  background: $white;
+  background: $light;
   z-index: 1031;
   @media print {
       display: none;
@@ -302,7 +306,7 @@ footer {
             text-align: center;
             width: 100%;
             height: 100%;
-            background-image: linear-gradient(to bottom, rgba($white, 1) 8%, rgba($white, $bg-opacity) 20%, rgba($white, $bg-opacity) 85%, rgba($white, 1) 100%);
+            background-image: linear-gradient(to bottom, rgba($light, 1) 8%, rgba($light, $bg-opacity) 20%, rgba($light, $bg-opacity) 85%, rgba($light, 1) 100%);
             margin: auto;
             padding: 1rem 2rem;
             .home-links {
@@ -320,6 +324,9 @@ footer {
     column-count: 3!important;
     &.portfolio-column {
         column-count: 2!important;
+        @media (max-width: 767.98px) {
+            column-count: 1!important;
+        }
     }
     @media (max-width: 991.98px) {
         column-count: 2!important;
@@ -344,7 +351,7 @@ footer {
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: $white;
+    color: $light;
     padding: 2rem;
     @include standard-transition;
     background-color: rgba($dark, 0.9);
@@ -375,7 +382,7 @@ footer {
         overflow: hidden;
     }
     .close {
-        color: $white;
+        color: $light;
         position: absolute;
         top: 1rem;
         right: 2rem;
@@ -414,7 +421,7 @@ footer {
             margin: 10vh 0;
             width: 4rem;
             cursor: pointer;
-            color: $white;
+            color: $light;
             font-weight: bold;
             font-size: 1.2rem;
             transition: 0.6s ease;
@@ -440,6 +447,16 @@ footer {
     &.show {
         display: inline-block!important;
     }
+}
+
+.direction-icon {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 1.5rem;
+    font-size: 4rem;  
+    color: $primary;
+    cursor: pointer;
 }
 
 // 14. Trail-n-Plan
@@ -470,5 +487,14 @@ $trailnplan: #4293d7, #8ac1f1, #ffffff, #ff9782, #e1d830, #6e7f10, #333333;
                 background-color: nth($trailnplan, $i);
             }
         }
+    }
+}
+
+// dark mode trial
+.darkmode {
+    color: $light;
+    background-color: $dark;
+    h1 {
+        color: $darkmode;
     }
 }

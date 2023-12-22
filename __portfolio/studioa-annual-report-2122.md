@@ -21,48 +21,31 @@ images:
     - image_path: annual-report-2122-mockup-08.jpg
     - image_path: annual-report-2122-mockup-09.jpg
 ---
-As part of my work with studio A, I had the privilege of designing their 68-page annual report for their financial year of 2021 and 2022. This report summarises studio A artists’ growth, professional development and success.
+As part of my work with studio A, I had the privilege of designing their 68-page annual report for their financial year of 2021 and 2022.
 
-The report includes a number of my photos that taken for the studio.
+studio A is a Sydney based arts company that provides professional development for artists with intellectual disabilities.
 
-<div class="row">
-  <div class="col-md">
-    <img src="/images/{{ page.folder }}/20220216-IMG_2620.jpg" class="card-img-top">
-  </div>
-  <div class="col-md">
-    <img src="/images/{{ page.folder }}/20220223-IMG_3454.jpg" class="card-img-top">
-  </div>
-</div>
+## Deliverables
 
-and the mockup used in the publication
+The report summarises studio A artists’ growth, professional development and success. Under the direction and guidence from the communication marketing manager, the report must consists of:
 
-<div class="row">
-    <div class="col-md">
-        <img src="/images/{{ page.folder }}/artshub-ipad-mockup-copy.jpg" class="card-img-top">
-    </div>
-    <div class="col-md">
-        <img src="/images/{{ page.folder }}/studioA_SOH_A4_Cover_Mockup_02.jpg" class="card-img-top">
-    </div>
-</div>
-<div class="row">
-    <div class="col-md">
-        <img src="/images/{{ page.folder }}/studioa-greg-policies-mockup-showcase.jpg" class="card-img-top">
-    </div>
-        <div class="col-md">
-        <img src="/images/{{ page.folder }}/studioa-online-laptop-mockup.jpg" class="card-img-top">
-    </div>
-</div>
-<div class="row">
-    <div class="col-md">
-        <img src="/images/{{ page.folder }}/media-mockup-01-Archabald2022-TheGuardian.jpg" class="card-img-top">
-    </div>
-    <div class="col-md">
-        <img src="/images/{{ page.folder }}/studioA_Hive_A4_Booklet_Mockup_01.jpg" class="card-img-top">
-    </div>
-</div>
-<br>
+- A publication cover
+- A content page
+- Message from the CEO
+- Message from the Chair of Board
+- Sponsors and Donnors
+- Multiple section cover spreads and content spreads that list out studio A's participation in:
+    - Exhibitions
+    - Commissions
+    - Partnerships 
+    - studio development
+- and Governance and financial report. 
 
-studio A is a Sydney based arts company that provides professional development for artists with intellectual disabilities. Learn more about their mission: [https://www.studioa.org.au/](https://www.studioa.org.au/)
+## The Challenge
+
+The challenge of this publication design is to make it accessibility friendly including readable font size, picking strong imagaries
+
+## Credits
 
 Cover Images on the publication by [Cybele Malinowski](https://www.instagram.com/cybism/).
 
@@ -70,4 +53,10 @@ Copywriting by studio A and Sam Kalis.
 
 Images used in the publications are supplied and in courtesy of studio A.
 
+## Published Content
+
 [Read the annual report here](https://static1.squarespace.com/static/55d96d22e4b039657c2fd998/t/6508faca2cbcb11581dbf7ab/1695087340928/StudioA+Annual+Report+21-22.pdf)
+
+## Learn More
+
+Learn more about their mission: [https://www.studioa.org.au/](https://www.studioa.org.au/)

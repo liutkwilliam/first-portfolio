@@ -68,7 +68,7 @@ plugins:
 collections:
   _portfolio:
       output: true
-      permalink: /projects/:title/
+      permalink: /portfolio/:title/
   _gallery:
       output: true
       permalink: /photography/:title/

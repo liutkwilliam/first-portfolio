@@ -10,7 +10,7 @@ image: mpsb-portfolio.png
 slug: mpsb-mgnt-consult-website
 link:
 feature:
-not-show:
+not-show: true
 images:
     - image_path: mpsb-home.png
       title: Home Page

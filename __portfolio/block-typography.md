@@ -9,7 +9,7 @@ slug: block-typography
 link:
 folder: block
 feature:
-not-show:
+not-show: true
 images:
     - image_path: Block-typo-img1.png
       title: Final design and artist statement

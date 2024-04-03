@@ -11,7 +11,7 @@ image: widephotos-brand_Artboard-0.png
 slug: widephoto-brand
 link:
 feature:
-not-show:
+not-show: true
 ---
 Wide Photo is a fictional company providing photography services based in Sydney. For the project, I have created the following:
 

@@ -23,7 +23,7 @@ title: William Liu | Sydney Based Photographer, Graphic Designer and Website Des
 email: liutk.william@gmail.com
 description: Based in Sydney, Australia. William is passionate about photography, graphic design, website design and UI Design.
 baseurl: ""
-url: "https://liutkwilliam.github.io"
+url: "https://www.liutkwilliam.com"
 facebook: liutk.william
 instagram: liutk.william
 linkedin: liutkwilliam
@@ -68,7 +68,7 @@ plugins:
 collections:
   _portfolio:
       output: true
-      permalink: /projects/:title/
+      permalink: /portfolio/:title/
   _gallery:
       output: true
       permalink: /photography/:title/

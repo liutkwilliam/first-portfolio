@@ -69,9 +69,6 @@ collections:
   _portfolio:
       output: true
       permalink: /portfolio/:title/
-  _gallery:
-      output: true
-      permalink: /photography/:title/
   posts:
       output: true
       permalink: /blog/:title/
@@ -82,11 +79,6 @@ defaults:
       path: "__portfolio"
     values:
       layout: "portfoliosite"
-  -
-    scope:
-      path: "__gallery"
-    values:
-      layout: "gallery"
   -
     scope:
       path: "_posts"

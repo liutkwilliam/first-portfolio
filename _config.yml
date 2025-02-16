@@ -33,9 +33,6 @@ logo-reg: /images/logos/logo-icon-colour.svg
 logo-black: /images/logos/logo-icon-black.svg
 logo-white: /images/logos/logo-icon-white.svg
 
-#FullCV
-fullcv: https://liutkwilliam.github.io/fullcv
-
 # Build settings
 markdown: kramdown
 

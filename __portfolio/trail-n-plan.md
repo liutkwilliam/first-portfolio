@@ -40,7 +40,7 @@ Trail-n-Plan is a personal User Experience (UX) & User Interface (UI) project. I
 A Google Form online survey is conducted, and received 27 responses.
 
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-<script type="text/javascript" src="/js/trailnplanScript.js"></script>
+<script type="text/javascript" src="/assets/js/trailnplanScript.js"></script>
 
 <div class="row">
     <div class="col-lg">

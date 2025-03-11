@@ -1,12 +1,8 @@
 - name: Home
   link: /
-- name: About Me
-  link: /about/
 - name: Design Portfolio
   link: /portfolio
-- name: Developer Portfolio
-  link: /developer
-- name: Photography Portfolio
-  link: /photography
 - name: QR Code Connect
   link: /qr
+# - name: Photography Portfolio
+#   link: /photography

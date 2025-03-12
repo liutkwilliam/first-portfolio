@@ -8,3 +8,4 @@ _assets
 .vscode
 node_modules
 _archived
+sass

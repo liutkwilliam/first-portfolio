@@ -42,9 +42,8 @@ plugins:
   - jekyll-seo-tag
   - jekyll-paginate
 
-sass:
-  sass_dir: _sass
-  style: compressed
+# sass:
+#   sass_dir: "/"
 
 # Exclude from processing.
 # The following items will not be processed, by default.

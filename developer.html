@@ -1,0 +1,30 @@
+---
+layout: page
+title: Developer Portfolio
+description: Check out my Developer portfolio in fronend design and static sites development.
+image: /images/portfolio-cover.png
+permalink: /developer/
+filtered: false
+---
+<div id="portfolio">
+	<section>
+		<div class="row">
+			<div class="col">
+				<h1>{{ page.title }}</h1>
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="row">
+			<div class="col">
+				<div class="card-columns">
+					{% assign sorted = site._developer | sort:"date" | reverse %}
+					{% for card in sorted %}		
+						{% include portfolio-box.html %}
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+	</section>
+</div>
+<script src="{{ "/assets/js/portfolio-grid.js" | relative_url }}"></script>

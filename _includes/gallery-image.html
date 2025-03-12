@@ -1,0 +1,16 @@
+<section>
+    <div class="row">
+      <div class="col">
+        <div class="card-columns">
+          {% for image in page.images %}
+            <div class="card">
+              <img 
+                src="/images/galleries/{% if page.folder %}{{ page.folder }}/{% endif %}{{ image.image_path }}" 
+                alt="Image {{ forloop.index }} of {{ page.title }}"
+                class="card-img-top">			
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+</section>

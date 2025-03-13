@@ -45,11 +45,3 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
-
-// function darkMode() {
-//   var element = document.body;
-//   var navBar = document.getElementById("header");
-//   element.classList.toggle("dark-mode");
-//   navBar.classList.toggle("navbar-light");
-//   navBar.classList.toggle("bg-light");
-// }

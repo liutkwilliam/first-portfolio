@@ -5,7 +5,7 @@ description: My event photographs contribution to UNSW Global in 2018
 categories: 
 - can-did & events
 organisation:
-folder: unswglobal-contributions-event
+folder: galleries/unswglobal-contributions-event
 date: 2018-12-01 12:00:00 +1000
 feature:
 not-show:

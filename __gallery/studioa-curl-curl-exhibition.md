@@ -5,7 +5,7 @@ description: Selected photos of can-did photography from the launch of studio A'
 categories: 
 - can-did & events
 organisation:
-folder: studioa-curl-curl-exhibition
+folder: galleries/studioa-curl-curl-exhibition
 date: 2022-02-28 18:00:00 +1000
 feature:
 not-show:
@@ -36,7 +36,7 @@ Artists works appeared:
 
 Matthew Elliott, Emily Crockford, Lauren Kerjan, Daniel Kim, Catherine McGuiness, Meagan Pelham, Damian Showyin and Phil Sidney.
 
-Image: Tsz Kin (William) Liu and artworks courtesy of studio A.
+Image: William Liu and artworks courtesy of studio A.
 
 All rights reserved.
 

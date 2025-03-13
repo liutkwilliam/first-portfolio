@@ -19,9 +19,9 @@
 # in the templates via {{ site.myvariable }}.
 
 # Site setting
-title: William Liu | Sydney Based Photographer, Graphic Designer and Website Designer
+title: William Liu Portfolio
 email: liutk.william@gmail.com
-description: Based in Sydney, Australia. William is passionate about photography, graphic design, website design and UI Design.
+description: Based in Sydney, Australia. William is passionate about photography, graphic design, website design and coding.
 baseurl: ""
 url: "https://www.liutkwilliam.com"
 facebook: liutk.william

@@ -22,8 +22,12 @@ $enable-responsive-font-sizes: true;
 
 // A3. navbar
 $navbar-padding-x: 1rem;
+$navbar-light-color: $BrandDark;
 $navbar-light-hover-color: $primary;
 $navbar-light-active-color: $primary;
+// $navbar-dark-color: $BrandLight;
+// $navbar-dark-hover-color: $secondary;
+// $navbar-dark-active-color: $secondary;
 $navbar-nav-link-padding-x: .7rem;
 $nav-link-font-weight: 500;
 
@@ -252,8 +256,9 @@ footer {
 }
 
 // 9. full page
+$bg-opacity: 0.8;
 .fullPage {
-    height: 100vh;
+    min-height: 100vh;
     position: relative;
     width: 100%;
     .full-cover-container {
@@ -294,9 +299,7 @@ footer {
             }
         }
         // bottom text
-        $bg-opacity: 0.8;
         .homepage-overlay {
-            color: $black;
             position: absolute;
             z-index: 1;
             top: 0;
@@ -309,11 +312,13 @@ footer {
             background-image: linear-gradient(to bottom, rgba($light, 1) 8%, rgba($light, $bg-opacity) 20%, rgba($light, $bg-opacity) 85%, rgba($light, 1) 100%);
             margin: auto;
             padding: 1rem 2rem;
+            div {
+                width: 1200px;
+                min-width: 330px;
+            }
             .home-links {
                 display: flex;
                 margin: auto;
-                max-width: 600px;
-                min-width: 330px;
             }
         }
     }
@@ -485,10 +490,16 @@ $trailnplan: #4293d7, #8ac1f1, #ffffff, #ff9782, #e1d830, #6e7f10, #333333;
 }
 
 // dark mode trial
-.dark-mode {
-    color: $light;
-    background-color: $dark;
-    h1 {
-        color: $darkmode;
-    }
-}
+// .dark-mode {
+//     color: $light;
+//     background-color: $dark;
+//     h1 {
+//         color: $darkmode;
+//     }
+//     .homepage-overlay {
+//         background-image: linear-gradient(to bottom, rgba($dark, 1) 8%, rgba($dark, $bg-opacity) 20%, rgba($dark, $bg-opacity) 85%, rgba($dark, 1) 100%)!important;
+//     }
+//     .active-link {
+//         color: $secondary!important;
+//     }
+// }

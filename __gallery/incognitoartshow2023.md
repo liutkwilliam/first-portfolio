@@ -5,7 +5,7 @@ description: Selected photos of can-did photography from the Sale Day of Incogni
 categories: 
 - can-did & events
 organisation: Incognito Art Show
-folder: incognitoartshow2023
+folder: galleries/incognitoartshow2023
 date: 2023-07-15 23:00:00 +1000
 feature:
 not-show: true

@@ -7,7 +7,6 @@
 		<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top py-2" id="header">
 			<a class="navbar-brand" href="{{ '/' }}">
 				<img alt="Page Logo" src="{{ site.logo-reg }}" style="height:40px;" class="d-inline-block align-text-middle pr-2 light-mode">
-				<!-- <img alt="Page Logo" src="{{ site.logo-reg }}" style="height:40px;" class="d-inline-block align-text-middle pr-2 dark-mode"> -->
 			</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars" aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
@@ -19,9 +18,6 @@
 						<a class="nav-link" href="{{site.baseurl}}{{item.link}}">{{ item.name }}</a>
 					</li>
 					{% endfor %}
-					<!-- <li class="nav-item">
-						<a class="btn btn-primary" onclick="darkMode()">Dark Mode</a>
-					</li> -->
 				</ul>
 			</div>
 		</nav>

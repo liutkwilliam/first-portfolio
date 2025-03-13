@@ -1,7 +1,7 @@
 - name: Home
   link: /
 - name: About Me
-  link: /about/
+  link: /about
 - name: Design Portfolio
   link: /portfolio
 - name: Developer Portfolio

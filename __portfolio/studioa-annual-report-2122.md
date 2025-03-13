@@ -55,7 +55,7 @@ Images used in the publications are supplied and in courtesy of studio A.
 
 ## Published Content
 
-[Read the annual report here](https://static1.squarespace.com/static/55d96d22e4b039657c2fd998/t/6508faca2cbcb11581dbf7ab/1695087340928/StudioA+Annual+Report+21-22.pdf)
+[Read the annual report here](https://storage.googleapis.com/sa-images-au/StudioAAnnualReport21-22.pdf)
 
 ## Learn More
 

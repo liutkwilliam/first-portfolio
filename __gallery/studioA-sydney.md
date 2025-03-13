@@ -5,7 +5,7 @@ description: Selected photos of can-did photography while working with studio A,
 categories:
 - can-did & events
 organisation:
-folder: studio-a-public-work
+folder: galleries/studio-a-public-work
 date: 2022-11-02 23:00:00 +1000
 feature:
 not-show:
@@ -89,7 +89,7 @@ Guests appeared:
 
 Shane Simpson AM (Chair of Board, studio A Limited), Trent Zimmerman MP (Federal Member for North Sydney), Shelly Simpson (Mud Australia), Ausgrid, Tim James MP (NSW NSW Member for Willoughby)
 
-Image: Tsz Kin (William) Liu and artworks courtesy of studio A.
+Image: William Liu and artworks courtesy of studio A.
 
 All rights reserved.
 

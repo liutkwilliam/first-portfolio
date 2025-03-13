@@ -1,19 +1,15 @@
 ---
 layout: default
-title: About Me
+title: About
 description: Get to know me.
 image: /images/portfolio-cover.png
-profile-image: /images/2024-profile-web.jpg
 permalink: /about/
 filtered: false
 ---
 <div class="d-flex align-items-center fullPage">
     <div class="container-xl">
         <div class="row d-flex justify-content-center align-items-center">
-            <div class="col-md order-md-2 text-center">
-                <img src="{{ page.profile-image }}" class="rounded-circle my-5 mx-auto d-block" style="width: 15rem;" alt="Profile Image">
-            <!-- </div> -->
-            <!-- <div class="col-md-6 order-md-1 text-center"> -->
+            <div class="col-md-8 col-lg-6">
                 <div class="mb-4">
                     {% capture aboutMe %}{% include about-me.md %}{% endcapture %}
                     {{ aboutMe | markdownify }}
@@ -24,7 +20,8 @@ filtered: false
                 </div>
                 <div>
                     <h5>Contact Me</h5>
-                    <p><i class="fa fa-lg fa-envelope-o"></i><a href="mailto:liutk.william@gmail.com" class="ml-2">liutk.william (@) gmail.com</a></p>
+                    <p><i class="fa fa-lg fa-envelope-o"></i><a href="mailto:{{ site.email }}" class="ml-2">liutk.william (@) gmail.com</a></p>
+                    <p><i class="fa fa-lg fa-linkedin"></i><a href="https://www.linkedin.com/in/{{ site.linkedin }}/" class="ml-2">Connect Me on LinkedIn</a></p>
                 </div>
             </div>
         </div>

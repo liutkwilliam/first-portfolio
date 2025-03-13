@@ -5,7 +5,7 @@
           {% for image in page.images %}
             <div class="card" onclick="openModal();currentSlide({{ forloop.index }})">
               <img 
-                src="/images/{% if page.layout == "gallery" %}galleries/{% endif %}{% if page.folder %}{{ page.folder }}/{% endif %}{{ image.image_path }}" 
+                src="/images/{% if page.folder %}{{ page.folder }}/{% endif %}{{ image.image_path }}" 
                 alt="Image {{ forloop.index }} of {{ page.title }}"
                 class="card-img-top">			
             </div>

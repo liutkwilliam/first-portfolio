@@ -5,7 +5,7 @@ description: Selected photos of can-did photography from the launch of Head On P
 categories: 
 - can-did & events
 organisation: Head On Foundation
-folder: headon2022opening
+folder: galleries/headon2022opening
 date: 2022-11-04 23:00:00 +1000
 feature:
 not-show:

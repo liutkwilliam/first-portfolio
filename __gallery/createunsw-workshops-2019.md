@@ -5,7 +5,7 @@ description: This gallery showcases some of the best captures from Arduino works
 categories: 
 - can-did & events
 organisation:
-folder: createunsw-workshops-2019
+folder: galleries/createunsw-workshops-2019
 date: 2019-04-30 12:00:00 +1000
 feature:
 not-show:

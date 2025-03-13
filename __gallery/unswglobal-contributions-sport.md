@@ -5,7 +5,7 @@ description: My sport photographs contribution to UNSW Global in 2018
 categories: 
 - can-did & events
 organisation:
-folder: unswglobal-contributions-sport
+folder: galleries/unswglobal-contributions-sport
 date: 2018-03-01 12:00:00 +1000
 feature:
 not-show:

@@ -53,5 +53,5 @@ Bridgestone World Solar Challenge is a biannual event, it is aimed to promote in
 [Visit World Solar Challenge Website](https://www.worldsolarchallenge.org/)
 
 <style>
-    iframe {width: 100%; height: 80vw; border: none;}
+    iframe {width: 100%; height: 50vw; border: none;}
 </style>

@@ -9521,12 +9521,17 @@ footer a.fa:hover {
   padding: 1rem 2rem;
 }
 .fullPage .full-cover-container .homepage-overlay div {
-  width: 1200px;
+  width: 80vw;
   min-width: 330px;
 }
 .fullPage .full-cover-container .homepage-overlay .home-links {
   display: flex;
   margin: auto;
+}
+@media (max-width: 991.98px) {
+  .fullPage .full-cover-container .homepage-overlay .home-links {
+    display: block;
+  }
 }
 
 .card-columns {

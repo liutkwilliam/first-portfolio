@@ -2,17 +2,17 @@
 
 Born in Hong Kong, currently living in Gadigal Country / Sydney, Australia.
 
-A final year student in Master of Computer Science, with a focus on software engineering at the University of Sydney.
+A final year student in Master of Computer Science, with a focus on Software Engineering at the University of Sydney.
 
 I love taking photos, whenever I go, documenting the moments. Can-did, events, product photography and artwork documentation are what I am interested in. 
 
 And I enjoy using coding to design websites, something cool, there are a lot of stuff that I am still exploring, including: ReactJS, Java, C# and Hugo.
 
-I hold a bachelor (honours) degree in Media Arts from UNSW.
+I hold a bachelor (honours) degree in Media Arts from UNSW, and certificate of completion in UX/UI Design and Digital Graphic Design.
 
 ###### Creative Skills
 
-Photography / Video recording / Photoshop / Illustrator / InDesign / Premiere Pro / After Effects / Figma / Fusion
+Photography / Video recording / Photoshop / Illustrator / InDesign / Premiere Pro / After Effects / Figma / Fusion 360
 
 ###### Coding Skills
 

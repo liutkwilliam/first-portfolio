@@ -313,12 +313,15 @@ $bg-opacity: 0.8;
             margin: auto;
             padding: 1rem 2rem;
             div {
-                width: 1200px;
+                width: 80vw;
                 min-width: 330px;
             }
             .home-links {
                 display: flex;
                 margin: auto;
+                @media (max-width: 991.98px) {
+                    display: block;
+                }
             }
         }
     }

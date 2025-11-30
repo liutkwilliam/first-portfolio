@@ -11,7 +11,7 @@ link:
 feature:
 not-show:
 ---
-William produced two highlights videos while participating in a student project team <b>CREATE UNSW Project Illuminate</b>, documenting the progress of bumping in for their light installation Celestial Pancake in Vivid Sydney 2019.
+I produced two highlights videos while participating in a student project team <b>CREATE UNSW Project Illuminate</b>, documenting the progress of bumping in for their light installation Celestial Pancake in Vivid Sydney 2019.
 
 CREATE UNSW Project Illuminate is a UNSW student project, within the UNSW Engineering Faculty that aims to empower students to apply hands-on skills on large scale professional and multidisciplinary projects. We seek to foster deep interactions between designers and engineers, allowing students to realise their creative visions while gaining practical design and manufacturing experience. This project combines the creativity of art and the innovation of engineering to demonstrate the magic of art meeting technology through light.
 

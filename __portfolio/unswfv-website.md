@@ -36,9 +36,7 @@ UNSW Future Vehicles (FV) is a student organisation at the University of New Sou
 
 The organisation is proudly supported by UNSW Engineering and UNSW Business School.
 
-William delivered the branding, design, website design and development for the organiation.
-
-Apart from the branding and website design, William also produced an motion design for the website landing page.
+I delivered the branding, design, website design and development for the organiation.
 
 <div>
     <video width="100%" controls autoplay loop>

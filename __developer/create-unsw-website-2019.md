@@ -7,7 +7,7 @@ image: createunsw-2020-mockup-laptop.jpg
 slug: create-unsw-website-2019
 link:
 feature:
-not-show:
+not-show: true
 images:
     - image_path: createunsw_webprototype_version1.PNG
       title: Website Prototyping via Adobe XD
@@ -20,7 +20,7 @@ images:
     - image_path: new_createunsw_website-2020-projects.png
       title: "Website Layout Improvement in 2020 - Projects Page"
 ---
-William revamped the layout and colour scheme of the UNSW Student club CREATE UNSW in 2019, with applying his creative design and website development skills in HTML, CSS and Jekyll Scripting.
+I revamped the layout and colour scheme of the UNSW Student club CREATE UNSW in 2019, with applying his creative design and website development skills in HTML, CSS and Jekyll Scripting.
 
 The website revamping is initially launched in February 2019, then the latest version is completed in June 2020.
 

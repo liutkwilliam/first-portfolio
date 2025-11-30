@@ -33,7 +33,7 @@ images:
     - image_path: createunsw-workshops-2019-020.jpg
     - image_path: createunsw-workshops-2019-021.jpg 
 ---
-While William was studying at UNSW, he joined CREATE UNSW, a student-led maker club at UNSW. He volunteered documenting the workshops run by CREATE in the first half of 2019. This gallery showcases some of the best captures from Arduino workshops and CAD workshops.
+While I was studying at UNSW, I joined CREATE UNSW, a student-led maker club at UNSW in documenting the workshops run by CREATE in the first half of 2019. This gallery showcases some of the best captures from Arduino workshops and CAD workshops.
 
 Photos taken between February 2019 and April 2019.
 

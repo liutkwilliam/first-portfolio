@@ -16,7 +16,7 @@ images:
     - image_path: 20190924-SS-Countingdown-IMG_7885.jpg
       title: Sunswift Trailer for the solar car VIolet (2019)
 ---
-William designed a vehicle re-vinyl for Sunswift 6th Generation Solar Car VIolet and its trailer, in light of Sunswift was competing in the Bridgestone World Solar Challenge (BWSC) in 2019.
+I designed a vehicle re-vinyl for Sunswift 6th Generation Solar Car VIolet and its trailer, in light of Sunswift was competing in the Bridgestone World Solar Challenge (BWSC) in 2019.
 
 The new design retains the dynamic flow from the previous vinyl design when VIolet first competed in BWSC in 2017. The final piece also includes UNSW yellow as a secondary colour to create a gradient transition between violet purple and UNSW yellow, enhancing the importance of the affiliation and long-history engineering student project in the University of New South dWales.
 

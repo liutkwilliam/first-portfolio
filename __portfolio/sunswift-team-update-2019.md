@@ -12,7 +12,7 @@ link:
 feature:
 not-show:
 ---
-Sunswift Team Update 2019 is a video series curated, documented and edited by William. The video series include a mechanical team and software team update respectively, showing how Sunswift was preparing for the Bridgestone World Solar Challenge taking place in October 2019.
+Sunswift Team Update 2019 is a video series, including a mechanical team and software team update respectively, showing how Sunswift was preparing for the Bridgestone World Solar Challenge taking place in October 2019.
 
 The videos are published on Sunswift's social media including Facebook, Instagram, YouTube and LinkedIn. 
 

@@ -12,11 +12,11 @@ link:
 feature:
 not-show:
 ---
-Sunswift BWSC19 Aftermovie is a video work by William.  He recorded the best moments during Sunswift's adventure to the Bridgestone World Solar Challenge 2019 with the race team of Sunswift, a Solar Car Racing Team from the University of New South Wales.
+Sunswift BWSC19 Aftermovie is a video work.  I recorded the best moments during Sunswift's adventure to the Bridgestone World Solar Challenge 2019 with the race team of Sunswift, a Solar Car Racing Team from the University of New South Wales.
 
-William joined Sunswift in February 2019 while he was in the final year of his bachelor degree. He joined Business Team to assist with media content and graphic design. He was later appointed to be the head of media and design and selected to be the race as a media lead. He also became the only non-engineering faculty degree student in the team 2019 and the very first art & design faculty degree student participating in the event in the history of Sunswift. (est. 1996)
+I joined Sunswift in February 2019 while I was in the final year of his bachelor degree. I joined Business Team to contribute with media content and graphic design.
 
-In the project, William documented all aspects of the journey from departing Sydney, solar car testing in South Australia, preparation in Darwin, the race, the finishing line moments, receiving the awards and some behind the scenes. William has relied on his DSLR camera and a GoPro action camera to capture footage, then edited and composed into a 4 min 30 sec of highlights.
+In the project, I documented all aspects of the journey from departing Sydney, solar car testing in South Australia, preparation in Darwin, the race, the finishing line moments, receiving the awards and some behind the scenes. I relied on his DSLR camera and a GoPro action camera to capture footage, then edited and composed into a 4 min 30 sec of highlights.
 
 <div class="resp-container">
     <iframe class="resp-iframe" src="https://www.youtube.com/embed/WSr1Y5ayqcg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

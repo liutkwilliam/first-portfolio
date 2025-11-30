@@ -22,10 +22,10 @@ images:
     - image_path: Store-Page.png
       title: "Proposing Design for the Store Page"
 ---
-William had the pleasure to volunteer and propose a website redesign for UNSW Student club CREATE UNSW following their rebranding. William contributed his UI design skills to bring their new identity to the final design.
+I had the pleasure to volunteer and propose a website redesign for UNSW Student club CREATE UNSW following their rebranding. I contributed his UI design skills to bring their new identity to the final design.
 
-He focused on the design systems and how the new identity could be reflected in their online presence, including the use of graphics and eye-catching headings.
+I focused on the design systems and how the new identity could be reflected in their online presence, including the use of graphics and eye-catching headings.
 
-He wanted to demonstrate his efforts in giving back to the society he had been part of while studying.
+I wanted to demonstrate his efforts in giving back to the society I had been part of while studying.
 
 Software used: Figma, Adobe Illustrator

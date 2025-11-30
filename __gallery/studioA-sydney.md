@@ -75,7 +75,7 @@ images:
     title: Tim James MP - NSW Member for Willoughby visited studio A
     date: 2022-11-02 23:00:00 +10:00
 ---
-Selected photos of can-did photography while William is working with studio A, a supported studio in Sydney, supporting artists living with intellectual disability.
+Selected photos of can-did photography while I am working with studio A, a supported studio in Sydney, supporting artists living with intellectual disability.
 
 The photos are published in studio A's social media including Facebook, Instagram and LinkedIn. 
 
@@ -92,7 +92,5 @@ Shane Simpson AM (Chair of Board, studio A Limited), Trent Zimmerman MP (Federal
 Image: William Liu and artworks courtesy of studio A.
 
 All rights reserved.
-
-Note: This photo album is last updated in November 2022.
 
 <a href="https://www.studioa.org.au/" class="btn btn-primary">Visit studio A Website</a>

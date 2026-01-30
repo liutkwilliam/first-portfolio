@@ -7,6 +7,7 @@ function NavBar() {
     { title: "Home", href: "/" },
     { title: "About", href: "/about" },
     { title: "Portfolio", href: "/portfolio" },
+    { title: "Gallery", href: "/gallery" }
   ]
 
   const NavMenu = NavList.map((item, index) =>

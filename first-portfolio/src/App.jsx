@@ -7,6 +7,7 @@ import About from './pages/About';
 import PortfolioPage from './pages/PortfolioPage';
 import Portfolio from './layouts/Portfolio';
 import PortfolioEntry from './pages/PortfolioEntry';
+import GalleryPage from './pages/GalleryPage';
 
 function App() {
   return (
@@ -18,8 +19,9 @@ function App() {
           <Route path="/about" element={<About />} />
         </Route>
         {/* page layout */}
-        <Route element={<Page />}>
+        <Route path="/" element={<Page />}>
           <Route path="/portfolio" element={<PortfolioPage />} />
+          <Route path="/gallery" element={<GalleryPage />} />
         </Route>
         {/* portfolio layout */}
         <Route element={<Portfolio />}>

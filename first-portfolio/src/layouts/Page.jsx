@@ -1,10 +1,17 @@
 import React from 'react'
+import { Outlet } from 'react-router-dom';
+import NavBar from '../components/NavBar';
+import Footer from '../components/Footer';
 
 function Page() {
   return (
-    <div>
-      
-    </div>
+    <>
+      <NavBar />
+      <div className="bg-page min-h-[90vh]">
+        <Outlet />
+      </div>
+      <Footer />
+    </>
   )
 }
 

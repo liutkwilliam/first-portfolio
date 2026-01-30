@@ -1,16 +1,23 @@
 <section>
-    <div class="row">
-      <div class="col">
-        <div class="card-columns">
-          {% for image in page.images %}
-            <div class="card" onclick="openModal();currentSlide({{ forloop.index }})">
-              <img 
-                src="/images/{% if page.folder %}{{ page.folder }}/{% endif %}{{ image.image_path }}" 
-                alt="Image {{ forloop.index }} of {{ page.title }}"
-                class="card-img-top">			
-            </div>
-          {% endfor %}
+  <div class="row">
+    <div class="col">
+      <div class="card-columns">
+        {% for images in page.images %}
+        <div
+          class="card"
+          onclick="openModal();currentSlide({{ forloop.index }})"
+        >
+          <img
+            src="/images/{% if page.folder %}{{ page.folder }}/{% endif %}{{ images.image_path }}"
+            alt="Image {{ forloop.index }} of {{ page.title }}"
+            class="card-img-top"
+          />
+          <div class="card-body">
+            <p class="card-text">{{ images.title }}</p>
+          </div>
         </div>
+        {% endfor %}
       </div>
     </div>
+  </div>
 </section>

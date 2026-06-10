@@ -7,18 +7,24 @@ function NavBar() {
     { title: "Home", href: "/" },
     { title: "About", href: "/about" },
     { title: "Portfolio", href: "/portfolio" },
-    { title: "Gallery", href: "/gallery" }
+    { title: "Developer", href: "/developer" },
+    { title: "Photography", href: "/photography" },
+    { title: "Artwork", href: "/artwork" },
   ]
 
   const NavMenu = NavList.map((item, index) =>
-    <Link key={index} to={item.href}><div className='py-2 px-1 hover:text-blue-500 hover:font-bold'><p>{item.title}</p></div></Link>
+    <Link key={index} to={item.href}>
+      <div className='rounded-full px-3 py-2 text-sm font-medium text-slate-700 hover:bg-blue-50 hover:text-blue-600'>
+        <p>{item.title}</p>
+      </div>
+    </Link>
   )
 
   return (
     <>
-      <div className='flex p-2 gap-2 items-center bg-slate-100'>
+      <div className='sticky top-0 z-50 flex items-center gap-4 border-b border-slate-200 bg-white/80 px-4 py-3 shadow-sm backdrop-blur'>
         <Logo />
-        <div className="flex gap-2">
+        <div className="ml-auto flex flex-wrap justify-end gap-1">
           {NavMenu}
         </div>
       </div>

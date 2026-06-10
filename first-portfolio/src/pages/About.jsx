@@ -1,5 +1,5 @@
 import React from 'react'
-import ReactMarkdown from "react-markdown";
+import MarkdownContent from '../components/MarkdownContent';
 
 function About() {
   const bio = `
@@ -31,15 +31,7 @@ HTML / CSS / Javascript / ReactJS / Python / SQL / Jekyll
           <div className="flex justify-center items-center">
             <div className="w-full md:w-4/5 lg:w-1/2">
               <div className="mb-8">
-                <ReactMarkdown
-                  components={{
-                    h2: ({node, ...props}) => <h2 className="text-2xl font-bold mb-2 text-blue-600" {...props} />,
-                    h6: ({node, ...props}) => <h6 className="text-sm font-semibold mt-6 mb-1" {...props} />,
-                    p: ({node, ...props}) => <p className="mb-2 text-gray-700" {...props} />,
-                  }}
-                >
-                  {bio}
-                </ReactMarkdown>
+                <MarkdownContent>{bio}</MarkdownContent>
               </div>
               <div className="mb-6">
                 <h5 className="text-lg font-semibold mb-2">Follow me</h5>

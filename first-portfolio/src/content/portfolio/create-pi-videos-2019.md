@@ -15,8 +15,6 @@ I produced two highlights videos while participating in a student project team <
 
 CREATE UNSW Project Illuminate is a UNSW student project, within the UNSW Engineering Faculty that aims to empower students to apply hands-on skills on large scale professional and multidisciplinary projects. We seek to foster deep interactions between designers and engineers, allowing students to realise their creative visions while gaining practical design and manufacturing experience. This project combines the creativity of art and the innovation of engineering to demonstrate the magic of art meeting technology through light.
 
-The project is now rebranded as UNSW Illuminate in September 2019.
-
 ## Video Works
 
 ### Moving Out from UNSW campus to the light installation site in Circular Quay, Sydney

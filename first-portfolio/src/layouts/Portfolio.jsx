@@ -1,10 +1,16 @@
-import React from 'react'
+import { Outlet } from 'react-router-dom';
+import NavBar from '../components/NavBar';
+import Footer from '../components/Footer';
 
 function Portfolio() {
   return (
-    <div>
-      
-    </div>
+    <>
+      <NavBar />
+      <main className="min-h-[90vh] bg-white">
+        <Outlet />
+      </main>
+      <Footer />
+    </>
   )
 }
 

@@ -1,6 +1,6 @@
-import { Outlet } from 'react-router-dom';
-import NavBar from '../components/NavBar';
-import Footer from '../components/Footer';
+import { Outlet } from "react-router-dom";
+import NavBar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 function Portfolio() {
   return (
@@ -11,7 +11,7 @@ function Portfolio() {
       </main>
       <Footer />
     </>
-  )
+  );
 }
 
-export default Portfolio
+export default Portfolio;

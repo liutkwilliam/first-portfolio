@@ -12,7 +12,7 @@ import NotFoundPage from './pages/NotFoundPage';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/">
       <Routes>
         {/* default layout */}
         <Route path="/" element={<Default />}>

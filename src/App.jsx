@@ -1,4 +1,4 @@
-import { HashRouter as Router, Routes, Route } from 'react-router-dom'; // "react-router-dom": "^6.22.1",
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // "react-router-dom": "^6.22.1",
 import './App.css'
 import Default from './layouts/Default';
 import Home from './pages/Home';

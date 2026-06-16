@@ -2,6 +2,7 @@
 categories: 
 - animation
 title: Sunswift Events Motion Infographic
+description: A series of motion infographic animation designed for the UNSW Flagship Engineering Student Project.
 deliverables: Website Motion Design
 date: 2019-03-30 18:00:00 +1000
 folder: web-animation

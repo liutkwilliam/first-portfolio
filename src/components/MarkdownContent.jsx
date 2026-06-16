@@ -1,8 +1,10 @@
 import ReactMarkdown from 'react-markdown';
+import rehypeRaw from 'rehype-raw';
 
 function MarkdownContent({ children }) {
   return (
     <ReactMarkdown
+      rehypePlugins={[rehypeRaw]}
       components={{
         h1: (props) => <h1 className="mb-5 text-4xl font-bold text-slate-950" {...props} />,
         h2: (props) => <h2 className="mb-4 mt-10 text-2xl font-bold text-slate-950" {...props} />,
@@ -14,6 +16,9 @@ function MarkdownContent({ children }) {
         a: (props) => <a className="font-semibold text-blue-600 hover:text-blue-800" target="_blank" rel="noreferrer" {...props} />,
         div: ({ ...props }) => {
           return <div {...props} />;
+        },
+        script: ({ ...props}) =>{
+          return <script {...props} />;
         },
       }}
     >

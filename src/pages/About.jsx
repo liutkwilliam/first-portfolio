@@ -1,19 +1,16 @@
 import React from 'react'
 import MarkdownContent from '../components/MarkdownContent';
+import SocialButton from '../components/SocialButton';
+import { MdOutlineEmail } from "react-icons/md";
+import { FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
 
 function About() {
   const bio = `
 ## Hi I'm William Liu
 
-Born in Hong Kong, currently living in Gadigal Country / Sydney, Australia.
+Living in Gadigal Country / Sydney, Australia.
 
-I am a Master of Computer Science student at the University of Sydney, focusing on Software Engineering.
-
-I love taking photos - wherever I go, I’m drawn to documenting moments. I’m particularly interested in candid photography, events, and product shoots.
-
-I also enjoy using code to design and build websites.
-
-I hold a Bachelor of Media Arts (Honours) from UNSW, as well as certificates in UX/UI Design and Digital Graphic Design.
+A frontend developer, designer and photographer. I have a passion for creating visually appealing and user-friendly websites, as well as capturing moments through my photography.
 
 ###### Creative Skills
 
@@ -36,6 +33,9 @@ HTML / CSS / Javascript / ReactJS / Python / SQL / Jekyll
               <div className="mb-6">
                 <h5 className="text-lg font-semibold mb-2">Follow me</h5>
                 <p className="flex items-center mb-2">
+
+                  <SocialButton Icon={<FaInstagram />} />
+
                   <i className="fa fa-lg fa-instagram text-pink-500"></i>
                   <a
                     href="https://www.instagram.com/liutkwilliam"
@@ -49,7 +49,7 @@ HTML / CSS / Javascript / ReactJS / Python / SQL / Jekyll
               <div>
                 <h5 className="text-lg font-semibold mb-2">Contact Me</h5>
                 <p className="flex items-center mb-2">
-                  <i className="fa fa-lg fa-envelope-o text-gray-600"></i>
+                  <SocialButton Icon={<MdOutlineEmail />} />
                   <a
                     href="mailto:liutk.william@gmail.com"
                     className="ml-2 text-blue-500 hover:underline"
@@ -58,7 +58,7 @@ HTML / CSS / Javascript / ReactJS / Python / SQL / Jekyll
                   </a>
                 </p>
                 <p className="flex items-center mb-2">
-                  <i className="fa fa-lg fa-linkedin text-blue-700"></i>
+                  <SocialButton Icon={<FaLinkedin />} />
                   <a
                     href="https://www.linkedin.com/in/liutkwilliam/"
                     className="ml-2 text-blue-500 hover:underline"
@@ -68,7 +68,7 @@ HTML / CSS / Javascript / ReactJS / Python / SQL / Jekyll
                   </a>
                 </p>
                 <p className="flex items-center">
-                  <i className="fa fa-lg fa-github text-gray-800"></i>
+                  <SocialButton Icon={<FaGithub />} />
                   <a
                     href="https://www.github.com/liutkwilliam/"
                     className="ml-2 text-blue-500 hover:underline"

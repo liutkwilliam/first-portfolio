@@ -1,5 +1,6 @@
 ---
 title: Nobility Care Australia
+description: A commissioned web development for a Sydney based disability care service.
 date: 2021-11-01 00:00:00 +1000
 folder: nca-website
 image: nca-portfolio.png
@@ -19,8 +20,6 @@ images:
     - image_path: nca-05.jpeg
       title: New Content Page
 ---
-Website: [www.nobilitycare.com.au](https://www.nobilitycare.com.au)
-
 Nobility Care Australia (NCA) is a new disability care service based in Sydney, Australia. NCA will operate in New South Wales first.
 
 I had the pleasure to deliver his first commission on website design and front-end development. I also worked with [Tanveer Singh](https://tanveerfb.github.io/), a passionate website developer, to provide a fully customised static website layout and design. With aims to deliver user and accessibility friendly browsing.

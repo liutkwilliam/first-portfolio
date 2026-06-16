@@ -1,6 +1,6 @@
 ---
-categories: 
-- ux ui web
+categories:
+  - ux ui web
 title: Trail-n-Plan
 description: A graphics-styled animation portraying a nightmare from an unfinished crocodile animation assignment.
 organisation: Academy Xi - UX/UI Design Elevate Certificate
@@ -13,6 +13,7 @@ link:
 feature:
 not-show:
 ---
+
 Trail-n-Plan is a personal User Experience (UX) & User Interface (UI) project. It is prototyped in response to my friend's request who want to see a single-app that can plan and manage both trail route and logistics to collect user preferences and automate summaries for this trail running community. Unfortunately, there is yet any similar single-app that achieve it.
 
 <blockquote class="project-blockquote">
@@ -31,7 +32,7 @@ Trail-n-Plan is a personal User Experience (UX) & User Interface (UI) project. I
 
 ## Project Timeline
 
-<img src="/images/trail-n-plan/project-timeline.svg" class="card-img-top">
+<img src="/images/trail-n-plan/project-timeline.svg" class="w-full">
 
 ## Research
 
@@ -39,16 +40,9 @@ Trail-n-Plan is a personal User Experience (UX) & User Interface (UI) project. I
 
 A Google Form online survey is conducted, and received 27 responses.
 
-<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-<script type="text/javascript" src="/assets/js/trailnplanScript.js"></script>
-
-<div class="row">
-    <div class="col-lg">
-        <div id="chart_div_1"></div>
-    </div>
-    <div class="col-lg">
-        <div id="chart_div_2"></div>
-    </div>
+<div class="flex">
+    <div id="chart_div_1"></div>
+    <div id="chart_div_2"></div>
 </div>
 
 **Others** include: Local or cities' Trail Map, Viewranger, AllTrails.
@@ -72,21 +66,15 @@ A Google Form online survey is conducted, and received 27 responses.
 - Some inaccurate or too much information
 - Navigation occasionally becomes inaccurate on some tracks
 
-<div class="row">
-    <div class="col-md">
-        <div id="chart_div_3"></div>
-    </div>
+<div class="flex">
+    <div id="chart_div_3"></div>
 </div>
 
 **Others** include: Other comments from trail runners on specific route, Others' performance on the track, Photograph of landmakrs or markes and recommended gear to bring.d
 
-<div class="row">
-    <div class="col-lg">
-        <div id="chart_div_4"></div>
-    </div>
-    <div class="col-lg">
-        <div id="chart_div_5"></div>
-    </div>
+<div class="flex">
+    <div id="chart_div_4"></div>
+    <div id="chart_div_5"></div>
 </div>
 
 ### Competitor Analysis
@@ -96,14 +84,8 @@ Given the prototype idea does not have a preexisted reference, the analysis is s
 1. Route planning applications, and
 2. Event / logistics / planning or documenting applications
 
-<div class="row">
-    <div class="col-md">
-        <img src="/images/trail-n-plan/route-planning-compare.png" class="card-img-top">
-    </div>
-    <div class="col-md">
-        <img src="/images/trail-n-plan/logistics-planning-compare.png" class="card-img-top">
-    </div>
-</div>
+<img src="/images/trail-n-plan/route-planning-compare.png" class="card-img-top">
+<img src="/images/trail-n-plan/logistics-planning-compare.png" class="card-img-top">
 
 ## Key Findings
 
@@ -201,17 +183,11 @@ This diagram show how each of the features evaluated.
 
 ### Selected preview
 
-<div class="row trailnplan">
-    {% for screen in site.data.trailnplan-app %}
-    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-        <div class="card h-100">
-            <img src="{{ site.baseurl }}/images/trail-n-plan/{{ screen.image }}" alt="Picture of {{screen.title}}" class="card-img-top">
-            <div class="card-body">
-                <h5>{{ screen.title }}</h5>
-            </div>        
-        </div>
-    </div>
-    {% endfor %}
+<div className="flex flex-wrapped">
+    <img src="\images\trail-n-plan\app-home-screen.png" alt="Picture of Home Screen" class="w-50">
+    <img src="\images\trail-n-plan\app-stop-map-4.png" alt="Picture of Map Pointing Screen" class="w-50">
+    <img src="\images\trail-n-plan\app-overall-logistics-plan.png" alt="Picture of Logistic Planning Screen" class="w-50">
+    <img src="\images\trail-n-plan\app-invite-members-added.png" alt="Picture of Invite Members Screen" class="w-50">
 </div>
 
 ## Possible Future Development

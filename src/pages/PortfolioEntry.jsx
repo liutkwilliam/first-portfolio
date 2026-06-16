@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import MarkdownContent from '../components/MarkdownContent';
 import { developerProjects, galleryProjects, portfolioProjects, blogPosts } from '../content/collections';
@@ -12,7 +13,7 @@ const collectionMap = {
 const labelMap = {
   portfolio: 'Design Portfolio',
   developer: 'Developer Portfolio',
-  gallery: 'Photography',
+  gallery: 'Photography Portfolio',
   posts: 'Blog',
 };
 
@@ -23,9 +24,58 @@ const backMap = {
   posts: '/blog',
 };
 
+const scriptPromises = new Map();
+
+const loadScript = (src) => {
+  if (scriptPromises.has(src)) return scriptPromises.get(src);
+
+  const existingScript = document.querySelector(`script[src="${src}"]`);
+  if (existingScript) {
+    const promise = Promise.resolve(existingScript);
+    scriptPromises.set(src, promise);
+    return promise;
+  }
+
+  const promise = new Promise((resolve, reject) => {
+    const script = document.createElement('script');
+    script.src = src;
+    script.async = true;
+    script.onload = () => resolve(script);
+    script.onerror = () => reject(new Error(`Unable to load ${src}`));
+    document.body.appendChild(script);
+  });
+
+  scriptPromises.set(src, promise);
+  return promise;
+};
+
 function PortfolioEntry({ type = 'portfolio' }) {
   const { id } = useParams();
   const item = collectionMap[type]?.find((entry) => entry.slug === id);
+
+  useEffect(() => {
+    if (item?.slug !== 'trail-n-plan') return undefined;
+
+    let isMounted = true;
+
+    const drawTrailNPlanCharts = () => {
+      if (isMounted) window.drawTrailNPlanCharts?.();
+    };
+
+    loadScript('https://www.gstatic.com/charts/loader.js')
+      .then(() => loadScript('/js/trailnplanScript.js'))
+      .then(drawTrailNPlanCharts)
+      .catch((error) => {
+        console.error(error);
+      });
+
+    window.addEventListener('resize', drawTrailNPlanCharts);
+
+    return () => {
+      isMounted = false;
+      window.removeEventListener('resize', drawTrailNPlanCharts);
+    };
+  }, [item?.slug]);
 
   if (!item) {
     return (

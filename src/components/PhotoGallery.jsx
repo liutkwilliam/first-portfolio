@@ -15,7 +15,7 @@ const PhotoGallery = ({ images = [] }) => (
       {images.map((src, index) => (
         <div
           key={index}
-          className="mb-4 break-inside-avoid overflow-hidden rounded-lg shadow-lg"
+          className="break-inside-avoid overflow-hidden rounded-lg shadow-lg"
         >
           <img
             src={src}

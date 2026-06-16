@@ -18,9 +18,9 @@ function ProjectCard({ item }) {
         <div className="absolute inset-0 bg-slate-950/0 transition group-hover:bg-slate-950/45" />
       </div>
       <div className="p-5">
-        <p className="text-xs font-semibold uppercase tracking-[0.2em] text-blue-600">
+        {/* <p className="text-xs font-semibold uppercase tracking-[0.2em] text-blue-600">
           {item.categories?.join(', ') || item.type}
-        </p>
+        </p> */}
         <h3 className="mt-2 text-xl font-bold text-slate-900">{item.title}</h3>
         {item.description && <p className="mt-2 text-sm text-slate-600">{item.description}</p>}
       </div>

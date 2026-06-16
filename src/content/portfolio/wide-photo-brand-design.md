@@ -2,7 +2,7 @@
 categories: 
 - graphic design
 title: Wide Photo - Graphic Design Project
-description:
+description: A graphic design prototype for a fictional brand.
 organisation: 
 deliverables: A visual guideline, presentation slides templates, a social media post (Instagram) and a web banner
 date: 2022-11-30 12:00:00 +1000
@@ -18,6 +18,7 @@ Wide Photo is a fictional company providing photography services based in Sydney
 - A visual guideline
 
 Then based on the visual guideline, I created:
+
 - Presentation slides template
 - A social media post (Instagram)
 - A web banner

@@ -1,5 +1,6 @@
 ---
 title: Full Stack Web App
+description: A ReactJS web application of a fictional second-hand phone online purchasing system.
 date: 2025-05-27 20:00:00 +1000
 folder: full-stack-web-app
 image: full-stack-web-app_01.png

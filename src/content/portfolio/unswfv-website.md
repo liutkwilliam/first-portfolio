@@ -25,10 +25,10 @@ images:
 ---
 UNSW Future Vehicles (FV) is a student organisation at the University of New South Wales. It is a new initiative aiming to facilitate innovation by some of the brightest and most dedicated young minds in the transportation space. Currently, FV is made up of four key student teams, including:
 
-* UNSW Future Vehicle Business Unit
-* UNSW Sunswift - Solar Car Racing Team
-* UNSW Redback Racing - Formula SAE Motorsport Team
-* UNSW Hyperloop - Vacuum Train Future Transport Prototype Team
+- UNSW Future Vehicle Business Unit
+- UNSW Sunswift - Solar Car Racing Team
+- UNSW Redback Racing - Formula SAE Motorsport Team
+- UNSW Hyperloop - Vacuum Train Future Transport Prototype Team
 
 The organisation is proudly supported by UNSW Engineering and UNSW Business School.
 

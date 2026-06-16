@@ -11,12 +11,12 @@ image: 20180523_CREATE_Synergy_MediaNight-0009.jpg
 slug: synergy
 link:
 feature:
-not-show: true
+not-show:
 ---
 SYNERGY is a collaborating interactive light installation for the Vivid Sydney light festival 2018.
 
 ## Dimension
-3.9m∅ X 3m(H) Plywood Framed Tree Structure, 1m∅ X 0.5m(H) Acrylic Fern
+3.9m in diameter X 3m high Plywood Framed Tree Structure, 1m in diameter X 0.5m high Acrylic Fern
 
 ## Artists
 CREATE NSW Inc.: Junji Moey / Tsz Kin Liu / Jane Fan / Jonathan Hribar / Christie Wong

@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import Button from '../components/Button';
 
 function NotFoundPage() {
   return (
@@ -7,9 +7,9 @@ function NotFoundPage() {
         <img src="/images/404help.svg" alt="" className="mx-auto mb-8 max-h-64" />
         <h1 className="text-5xl font-black">404</h1>
         <p className="mt-4 text-lg text-slate-300">This page wandered off with a camera.</p>
-        <Link className="mt-8 inline-block rounded-full bg-blue-600 px-6 py-3 font-semibold hover:bg-blue-700" to="/">
+        <Button to="/" size="lg" className="mt-8 rounded-full">
           Back home
-        </Link>
+        </Button>
       </div>
     </main>
   )

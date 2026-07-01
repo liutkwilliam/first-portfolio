@@ -8,6 +8,7 @@ import {
   normalizePortfolioItem,
   portfolioProjects,
 } from '../services/portfolioServices';
+import useSubtitle from '../hooks/useSubtitle';
 
 const collectionMap = {
   portfolio: portfolioProjects,
@@ -34,6 +35,8 @@ function PortfolioEntry({ type = 'portfolio' }) {
   const matchingDynamicItem =
     dynamicItem?.slug === id && dynamicItem?.type === type ? dynamicItem : null;
   const item = staticItem || matchingDynamicItem;
+
+  useSubtitle({ title: item?.title, description: item?.description });
 
   useEffect(() => {
     if (staticItem || type === 'posts') {

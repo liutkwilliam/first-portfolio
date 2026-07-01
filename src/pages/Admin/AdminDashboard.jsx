@@ -18,6 +18,7 @@ import AdminPhotoList from '../../components/AdminPhotoList';
 import Button from '../../components/Button';
 import { FaPen } from "react-icons/fa";
 import { ImBin } from "react-icons/im";
+import useSubtitle from '../../hooks/useSubtitle';
 
 function AdminDashboard() {
   // entries for form fields
@@ -46,6 +47,8 @@ function AdminDashboard() {
     loaded: false,
     error: '',
   });
+
+  useSubtitle({ title: 'Admin Dashboard', description: 'Manage portfolio entries and images.' });
 
   useEffect(() => {
     draftPhotosRef.current = draftPhotos;
@@ -401,255 +404,256 @@ function AdminDashboard() {
   };
 
   return (
-    <div className="grid grid-cols-2 gap-4">
-      {/* see all projects */}
-      <div className='h-[90vh] overflow-auto'>
-        <div className="mt-6 flex items-center justify-between gap-3">
-          <h3 className="text-xl font-semibold text-slate-900">Stored Items</h3>
-          <Button type="button" onClick={fetchItems} disabled={isFetching} variant="secondary">
-            {isFetching ? 'Fetching...' : 'Fetch Data'}
-          </Button>
-        </div>
-        <div className="grid grid-cols-4 gap-4 p-2">
-          <div>Title / Slug</div>
-          <div>Date</div>
-          <div>Category</div>
-          <div>Last Update</div>
-        </div>
-        {isFetching && items.length === 0 ? <p className="mt-3 text-slate-600">Loading items from Firestore...</p> : null}
-        {
-          !isFetching && items.length === 0 ? <p className="mt-3 text-slate-600">No items found.</p> : (
-            items.map((item) => (
-              <div key={item.id} className="my-4 rounded border border-slate-200 bg-slate-50 p-4 shadow-md">
-                <div className="grid grid-cols-4 gap-2">
-                  <p className="col-span-3 font-semibold text-slate-900">{item.title}</p>
-                  <div className="col-span-1 place-self-end flex gap-2">
-                    <Button
-                      type="button"
-                      onClick={() => handleEdit(item)}
-                      className="bg-amber-400 text-slate-900 transition hover:bg-amber-500 text-sm"
-                    >
-                      <FaPen />
-                    </Button>
-                    <Button
-                      type="button"
-                      onClick={() => handleDelete(item.id)}
-                      className="bg-red-600 text-white transition hover:bg-red-700"
-                    >
-                      <ImBin />
-                    </Button>
-                  </div>
-                  <p className="mt-1 text-sm text-slate-500">Slug: {item.slug}</p>
-                  <p className="mt-1 text-sm text-slate-500">{formatStoredDate(item.date)}</p>
-                  <p className="mt-1 text-sm text-slate-500">{item.category}</p>
-                  <div className="mt-1 text-sm text-slate-500">{formatStoredDate(item.updatedAt)}</div>
+    <>
+      <div className="grid grid-cols-2 gap-4">
+        {/* see all projects */}
+        <div className='h-[90vh] overflow-auto'>
+          <div className="mt-6 flex items-center justify-between gap-3">
+            <h3 className="text-xl font-semibold text-slate-900">Stored Items</h3>
+            <Button type="button" onClick={fetchItems} disabled={isFetching} variant="secondary">
+              {isFetching ? 'Fetching...' : 'Fetch Data'}
+            </Button>
+          </div>
+          <div className="grid grid-cols-4 gap-4 p-2">
+            <div>Title / Slug</div>
+            <div>Date</div>
+            <div>Category</div>
+            <div>Last Update</div>
+          </div>
+          {isFetching && items.length === 0 ? <p className="mt-3 text-slate-600">Loading items from Firestore...</p> : null}
+          {
+            !isFetching && items.length === 0 ? <p className="mt-3 text-slate-600">No items found.</p> : (
+              items.map((item) => (
+                <div key={item.id} className="my-4 rounded border border-slate-200 bg-slate-50 p-4 shadow-md">
+                  <div className="grid grid-cols-4 gap-2">
+                    <p className="col-span-3 font-semibold text-slate-900">{item.title}</p>
+                    <div className="col-span-1 place-self-end flex gap-2">
+                      <Button
+                        type="button"
+                        onClick={() => handleEdit(item)}
+                        className="bg-amber-400 text-slate-900 transition hover:bg-amber-500 text-sm"
+                      >
+                        <FaPen />
+                      </Button>
+                      <Button
+                        type="button"
+                        onClick={() => handleDelete(item.id)}
+                        className="bg-red-600 text-white transition hover:bg-red-700"
+                      >
+                        <ImBin />
+                      </Button>
+                    </div>
+                    <p className="mt-1 text-sm text-slate-500">Slug: {item.slug}</p>
+                    <p className="mt-1 text-sm text-slate-500">{formatStoredDate(item.date)}</p>
+                    <p className="mt-1 text-sm text-slate-500">{item.category}</p>
+                    <div className="mt-1 text-sm text-slate-500">{formatStoredDate(item.updatedAt)}</div>
 
-                  <div className="col-span-4 flex flex-wrap gap-2">
-                    {item.tags && item.tags.map((tag, index) => (
-                      <span key={index} className="rounded bg-slate-200 px-2 py-1 text-xs font-medium text-slate-700">
-                        #{tag}
-                      </span>
-                    ))}
+                    <div className="col-span-4 flex flex-wrap gap-2">
+                      {item.tags && item.tags.map((tag, index) => (
+                        <span key={index} className="rounded bg-slate-200 px-2 py-1 text-xs font-medium text-slate-700">
+                          #{tag}
+                        </span>
+                      ))}
+                    </div>
                   </div>
+
+                  {/* <div className="mt-1 text-sm text-slate-500">Created At: {item.createdAt?.toDate?.()?.toLocaleString() || 'N/A'}</div> */}
+
+
+
                 </div>
+              ))
+            )
+          }
+        </div>
+        {/*edit portfolio entries */}
+        <div className='h-[90vh] overflow-auto'>
+          <p className="text-2xl font-bold text-slate-900">Portfolio Entry Editing Form</p>
+          <p className="mt-2 text-sm text-slate-600">
+            Create, edit portfolio entries in the <span className="font-semibold">items</span> collection and fetches them back from Firestore.
+          </p>
 
-                {/* <div className="mt-1 text-sm text-slate-500">Created At: {item.createdAt?.toDate?.()?.toLocaleString() || 'N/A'}</div> */}
-
-
-
-              </div>
-            ))
-          )
-        }
-      </div>
-      {/*edit portfolio entries */}
-      <div className='h-[90vh] overflow-auto'>
-        <p className="text-2xl font-bold text-slate-900">Portfolio Entry Editing Form</p>
-        <p className="mt-2 text-sm text-slate-600">
-          Create, edit portfolio entries in the <span className="font-semibold">items</span> collection and fetches them back from Firestore.
-        </p>
-
-        {/* FORM */}
-        <form onSubmit={handleSubmit} className="mb-8 mt-6 flex flex-col gap-2">
-          <Inputs
-            label="Title"
-            type="text"
-            placeholder="A title that describes the item"
-            value={title}
-            onChange={(e) => setTitle(e.target.value)}
-          />
-          <Inputs
-            label="Description"
-            type="text"
-            placeholder="a short description of the item, in less than 20 words"
-            value={description}
-            onChange={(e) => setDescription(e.target.value)}
-          />
-          <Dropdown label="Category" value={category} onChange={(e) => setCategory(e.target.value)}>
-            <option value="">Select Category</option>
-            {categoryOptions.map((option) => (
-              <option key={option.value} value={option.value}>{option.label}</option>
-            ))}
-          </Dropdown>
-          <Inputs
-            label="Date and Time"
-            type="datetime-local"
-            value={date}
-            onChange={(e) => setDate(e.target.value)}
-          />
-          <Inputs
-            label="Slug"
-            type="text"
-            placeholder="Slug (e.g., my-item-slug)"
-            value={slug}
-            onChange={(e) => setSlug(e.target.value)}
-          />
-          <Textarea
-            label="Content (Markdown supported)"
-            placeholder="Enter the content includes markdown formatting and allow HTML tags"
-            value={content}
-            onChange={(e) => setContent(e.target.value)}
-          />
-          <Inputs
-            label="Tags"
-            type="text"
-            placeholder="Tags (comma separated)"
-            value={tags}
-            onChange={(e) => setTags(e.target.value)}
-          />
-          {/* cover photo box */}
-          <div className="mb-4">
-            <p className='text-xl font-medium'>Upload Cover Image</p>
-            <input
-              ref={coverInputRef}
-              type="file"
-              accept="image/*"
-              onChange={handleCoverFileChange}
-              disabled={uploading}
-              className="mt-2 rounded px-3 py-2 cursor-pointer bg-slate-100 shadow-lg disabled:cursor-not-allowed disabled:bg-gray-200"
+          {/* FORM */}
+          <form onSubmit={handleSubmit} className="mb-8 mt-6 flex flex-col gap-2">
+            <Inputs
+              label="Title"
+              type="text"
+              placeholder="A title that describes the item"
+              value={title}
+              onChange={(e) => setTitle(e.target.value)}
             />
-            <div className="mt-3">
-              <Button type="button" onClick={loadMediaLibrary} disabled={uploading || mediaLibrary.loading} variant="secondary" size="sm">
-                {mediaLibrary.loading ? 'Loading Firebase Images...' : 'Select From Existing Firebase Images'}
-              </Button>
-            </div>
-            {mediaLibrary.error && (
-              <p className="mt-2 rounded bg-red-50 px-3 py-2 text-sm text-red-600">{mediaLibrary.error}</p>
-            )}
-            {mediaLibrary.loaded && (
-              <div className="mt-3 grid grid-cols-2 gap-3 sm:grid-cols-4 lg:grid-cols-6">
-                {mediaLibrary.images.map((image) => {
-                  const isSelected = coverImageUrl === image.url;
-
-                  return (
-                    <button
-                      key={`cover-${image.path}`}
-                      type="button"
-                      onClick={() => selectExistingCover(image)}
-                      disabled={uploading || isSelected}
-                      className="rounded border border-slate-200 bg-white p-2 text-left shadow-sm transition hover:border-blue-400 disabled:cursor-not-allowed disabled:opacity-60"
-                    >
-                      <img src={image.url} alt={image.name} className="mb-2 aspect-square w-full rounded object-cover" />
-                      <span className="block truncate text-xs text-slate-700">{isSelected ? 'Selected' : image.name}</span>
-                    </button>
-                  );
-                })}
-              </div>
-            )}
-            {(coverPhoto?.previewUrl || coverImageUrl) && (
-              <div className="mt-4 max-w-sm rounded border border-slate-200 bg-white p-3 shadow-sm">
-                <img
-                  src={coverPhoto?.previewUrl || coverImageUrl}
-                  alt="Cover preview"
-                  className="mb-3 aspect-video w-full rounded object-cover"
-                />
-                <Button type="button" onClick={handleCoverDelete} disabled={uploading} variant="danger" size="sm">
-                  Remove Cover
+            <Inputs
+              label="Description"
+              type="text"
+              placeholder="a short description of the item, in less than 20 words"
+              value={description}
+              onChange={(e) => setDescription(e.target.value)}
+            />
+            <Dropdown label="Category" value={category} onChange={(e) => setCategory(e.target.value)}>
+              <option value="">Select Category</option>
+              {categoryOptions.map((option) => (
+                <option key={option.value} value={option.value}>{option.label}</option>
+              ))}
+            </Dropdown>
+            <Inputs
+              label="Date and Time"
+              type="datetime-local"
+              value={date}
+              onChange={(e) => setDate(e.target.value)}
+            />
+            <Inputs
+              label="Slug"
+              type="text"
+              placeholder="Slug (e.g., my-item-slug)"
+              value={slug}
+              onChange={(e) => setSlug(e.target.value)}
+            />
+            <Textarea
+              label="Content (Markdown supported)"
+              placeholder="Enter the content includes markdown formatting and allow HTML tags"
+              value={content}
+              onChange={(e) => setContent(e.target.value)}
+            />
+            <Inputs
+              label="Tags"
+              type="text"
+              placeholder="Tags (comma separated)"
+              value={tags}
+              onChange={(e) => setTags(e.target.value)}
+            />
+            {/* cover photo box */}
+            <div className="mb-4">
+              <p className='text-xl font-medium'>Upload Cover Image</p>
+              <input
+                ref={coverInputRef}
+                type="file"
+                accept="image/*"
+                onChange={handleCoverFileChange}
+                disabled={uploading}
+                className="mt-2 rounded px-3 py-2 cursor-pointer bg-slate-100 shadow-lg disabled:cursor-not-allowed disabled:bg-gray-200"
+              />
+              <div className="mt-3">
+                <Button type="button" onClick={loadMediaLibrary} disabled={uploading || mediaLibrary.loading} variant="secondary" size="sm">
+                  {mediaLibrary.loading ? 'Loading Firebase Images...' : 'Select From Existing Firebase Images'}
                 </Button>
               </div>
-            )}
-          </div>
+              {mediaLibrary.error && (
+                <p className="mt-2 rounded bg-red-50 px-3 py-2 text-sm text-red-600">{mediaLibrary.error}</p>
+              )}
+              {mediaLibrary.loaded && (
+                <div className="mt-3 grid grid-cols-2 gap-3 sm:grid-cols-4 lg:grid-cols-6">
+                  {mediaLibrary.images.map((image) => {
+                    const isSelected = coverImageUrl === image.url;
 
-          {/* multiple photos */}
-          <div className="mb-4">
-            <p className='text-xl font-medium'>Upload Multiple Images</p>
-
-            <input
-              ref={fileInputRef}
-              type="file"
-              multiple
-              accept="image/*"
-              onChange={handleFileChange}
-              disabled={uploading}
-              className="mt-2 rounded px-3 py-2 cursor-pointer bg-slate-100 shadow-lg disabled:cursor-not-allowed disabled:bg-gray-200"
-            />
-            <div className="mt-3">
-              <Button type="button" onClick={loadMediaLibrary} disabled={uploading || mediaLibrary.loading} variant="secondary" size="sm">
-                {mediaLibrary.loading ? 'Loading Firebase Images...' : 'Select From Existing Firebase Images'}
-              </Button>
+                    return (
+                      <button
+                        key={`cover-${image.path}`}
+                        type="button"
+                        onClick={() => selectExistingCover(image)}
+                        disabled={uploading || isSelected}
+                        className="rounded border border-slate-200 bg-white p-2 text-left shadow-sm transition hover:border-blue-400 disabled:cursor-not-allowed disabled:opacity-60"
+                      >
+                        <img src={image.url} alt={image.name} className="mb-2 aspect-square w-full rounded object-cover" />
+                        <span className="block truncate text-xs text-slate-700">{isSelected ? 'Selected' : image.name}</span>
+                      </button>
+                    );
+                  })}
+                </div>
+              )}
+              {(coverPhoto?.previewUrl || coverImageUrl) && (
+                <div className="mt-4 max-w-sm rounded border border-slate-200 bg-white p-3 shadow-sm">
+                  <img
+                    src={coverPhoto?.previewUrl || coverImageUrl}
+                    alt="Cover preview"
+                    className="mb-3 aspect-video w-full rounded object-cover"
+                  />
+                  <Button type="button" onClick={handleCoverDelete} disabled={uploading} variant="danger" size="sm">
+                    Remove Cover
+                  </Button>
+                </div>
+              )}
             </div>
-            {mediaLibrary.loaded && (
-              <div className="mt-3 grid grid-cols-2 gap-3 sm:grid-cols-4 lg:grid-cols-6">
-                {mediaLibrary.images.map((image) => {
-                  const isSelected = draftPhotos.some((photo) => photo.url === image.url);
 
-                  return (
-                    <button
-                      key={`image-${image.path}`}
-                      type="button"
-                      onClick={() => addExistingPhoto(image)}
-                      disabled={uploading || isSelected}
-                      className="rounded border border-slate-200 bg-white p-2 text-left shadow-sm transition hover:border-blue-400 disabled:cursor-not-allowed disabled:opacity-60"
-                    >
-                      <img src={image.url} alt={image.name} className="mb-2 aspect-square w-full rounded object-cover" />
-                      <span className="block truncate text-xs text-slate-700">{isSelected ? 'Selected' : image.name}</span>
-                    </button>
-                  );
-                })}
+            {/* multiple photos */}
+            <div className="mb-4">
+              <p className='text-xl font-medium'>Upload Multiple Images</p>
+
+              <input
+                ref={fileInputRef}
+                type="file"
+                multiple
+                accept="image/*"
+                onChange={handleFileChange}
+                disabled={uploading}
+                className="mt-2 rounded px-3 py-2 cursor-pointer bg-slate-100 shadow-lg disabled:cursor-not-allowed disabled:bg-gray-200"
+              />
+              <div className="mt-3">
+                <Button type="button" onClick={loadMediaLibrary} disabled={uploading || mediaLibrary.loading} variant="secondary" size="sm">
+                  {mediaLibrary.loading ? 'Loading Firebase Images...' : 'Select From Existing Firebase Images'}
+                </Button>
               </div>
+              {mediaLibrary.loaded && (
+                <div className="mt-3 grid grid-cols-2 gap-3 sm:grid-cols-4 lg:grid-cols-6">
+                  {mediaLibrary.images.map((image) => {
+                    const isSelected = draftPhotos.some((photo) => photo.url === image.url);
+
+                    return (
+                      <button
+                        key={`image-${image.path}`}
+                        type="button"
+                        onClick={() => addExistingPhoto(image)}
+                        disabled={uploading || isSelected}
+                        className="rounded border border-slate-200 bg-white p-2 text-left shadow-sm transition hover:border-blue-400 disabled:cursor-not-allowed disabled:opacity-60"
+                      >
+                        <img src={image.url} alt={image.name} className="mb-2 aspect-square w-full rounded object-cover" />
+                        <span className="block truncate text-xs text-slate-700">{isSelected ? 'Selected' : image.name}</span>
+                      </button>
+                    );
+                  })}
+                </div>
+              )}
+
+              <AdminPhotoList
+                photos={draftPhotos}
+                onDelete={handlePhotoDelete}
+                onMove={movePhoto}
+                onDescriptionChange={handlePhotoDescriptionChange}
+                onDragStart={handleDragStart}
+                onDrop={handleDrop}
+                disabled={uploading}
+              />
+
+              {uploading && <p>Uploading ({progress}%)</p>}
+            </div>
+
+
+            {errorMessage && (
+              <p className="rounded border border-red-200 bg-red-50 px-3 py-2 text-sm text-red-700">{errorMessage}</p>
             )}
-
-            <AdminPhotoList
-              photos={draftPhotos}
-              onDelete={handlePhotoDelete}
-              onMove={movePhoto}
-              onDescriptionChange={handlePhotoDescriptionChange}
-              onDragStart={handleDragStart}
-              onDrop={handleDrop}
-              disabled={uploading}
-            />
-
-            {uploading && <p>Uploading ({progress}%)</p>}
-          </div>
-
-
-          {errorMessage && (
-            <p className="rounded border border-red-200 bg-red-50 px-3 py-2 text-sm text-red-700">{errorMessage}</p>
-          )}
-          {successMessage && (
-            <p className="rounded border border-green-200 bg-green-50 px-3 py-2 text-sm text-green-700">{successMessage}</p>
-          )}
-          <Button
-            type="submit"
-            disabled={isSaving}
-            className={`text-white transition ${editId ? 'bg-blue-600 hover:bg-blue-700' : 'bg-green-600 hover:bg-green-700'
-              }`}
-          >
-            {isSaving ? 'Saving...' : editId ? 'Update Item' : 'Add Item'}
-          </Button>
-          {editId && (
+            {successMessage && (
+              <p className="rounded border border-green-200 bg-green-50 px-3 py-2 text-sm text-green-700">{successMessage}</p>
+            )}
             <Button
-              type="button"
-              onClick={resetForm}
-              className="bg-slate-500 transition hover:bg-slate-300"
+              type="submit"
+              disabled={isSaving}
+              className={`text-white transition ${editId ? 'bg-blue-600 hover:bg-blue-700' : 'bg-green-600 hover:bg-green-700'
+                }`}
             >
-              Cancel Edit
+              {isSaving ? 'Saving...' : editId ? 'Update Item' : 'Add Item'}
             </Button>
-          )}
-        </form>
-      </div>
-
-    </div >
+            {editId && (
+              <Button
+                type="button"
+                onClick={resetForm}
+                className="bg-slate-500 transition hover:bg-slate-300"
+              >
+                Cancel Edit
+              </Button>
+            )}
+          </form>
+        </div>
+      </div >
+    </>
   );
 }
 

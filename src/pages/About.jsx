@@ -3,8 +3,13 @@ import MarkdownContent from '../components/MarkdownContent';
 import SocialButton from '../components/SocialButton';
 import { MdOutlineEmail } from "react-icons/md";
 import { FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
+import useSubtitle from '../hooks/useSubtitle';
 
 function About() {
+  useSubtitle({
+    title: "About",
+    description: "Learn more about William. Discover his creative and coding skills, as well as how to connect with him.",
+  });
   const bio = `
 ## Hi I'm William Liu
 

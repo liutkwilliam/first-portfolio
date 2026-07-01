@@ -10,7 +10,7 @@ function NavBar() {
     { title: "About", href: "/about" },
     { title: "Portfolio", href: "/portfolio" },
     { title: "Developer", href: "/developer" },
-    { title: "Photography", href: "/photography" },
+    // { title: "Photography", href: "/photography" },
     // { title: "Artwork", href: "/artwork" },
   ];
 

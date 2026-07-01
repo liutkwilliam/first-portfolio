@@ -16,11 +16,11 @@ function Home() {
           <div className="absolute insert-0 z-20 text-center text-white">
             <p className="text-4xl md:text-6xl font-bold mb-4">William Liu</p>
             <p className="text-lg md:text-xl mb-8">
-              Frontend Developer | Designer | Photographer 
+              Frontend Developer | Designer
             </p>
             <div className="flex flex-col md:flex-row gap-4 justify-center">
               <ButtonLink href={"/portfolio"} content={"Design Portfolio"} />
-              <ButtonLink href={"/photography"} content={"Photography Portfolio"} />
+              {/* <ButtonLink href={"/photography"} content={"Photography Portfolio"} /> */}
               <ButtonLink href={"/developer"} content={"Developer Portfolio"} />
             </div>
           </div>

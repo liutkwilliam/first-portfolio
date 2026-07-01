@@ -1,81 +1,84 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import MarkdownContent from '../components/MarkdownContent';
-import { developerProjects, galleryProjects, portfolioProjects, blogPosts } from '../content/collections';
+import {
+  developerProjects,
+  fetchPortfolioItemBySlug,
+  getPortfolioItemType,
+  normalizePortfolioItem,
+  portfolioProjects,
+} from '../services/portfolioServices';
+import useSubtitle from '../hooks/useSubtitle';
 
 const collectionMap = {
   portfolio: portfolioProjects,
   developer: developerProjects,
-  gallery: galleryProjects,
-  posts: blogPosts,
 };
 
 const labelMap = {
   portfolio: 'Design Portfolio',
   developer: 'Developer Portfolio',
-  gallery: 'Photography Portfolio',
-  posts: 'Blog',
 };
 
 const backMap = {
   portfolio: '/portfolio',
   developer: '/developer',
-  gallery: '/photography',
-  posts: '/blog',
-};
-
-const scriptPromises = new Map();
-
-const loadScript = (src) => {
-  if (scriptPromises.has(src)) return scriptPromises.get(src);
-
-  const existingScript = document.querySelector(`script[src="${src}"]`);
-  if (existingScript) {
-    const promise = Promise.resolve(existingScript);
-    scriptPromises.set(src, promise);
-    return promise;
-  }
-
-  const promise = new Promise((resolve, reject) => {
-    const script = document.createElement('script');
-    script.src = src;
-    script.async = true;
-    script.onload = () => resolve(script);
-    script.onerror = () => reject(new Error(`Unable to load ${src}`));
-    document.body.appendChild(script);
-  });
-
-  scriptPromises.set(src, promise);
-  return promise;
 };
 
 function PortfolioEntry({ type = 'portfolio' }) {
   const { id } = useParams();
-  const item = collectionMap[type]?.find((entry) => entry.slug === id);
+  const staticItem = collectionMap[type]?.find((entry) => entry.slug === id);
+  const [dynamicItem, setDynamicItem] = useState(null);
+  const [loadingDynamicItem, setLoadingDynamicItem] = useState(false);
+  const [loadedDynamicKey, setLoadedDynamicKey] = useState('');
+  const dynamicKey = `${type}:${id}`;
+  const matchingDynamicItem =
+    dynamicItem?.slug === id && dynamicItem?.type === type ? dynamicItem : null;
+  const item = staticItem || matchingDynamicItem;
+
+  useSubtitle({ title: item?.title, description: item?.description });
 
   useEffect(() => {
-    if (item?.slug !== 'trail-n-plan') return undefined;
+    if (staticItem || type === 'posts') {
+      return undefined;
+    }
 
-    let isMounted = true;
+    let ignore = false;
 
-    const drawTrailNPlanCharts = () => {
-      if (isMounted) window.drawTrailNPlanCharts?.();
+    const loadDynamicItem = async () => {
+      setLoadingDynamicItem(true);
+
+      try {
+        const portfolioItem = await fetchPortfolioItemBySlug(id);
+        const normalizedItem = portfolioItem ? normalizePortfolioItem(portfolioItem) : null;
+        const belongsToPage = normalizedItem && getPortfolioItemType(portfolioItem) === type;
+
+        if (!ignore) setDynamicItem(belongsToPage ? normalizedItem : null);
+      } catch (error) {
+        console.error('Error loading portfolio item:', error);
+        if (!ignore) setDynamicItem(null);
+      } finally {
+        if (!ignore) {
+          setLoadedDynamicKey(dynamicKey);
+          setLoadingDynamicItem(false);
+        }
+      }
     };
 
-    loadScript('https://www.gstatic.com/charts/loader.js')
-      .then(() => loadScript('/js/trailnplanScript.js'))
-      .then(drawTrailNPlanCharts)
-      .catch((error) => {
-        console.error(error);
-      });
-
-    window.addEventListener('resize', drawTrailNPlanCharts);
+    loadDynamicItem();
 
     return () => {
-      isMounted = false;
-      window.removeEventListener('resize', drawTrailNPlanCharts);
+      ignore = true;
     };
-  }, [item?.slug]);
+  }, [dynamicKey, id, staticItem, type]);
+
+  if (loadingDynamicItem || (!staticItem && type !== 'posts' && loadedDynamicKey !== dynamicKey)) {
+    return (
+      <main className="mx-auto max-w-3xl px-4 py-24 text-center">
+        <p className="text-lg text-slate-600">Loading project...</p>
+      </main>
+    );
+  }
 
   if (!item) {
     return (
@@ -106,15 +109,15 @@ function PortfolioEntry({ type = 'portfolio' }) {
           </p>
           <h1 className="text-4xl font-black tracking-tight md:text-6xl">{item.title}</h1>
           {item.date && <p className="mt-4 text-lg">{item.date.getFullYear()}</p>}
-          {item.categories?.length > 0 && (
+          {item.tags?.length > 0 && (
             <p className="mt-4 text-sm font-semibold uppercase tracking-[0.2em]">
-              {item.categories.join(', ')}
+              {item.tags.join(', ')}
             </p>
           )}
         </div>
       </section>
 
-      <main className="mx-auto max-w-6xl px-4 py-14 sm:px-6 lg:px-8">
+      <main className="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
         <Link className="mb-8 inline-block font-semibold text-blue-600 hover:text-blue-800" to={backMap[type]}>
           {'<'} Back to {labelMap[type]}
         </Link>
@@ -127,7 +130,7 @@ function PortfolioEntry({ type = 'portfolio' }) {
             {item.images.map((image, index) => (
               <figure key={`${image.image_path}-${index}`} className="mb-5 break-inside-avoid overflow-hidden rounded-2xl bg-white shadow">
                 <img
-                  src={`${imageBase}${image.image_path}`}
+                  src={image.isExternal ? image.image_path : `${imageBase}${image.image_path}`}
                   alt={image.title || `${item.title} image ${index + 1}`}
                   className="w-full object-cover"
                   loading="lazy"

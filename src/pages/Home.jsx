@@ -1,6 +1,6 @@
 import React from 'react'
 import ButtonLink from '../components/ButtonLink'
-import CoverImage from '../assets/portfolio-cover.png'
+import CoverImage from '/images/portfolio-cover.jpg'
 
 function Home() {
   return (
@@ -20,7 +20,6 @@ function Home() {
             </p>
             <div className="flex flex-col md:flex-row gap-4 justify-center">
               <ButtonLink href={"/portfolio"} content={"Design Portfolio"} />
-              {/* <ButtonLink href={"/photography"} content={"Photography Portfolio"} /> */}
               <ButtonLink href={"/developer"} content={"Developer Portfolio"} />
             </div>
           </div>
